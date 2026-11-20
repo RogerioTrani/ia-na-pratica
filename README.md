@@ -8,6 +8,10 @@ Material de apoio dos tutoriais do canal do Rogério Trani sobre IA: apostilas, 
 | --- | --- | --- |
 | [Agente de vagas](serie-agente-de-vagas/README.md) | Um sistema de três agentes de IA (Regente, Faro e Prumo) que busca vagas de emprego reais e ranqueia as melhores para o seu perfil, com modelos gratuitos | 5 |
 
+## Projeto pronto
+
+[`projeto-agente-de-vagas/`](projeto-agente-de-vagas/README.md): o projeto final da série, com o Regente, o Faro e o Prumo prontos para abrir no Zed. É Markdown puro (personas, habilidades e planos): a série mostra que dá para construir um sistema de agentes só com linguagem natural.
+
 ## Apostilas da série "Agente de vagas"
 
 1. [Aula 1 (1/2): instale o Zed e conecte um modelo grátis](serie-agente-de-vagas/aula-1-parte-1/apostila.md)

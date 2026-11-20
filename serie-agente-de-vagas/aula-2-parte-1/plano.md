@@ -34,15 +34,19 @@ Cada agente tem uma única missão e começa com a janela de contexto limpa. Iss
 
 - Único agente com quem a pessoa conversa.
 - Habilidade (skill) de **delegar trabalho** usando a ferramenta nativa de despacho de agentes.
-- Rotina: saudar; conferir se existe quiz em `data/`; se não existir, enviar as cinco perguntas e salvar o perfil; mostrar o menu.
+- Rotina: saudar; conferir se existe quiz em `data/`; se não existir, enviar as sete perguntas do quiz e salvar o perfil; mostrar o menu.
 
-### Quiz
+### Quiz (ampliado para sete perguntas)
 
 1. Área de interesse.
 2. Nível de experiência.
 3. Modelo de trabalho preferido (remoto, híbrido ou presencial).
 4. Localização.
-5. Habilidades técnicas.
+5. Soft skills mais fortes.
+6. Objetivo de carreira (primeiro emprego, crescimento técnico ou transição de carreira).
+7. Habilidades técnicas.
+
+O Regente envia as sete perguntas de uma vez, numeradas, e grava o perfil em `data/perfil-do-usuario.md`.
 
 ### Menu
 
