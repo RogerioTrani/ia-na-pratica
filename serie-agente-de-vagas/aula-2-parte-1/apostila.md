@@ -1,4 +1,6 @@
-# Apostila: Aula 2 (1/2): faça seu orquestrador de agentes funcionar
+# Aula 2 (1/2): faça seu orquestrador de agentes funcionar
+
+_2026-11-21 · tutorial_
 
 Você transforma o plano.md da Aula 1 no Regente, o orquestrador, dentro da pasta agente-de-vagas. O agente do Zed cria personas, skills, data e o AGENTS.md a partir do plano. Numa conversa nova, o Regente se apresenta e faz a primeira pergunta do quiz. O Faro, que busca vagas, fica para a parte 2.
 
@@ -15,11 +17,11 @@ Fonte: <https://zed.dev>
 
 ## Passos 1 e 2: complete o plano e confira a arquitetura
 
-Abra o plano.md e, na conversa do agente, peça duas partes novas. Modelos baratos e gratuitos costumam usar uma arquitetura chamada mistura de especialistas (MoE), que gasta menos hardware, e por isso respondem melhor a instruções claras e explícitas.
+Abra o plano.md e, na conversa do agente, peça três partes novas, sendo a terceira o quiz ampliado para sete perguntas. Modelos baratos e gratuitos costumam usar uma arquitetura chamada mistura de especialistas (MoE), que gasta menos hardware, e por isso respondem melhor a instruções claras e explícitas.
 
 Depois leia o desenho das camadas no plano.md. A revisão é sua: quem garante o resultado é você. Procure um agente que só busca vagas. Com uma única missão ele erra menos, e cada agente disparado começa com a janela de contexto limpa. Se o desenho estiver confuso, peça ajuste.
 
-- Resultado esperado: o plano.md ganha as diretrizes para modelos baratos e o desenho em três camadas (usuário, Regente, agentes).
+- Resultado esperado: o plano.md ganha as diretrizes para modelos baratos, o desenho em três camadas (usuário, Regente, agentes) e o quiz com sete perguntas.
 - Se o agente não acrescentar uma das partes, repita o pedido dizendo qual delas falta.
 
 Fonte: <https://zed.dev/docs/ai/agent-panel>
