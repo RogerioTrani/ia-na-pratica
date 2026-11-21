@@ -4,6 +4,7 @@ Todas as apostilas dos vídeos do canal, as mais novas primeiro. As das séries 
 
 | Data e título | Formato | Apostila |
 | --- | --- | --- |
+| 2026-11-21: Planner do Dynamo corta 80% de breaches de SLA | reportagens | [md](reportagens/2026-11/2026-11-21-planner-do-dynamo-corta-80-de-breaches-de-sla/apostila.md) · [pdf](reportagens/2026-11/2026-11-21-planner-do-dynamo-corta-80-de-breaches-de-sla/apostila.pdf) |
 | 2026-11-21: Meta lança o Llama 5 com 400 bi | noticias | [md](noticias/2026-11/2026-11-21-meta-lanca-o-llama-5-com-400-bi/apostila.md) · [pdf](noticias/2026-11/2026-11-21-meta-lanca-o-llama-5-com-400-bi/apostila.pdf) |
 | 2026-11-21: GPT-6 Astra edita pesos do Qwen 0.8B e melhora de 8% para 48% indicadores | noticias | [md](noticias/2026-11/2026-11-21-gpt-6-astra-edita-pesos-do-qwen-0-8b-e-melhora-de-8-para-48-/apostila.md) · [pdf](noticias/2026-11/2026-11-21-gpt-6-astra-edita-pesos-do-qwen-0-8b-e-melhora-de-8-para-48-/apostila.pdf) |
 | 2026-11-21: Google lança o Gemini 4 Neon, modelo do meio da linha | noticias | [md](noticias/2026-11/2026-11-21-google-lanca-o-gemini-4-neon-modelo-do-meio-da-linha/apostila.md) · [pdf](noticias/2026-11/2026-11-21-google-lanca-o-gemini-4-neon-modelo-do-meio-da-linha/apostila.pdf) |
