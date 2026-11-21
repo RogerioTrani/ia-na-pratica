@@ -1,4 +1,6 @@
-# Apostila: Aula 1 (2/2): escreva o plano do seu orquestrador de agentes
+# Aula 1 (2/2): escreva o plano do seu orquestrador de agentes
+
+_2026-11-21 · tutorial_
 
 Você vai pedir ao agente do Zed um plano.md que descreve o Regente, o orquestrador com quem você conversa. O plano traz a saudação, o quiz de cinco perguntas e o menu de opções. Nenhum agente é criado neste vídeo: primeiro o desenho, depois a obra. O arquivo fica na pasta agente-de-vagas e é a base do que a série constrói na Aula 2.
 
