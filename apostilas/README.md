@@ -4,6 +4,7 @@ Todas as apostilas dos vídeos do canal, as mais novas primeiro. As das séries 
 
 | Data e título | Formato | Apostila |
 | --- | --- | --- |
+| 2026-11-22: WrenAI leva 3 comandos para ligar agentes a 22 fontes | reportagens | [md](reportagens/2026-11/2026-11-22-wrenai-leva-3-comandos-para-ligar-agentes-a-22-fontes/apostila.md) · [pdf](reportagens/2026-11/2026-11-22-wrenai-leva-3-comandos-para-ligar-agentes-a-22-fontes/apostila.pdf) |
 | 2026-11-22: Nvidia lança IA de voz com 18 vozes prontas e papel livre | noticias | [md](noticias/2026-11/2026-11-22-nvidia-lanca-ia-de-voz-com-18-vozes-prontas-e-papel-livre/apostila.md) · [pdf](noticias/2026-11/2026-11-22-nvidia-lanca-ia-de-voz-com-18-vozes-prontas-e-papel-livre/apostila.pdf) |
 | 2026-11-22: Anthropic lança Sheets, Data e Whiteboards no Claude | reportagens | [md](reportagens/2026-11/2026-11-22-anthropic-lanca-sheets-data-e-whiteboards-no-claude/apostila.md) · [pdf](reportagens/2026-11/2026-11-22-anthropic-lanca-sheets-data-e-whiteboards-no-claude/apostila.pdf) |
 | 2026-11-21: Rato epiléptico operado por IA com 18 horas de preparo | noticias | [md](noticias/2026-11/2026-11-21-rato-epileptico-operado-por-ia-com-18-horas-de-preparo/apostila.md) · [pdf](noticias/2026-11/2026-11-21-rato-epileptico-operado-por-ia-com-18-horas-de-preparo/apostila.pdf) |
