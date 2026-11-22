@@ -5,6 +5,7 @@ Todas as apostilas dos vídeos do canal, as mais novas primeiro. As das séries 
 | Data e título | Formato | Apostila |
 | --- | --- | --- |
 | 2026-11-22: WrenAI leva 3 comandos para ligar agentes a 22 fontes | reportagens | [md](reportagens/2026-11/2026-11-22-wrenai-leva-3-comandos-para-ligar-agentes-a-22-fontes/apostila.md) · [pdf](reportagens/2026-11/2026-11-22-wrenai-leva-3-comandos-para-ligar-agentes-a-22-fontes/apostila.pdf) |
+| 2026-11-22: Vagas de PM sobem 75% desde o piso de março de 2023 | reportagens | [md](reportagens/2026-11/2026-11-22-vagas-de-pm-sobem-75-desde-o-piso-de-marco-de-2023/apostila.md) · [pdf](reportagens/2026-11/2026-11-22-vagas-de-pm-sobem-75-desde-o-piso-de-marco-de-2023/apostila.pdf) |
 | 2026-11-22: Trump sugere Tim Cook como CEO da NVIDIA | noticias | [md](noticias/2026-11/2026-11-22-trump-sugere-tim-cook-como-ceo-da-nvidia/apostila.md) · [pdf](noticias/2026-11/2026-11-22-trump-sugere-tim-cook-como-ceo-da-nvidia/apostila.pdf) |
 | 2026-11-22: Siri AI abre prévia para todos os desenvolvedores | noticias | [md](noticias/2026-11/2026-11-22-siri-ai-abre-previa-para-todos-os-desenvolvedores/apostila.md) · [pdf](noticias/2026-11/2026-11-22-siri-ai-abre-previa-para-todos-os-desenvolvedores/apostila.pdf) |
 | 2026-11-22: Prompt Motion passo a passo, do filtro ao vídeo final | reportagens | [md](reportagens/2026-11/2026-11-22-prompt-motion-passo-a-passo-do-filtro-ao-video-final/apostila.md) · [pdf](reportagens/2026-11/2026-11-22-prompt-motion-passo-a-passo-do-filtro-ao-video-final/apostila.pdf) |
