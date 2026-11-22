@@ -4,6 +4,7 @@ Todas as apostilas dos vídeos do canal, as mais novas primeiro. As das séries 
 
 | Data e título | Formato | Apostila |
 | --- | --- | --- |
+| 2026-11-22: Nvidia lança IA de voz com 18 vozes prontas e papel livre | noticias | [md](noticias/2026-11/2026-11-22-nvidia-lanca-ia-de-voz-com-18-vozes-prontas-e-papel-livre/apostila.md) · [pdf](noticias/2026-11/2026-11-22-nvidia-lanca-ia-de-voz-com-18-vozes-prontas-e-papel-livre/apostila.pdf) |
 | 2026-11-21: Rato epiléptico operado por IA com 18 horas de preparo | noticias | [md](noticias/2026-11/2026-11-21-rato-epileptico-operado-por-ia-com-18-horas-de-preparo/apostila.md) · [pdf](noticias/2026-11/2026-11-21-rato-epileptico-operado-por-ia-com-18-horas-de-preparo/apostila.pdf) |
 | 2026-11-21: Qubic evolui milhões de cérebros de IA em 500 CPUs | reportagens | [md](reportagens/2026-11/2026-11-21-qubic-evolui-milhoes-de-cerebros-de-ia-em-500-cpus/apostila.md) · [pdf](reportagens/2026-11/2026-11-21-qubic-evolui-milhoes-de-cerebros-de-ia-em-500-cpus/apostila.pdf) |
 | 2026-11-21: Planner do Dynamo corta 80% de breaches de SLA | reportagens | [md](reportagens/2026-11/2026-11-21-planner-do-dynamo-corta-80-de-breaches-de-sla/apostila.md) · [pdf](reportagens/2026-11/2026-11-21-planner-do-dynamo-corta-80-de-breaches-de-sla/apostila.pdf) |
