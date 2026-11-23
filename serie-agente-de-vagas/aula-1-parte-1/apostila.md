@@ -1,6 +1,6 @@
 # Aula 1 (1/2): instale o Zed e conecte um modelo grátis
 
-_2026-11-21 · tutorial_
+_2026-11-23 · tutorial_
 
 Esta apostila monta o ambiente que a série inteira usa: o editor Zed, uma conta e uma chave no OpenRouter, a pasta agente-de-vagas e um modelo gratuito no painel do agente. A série constrói agentes de IA que buscam vagas de emprego reais e escolhem as melhores. Os passos seguem o Windows; no Mac e no Linux, download e configuração são os mesmos. Ao terminar, o Zed está aberto na pasta do projeto, com um modelo marcado como free respondendo.
 
