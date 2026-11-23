@@ -1,6 +1,6 @@
 # Aula 3: crie o Prumo, o agente que ranqueia as vagas
 
-_2026-11-21 · tutorial_
+_2026-11-23 · tutorial_
 
 Nesta aula você cria o Prumo, o terceiro agente da série. Ele lê as vagas que o Faro encontrou e o perfil montado pelo Regente, e devolve só as melhores, em ordem, com nota de 0 a 100, pontos fortes, lacunas e o motivo da nota. O caminho é planejar, definir pesos e formato, implementar, reiniciar o Regente e testar com um perfil de exemplo.
 
