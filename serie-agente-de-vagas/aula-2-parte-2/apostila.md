@@ -1,6 +1,6 @@
 # Aula 2 (2/2): crie o Faro, o agente que busca vagas reais
 
-_2026-11-21 · tutorial_
+_2026-11-23 · tutorial_
 
 Nesta apostila você instala o Node pelo nvm, cria a conta no Firecrawl e monta o Faro, o agente que busca vagas reais com link. No fim, o resultado fica salvo na pasta data, com habilidades que faltam e contagem de correspondência. Esse arquivo é a entrada do Prumo, na Aula 3.
 
