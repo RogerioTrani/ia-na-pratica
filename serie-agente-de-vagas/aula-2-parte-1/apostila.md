@@ -1,6 +1,6 @@
 # Aula 2 (1/2): faça seu orquestrador de agentes funcionar
 
-_2026-11-21 · tutorial_
+_2026-11-23 · tutorial_
 
 Você transforma o plano.md da Aula 1 no Regente, o orquestrador, dentro da pasta agente-de-vagas. O agente do Zed cria personas, skills, data e o AGENTS.md a partir do plano. Numa conversa nova, o Regente se apresenta e faz a primeira pergunta do quiz. O Faro, que busca vagas, fica para a parte 2.
 
