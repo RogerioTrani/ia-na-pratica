@@ -5,6 +5,7 @@ Todas as apostilas dos vídeos do canal, as mais novas primeiro. As das séries 
 | Data e título | Formato | Apostila |
 | --- | --- | --- |
 | 2026-11-23: YouTube Agent Skill dá 11 habilidades grátis ao Claude | noticias | [md](noticias/2026-11/2026-11-23-youtube-agent-skill-da-11-habilidades-gratis-ao-claude/apostila.md) · [pdf](noticias/2026-11/2026-11-23-youtube-agent-skill-da-11-habilidades-gratis-ao-claude/apostila.pdf) |
+| 2026-11-23: Univer embute planilhas e documentos para pessoas e agentes | noticias | [md](noticias/2026-11/2026-11-23-univer-embute-planilhas-e-documentos-para-pessoas-e-agentes/apostila.md) · [pdf](noticias/2026-11/2026-11-23-univer-embute-planilhas-e-documentos-para-pessoas-e-agentes/apostila.pdf) |
 | 2026-11-23: Revolut corta 90% do custo de IA ao adotar GLM | noticias | [md](noticias/2026-11/2026-11-23-revolut-corta-90-do-custo-de-ia-ao-adotar-glm/apostila.md) · [pdf](noticias/2026-11/2026-11-23-revolut-corta-90-do-custo-de-ia-ao-adotar-glm/apostila.pdf) |
 | 2026-11-23: OpenAI relata uso crescente de agentes de código em pesquisa | noticias | [md](noticias/2026-11/2026-11-23-openai-relata-uso-crescente-de-agentes-de-codigo-em-pesquisa/apostila.md) · [pdf](noticias/2026-11/2026-11-23-openai-relata-uso-crescente-de-agentes-de-codigo-em-pesquisa/apostila.pdf) |
 | 2026-11-23: NVIDIA leva o RTX Spark à Adobe MAX 2026 | noticias | [md](noticias/2026-11/2026-11-23-nvidia-leva-o-rtx-spark-a-adobe-max-2026/apostila.md) · [pdf](noticias/2026-11/2026-11-23-nvidia-leva-o-rtx-spark-a-adobe-max-2026/apostila.pdf) |
