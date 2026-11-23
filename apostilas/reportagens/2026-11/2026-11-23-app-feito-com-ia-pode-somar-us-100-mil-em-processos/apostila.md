@@ -1,0 +1,93 @@
+# App feito com IA pode somar US$ 100 mil em processos
+
+_2026-11-23 · reportagem_
+
+Seis configurações comuns em app gerado por IA criam multas e indenizações antes da primeira venda. Nas leis citadas aqui, o valor é cobrado por unidade de violação (visitante, e-mail, obra) e não por percentual do faturamento. A apostila traz a regra de cada risco, a correção e o prompt pronto para colar na sua IA antes do deploy.
+
+## Por que o risco existe antes do faturamento
+
+Em muitas leis digitais dos EUA e da Europa, a penalidade não depende da receita da empresa. O cálculo é por unidade de violação: cada visitante, sessão ou e-mail pode contar como uma violação separada.
+
+Por isso o passivo nasce com o primeiro usuário. As seções abaixo trazem seis pontos que as ferramentas de IA costumam deixar passar, o valor em jogo em cada um e o que ajustar.
+
+## 1. Cadastro sem filtro de idade (COPPA)
+
+A COPPA (16 CFR Part 312) vale para quem coleta dados de menores de 13 anos. A multa chega a US$ 53.088 por violação.
+
+- Peça a data de nascimento no cadastro antes de salvar qualquer dado.
+- Bloqueie o registro de menores de 13 anos.
+
+Fonte: <https://www.ftc.gov/business-guidance/resources/complying-coppa-frequently-asked-questions>
+
+## 2. Fontes carregadas de servidor externo (GDPR)
+
+Carregar fontes direto do Google envia o IP do visitante aos servidores deles sem consentimento prévio. Precedente: o tribunal de Munique, em 20/01/2022 (processo 3 O 17493/20), fixou € 100 por visitante com base no Art. 6º do GDPR.
+
+- Hospede as fontes no seu próprio servidor.
+- Se usar Next.js, carregue localmente com arquivos estáticos ou next/font.
+
+Fonte: <https://dejure.org/dienste/vernetzung/rechtsprechung?Text=3+O+17493%2F20>
+
+## 3. Analytics com session replay (CIPA)
+
+Analytics com session replay, como PostHog e Clarity, grava a sessão do visitante. Na Califórnia, rastrear com terceiros sem aviso prévio pode ser tratado como interceptação ilegal. O Cal.
+
+- Dispare o analytics só depois do aceite de cookies.
+- Mantenha o mascaramento de todos os campos de input ligado.
+- No PostHog, a opção está em session_recording. Guia oficial: posthog.com/docs/session-replay/privacy
+
+```
+maskAllInputs: true
+```
+
+Fonte: <https://law.justia.com/codes/california/code-pen/part-1/title-15/chapter-1-5/section-637-2/>
+
+## 4. E-mail sem opção de descadastro (CAN-SPAM)
+
+Pelo CAN-SPAM Act, cada e-mail que viola a lei pode custar até US$ 53.088. Vale para o e-mail de lançamento enviado à lista de espera.
+
+- Ponha no rodapé um link de descadastro que funcione.
+- Ponha também um endereço postal físico válido.
+- Atenda os pedidos de saída em até 10 dias úteis.
+
+Fonte: <https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business>
+
+## 5. Checkout sem termos de renovação (ARL)
+
+A lei de renovação automática da Califórnia (Cal. Bus. & Prof. Code § 17602 e § 17603) exige termos de renovação perto do pedido de consentimento. Sem consentimento expresso, a cobrança fica nula.
+
+- Na tela de assinatura (Stripe, por exemplo), mostre um resumo da cobrança logo acima do botão de assinar.
+- O resumo traz valor, frequência da renovação e a regra de cancelamento.
+
+Fonte: <https://www.leginfo.ca.gov/pub/09-10/bill/sen/sb_0301-0350/sb_340_bill_20091011_chaptered.html>
+
+## 6. Uploads sem proteção DMCA
+
+Sem agente DMCA registrado, o dono do app responde por imagens que usuários postam.
+
+O registro do agente é feito no U.S. Copyright Office: taxa de US$ 6 por designação, com validade de três anos. Diretório: copyright.gov/dmca-directory
+
+- Registre seu agente designado no U.S. Copyright Office.
+- Publique uma página com a política de remoção de conteúdo e o formulário de denúncia, com link no rodapé.
+
+Fonte: <https://www.law.cornell.edu/uscode/text/17/504>
+
+## O prompt de blindagem
+
+Cole o texto abaixo na IA que escreve o seu código (Cursor, Windsurf, Lovable, Bolt ou Claude) e peça a auditoria antes de publicar o app.
+
+```
+Audite e refatore este projeto para conformidade legal internacional (COPPA, GDPR, CIPA, CAN-SPAM, ARL e DMCA) antes do deploy, aplicando obrigatoriamente estas 6 implementações:
+1. Age Gate (COPPA): Adicione validação obrigatória de data de nascimento no fluxo de cadastro antes de persistir qualquer dado no banco. Bloqueie o registro de usuários menores de 13 anos.
+2. Fontes Locais (GDPR): Remova todas as chamadas externas para ://googleapis.com e ://gstatic.com. Configure o carregamento local via arquivos estáticos ou next/font.
+3. Consentimento de Analytics (CIPA/GDPR): Condicione a inicialização de qualquer script de analytics ou session replay (PostHog, Hotjar, Clarity, GA4) ao consentimento explícito em um banner de cookies, e ative o mascaramento padrão de todos os campos de input.
+4. Templates de E-mail (CAN-SPAM): Atualize todos os templates de e-mail transacional/marketing para incluir no rodapé um placeholder obrigatório de endereço físico postal e um link funcional de descadastro (unsubscribe) em um clique.
+5. Tela de Checkout (ARL): Nos componentes de assinatura/Stripe, adicione um bloco de texto claro imediatamente acima do botão de pagamento informando valor, periodicidade da renovação automática e instruções simples de cancelamento.
+6. Fluxo DMCA: Crie uma rota pública /dmca com formulário/instruções de contato para denúncia de violação de direitos autorais e adicione o link no rodapé global da aplicação.
+```
+
+## Além do vídeo
+
+- Regra COPPA (16 CFR Part 312) na íntegra, no site da FTC: https://www.ftc.gov/legal-library/browse/rules/childrens-online-privacy-protection-rule-coppa
+- Guia oficial do Microsoft Clarity sobre mascaramento de conteúdo: https://learn.microsoft.com/en-us/clarity/setup-and-installation/clarity-masking
+- Tabela de taxas do U.S. Copyright Office: https://www.copyright.gov/about/fees.html
