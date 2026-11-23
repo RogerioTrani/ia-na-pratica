@@ -4,6 +4,7 @@ Todas as apostilas dos vídeos do canal, as mais novas primeiro. As das séries 
 
 | Data e título | Formato | Apostila |
 | --- | --- | --- |
+| 2026-11-23: Meta lança o Llama 5 com 400 bi | noticias | [md](noticias/2026-11/2026-11-23-meta-lanca-o-llama-5-com-400-bi/apostila.md) · [pdf](noticias/2026-11/2026-11-23-meta-lanca-o-llama-5-com-400-bi/apostila.pdf) |
 | 2026-11-23: Kimi K3.1 Pro bate o Opus 5.5 em 3 testes por US$ 2 | noticias | [md](noticias/2026-11/2026-11-23-kimi-k3-1-pro-bate-o-opus-5-5-em-3-testes-por-us-2/apostila.md) · [pdf](noticias/2026-11/2026-11-23-kimi-k3-1-pro-bate-o-opus-5-5-em-3-testes-por-us-2/apostila.pdf) |
 | 2026-11-22: WrenAI leva 3 comandos para ligar agentes a 22 fontes | reportagens | [md](reportagens/2026-11/2026-11-22-wrenai-leva-3-comandos-para-ligar-agentes-a-22-fontes/apostila.md) · [pdf](reportagens/2026-11/2026-11-22-wrenai-leva-3-comandos-para-ligar-agentes-a-22-fontes/apostila.pdf) |
 | 2026-11-22: Vagas de PM sobem 75% desde o piso de março de 2023 | reportagens | [md](reportagens/2026-11/2026-11-22-vagas-de-pm-sobem-75-desde-o-piso-de-marco-de-2023/apostila.md) · [pdf](reportagens/2026-11/2026-11-22-vagas-de-pm-sobem-75-desde-o-piso-de-marco-de-2023/apostila.pdf) |
