@@ -2,46 +2,41 @@
 
 _2026-11-24 · reportagem_
 
-A OpenAI mostra nos gráficos o GPT-6.2 Sol na frente do Claude Opus 5.5 por metade do preço. Num teste direto, o Opus 5.5 foi um pouco mais preciso. O Sol custou menos de um quinto do que o Opus 5.5 e terminou em metade do tempo. Se a pequena perda de precisão for aceitável no seu uso, o Sol pode ser a compra mais vantajosa.
+Os gráficos da OpenAI mostram o GPT-6.2 Sol à frente do Claude Opus 5.5 e anunciam o Sol pela metade do preço. No teste direto, o Opus 5.5 foi um pouco mais preciso, mas o Sol custou menos de um quinto e terminou na metade do tempo. A escolha depende de quanto vale para você aquele pouco a mais de acerto.
 
-## O que a OpenAI promete
+## A promessa da OpenAI
 
-Nos gráficos de lançamento, a OpenAI afirma que o GPT-6.2 Sol supera o Claude Opus 5.5 custando metade do preço.
+Os gráficos de lançamento da OpenAI colocam o GPT-6.2 Sol na frente do Claude Opus 5.5 e anunciam o Sol pela metade do preço.
 
-Gráfico de lançamento é feito por quem vende o modelo. Serve de ponto de partida, e só um teste direto mostra se a promessa se sustenta.
+Gráfico de lançamento é feito pela empresa que vende o modelo. Serve de ponto de partida, mas só um teste direto mostra se a promessa aguenta.
 
-## Precisão: vantagem do Opus 5.5
+## Precisão: o Opus 5.5 ficou um pouco à frente
 
-No teste direto, o Claude Opus 5.5 foi um pouco mais preciso que o GPT-6.2 Sol. A diferença é pequena, mas aponta para o Opus. A afirmação de que o Sol supera o rival não se confirmou nesse teste.
+No teste direto, o Claude Opus 5.5 foi um pouco mais preciso que o GPT-6.2 Sol.
 
-## Custo: a surpresa do teste
+A diferença é pequena, mas aponta para o Opus. A afirmação de que o Sol supera o rival não se confirmou nesse teste.
 
-O preço anunciado do Sol era metade do preço do Opus 5.5. No teste, o Sol saiu por menos de 1/5 do que o Opus 5.5 gastou.
+## Custo: menos de um quinto
 
-- Promessa da OpenAI: metade do preço
-- Resultado no teste: menos de 1/5 do custo do Opus 5.5
+O preço anunciado era metade do preço do Opus 5.5. No teste direto, a diferença foi maior do que o anunciado.
+
+- No teste, o Sol custou menos de 1/5 do preço do Opus 5.5.
 
 ## Velocidade: metade do tempo
 
-O GPT-6.2 Sol concluiu o teste na metade do tempo que o Opus 5.5 levou. Para quem espera a resposta na tela, isso muda a experiência de uso, principalmente em tarefas repetidas.
+O GPT-6.2 Sol concluiu o teste na metade do tempo que o Opus 5.5 levou.
 
-## Qual escolher
+Para quem espera a resposta, tempo pesa tanto quanto a conta, principalmente em tarefas repetidas.
 
-A pergunta é quanto vale aquele pouco a mais de acerto do Opus 5.5. Se o seu trabalho tolera uma margem pequena de erro, custo e velocidade pesam a favor do Sol.
+## Vale a pena?
 
-- Prioridade é a maior precisão possível: o Opus 5.5 ficou na frente no teste.
-- Margem pequena de erro é aceitável: o Sol custou menos de 1/5 e terminou em metade do tempo.
+A conta é sua: quanto vale aquele pouco a mais de acerto?
+
+- Se o trabalho tolera uma margem pequena de erro, custo e velocidade pesam a favor do Sol.
+- Se a precisão for decisiva, o Opus 5.5 ficou um pouco à frente no teste.
 
 ## Compare os dois modelos
 
-O Artificial Analysis mantém uma página que põe os lançamentos de cada modelo lado a lado em inteligência, desempenho e preço.
-
-```
-artificialanalysis.ai/models/comparisons/gpt-6-2-sol-vs-claude-opus-5-5
-```
+O Artificial Analysis mantém uma página que coloca um ao lado do outro os lançamentos do GPT-6.2 Sol e do Claude Opus 5.5, com inteligência, desempenho e preço.
 
 Fonte: <https://artificialanalysis.ai/models/comparisons/gpt-6-2-sol-vs-claude-opus-5-5>
-
-## Além do vídeo
-
-- A página do Artificial Analysis compara 5 modelos do GPT-6.2 Sol com 5 modelos do Claude Opus 5.5, cada um com inteligência, desempenho e preço próprios.
