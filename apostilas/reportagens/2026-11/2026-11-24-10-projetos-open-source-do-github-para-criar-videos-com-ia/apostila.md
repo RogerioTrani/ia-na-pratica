@@ -2,66 +2,61 @@
 
 _2026-11-24 · reportagem_
 
-Esta é a segunda parte da lista: dez projetos open source do GitHub, do 20º ao 11º, para editar, transcrever, legendar, animar e publicar vídeo com IA. A apostila traz o que cada projeto faz, o link do repositório e os comandos de instalação que o roteiro cita. Para o Whisper-WebUI há o passo a passo completo com Docker.
+Dez projetos open source do GitHub cobrem edição, transcrição, legenda, animação e publicação de vídeo com IA. São os números 20 a 11 da segunda parte da lista. Cada projeto traz sua função, o comando de instalação quando existe e o repositório oficial. Escolha conforme a etapa do seu fluxo de produção.
 
-## Edição e transcrição (20º ao 18º)
+## Editar vídeo por comando: Open Chat Cut
 
-Open Chat Cut (20º) edita vídeos com IA a partir de comandos em linguagem natural. A edição acontece numa linha do tempo real e editável, então você descreve a mudança e continua podendo ajustar o projeto à mão.
-
-AI Video Transcriber (18º) transcreve e resume vídeos e podcasts a partir de um link ou de um arquivo local. Serve para transformar uma gravação em base de roteiro ou de post.
-
-- Open Chat Cut: github.com/0xsline/OpenChatCut
-- AI Video Transcriber: github.com/wendy7756/AI-Video-Transcriber
+O Open Chat Cut edita vídeo com comandos em linguagem natural. Você descreve a mudança que quer, e a edição acontece numa linha do tempo real e editável. O projeto é open source.
 
 Fonte: <https://github.com/0xsline/OpenChatCut>
 
-## Whisper-WebUI (19º): instalação com Docker
+## Transcrever áudio e vídeo: Whisper-WebUI
 
-Interface web para transcrever áudio e vídeo. Você escolhe entre três implementações do Whisper: openai/whisper, SYSTRAN/faster-whisper e Vaibhavs10/insanely-fast-whisper.
+O Whisper-WebUI é uma interface web para transcrever áudio e vídeo. Ele traz três implementações do Whisper para você escolher. A instalação usa Docker.
 
-- Clone o repositório.
-- Rode docker compose build.
-- Rode docker compose up.
-- Abra http://localhost:7860 no navegador.
-- Sem Docker: rode install.bat ou install.sh e inicie com start-webui.bat ou start-webui.sh.
+- Escolha uma das três implementações do Whisper na interface.
 
 Fonte: <https://github.com/jhj0517/Whisper-WebUI>
 
-## Agentes de edição e redes sociais (17º e 16º)
+## Transcrever e resumir: AI Video Transcriber
 
-Open Storyline (17º) é um agente de edição. Você conversa com ele, e ele monta o roteiro e a narração e organiza as cenas a partir dos seus vídeos e imagens.
+O AI Video Transcriber transcreve e resume vídeos e podcasts a partir de um link ou de um arquivo local. Você cola o link ou envia o arquivo e sai com a transcrição. Para o resumo, configure na interface uma chave de API de um provedor compatível com OpenAI. O material fica pronto para virar roteiro ou post.
 
-Easel (16º) é um assistente de redes sociais. Descobre pautas, planeja, cria texto, imagem, áudio e vídeo, e publica.
+- Cole o link do vídeo ou envie um arquivo local.
+- Configure uma chave de API compatível com OpenAI na interface para gerar o resumo.
 
-- Open Storyline: github.com/FireRedTeam/FireRed-OpenStoryline
-- Easel: github.com/ZJU-REAL/Easel
+Fonte: <https://github.com/wendy7756/AI-Video-Transcriber>
 
-Fonte: <https://github.com/FireRedTeam/FireRed-OpenStoryline>
+## Roteiro e pautas: Open Storyline e Easel
 
-## Legendas e animação (15º e 14º)
+O Open Storyline é um agente de edição. Você conversa com ele, e ele monta o roteiro, a narração e a sequência das cenas a partir dos seus vídeos e imagens. O Easel é um assistente de redes sociais. Ele descobre pautas, planeja, cria texto, imagem, áudio e vídeo, e publica nas plataformas.
 
-Auto Subs (15º) gera legendas no seu computador, sem nuvem. Ele se conecta ao DaVinci Resolve, ao Premiere e ao After Effects.
+Fonte: <https://github.com/FireRedTeam/FireRed-OpenStoryline https://github.com/ZJU-REAL/Easel>
 
-Stickman Video Director (14º) transforma roteiros em vídeos animados com personagens palito, em vários estilos. Dá para publicar sem gravar nada.
+## Legendas no computador: Auto Subs
 
-- Auto Subs: github.com/tmoroney/auto-subs
-- Stickman Video Director: github.com/kaomei/stickman-video-director
+O Auto Subs gera legendas no seu computador, sem enviar nada para a nuvem. Ele se conecta ao DaVinci Resolve, ao Premiere e ao After Effects. As legendas mantêm quem assiste sem som.
 
 Fonte: <https://github.com/tmoroney/auto-subs>
 
-## YouTube Automation Agent (13º)
+## Animação com palitos: Stickman Video Director
 
-Agente que pesquisa, roteiriza e produz vídeos para o YouTube. Ele só publica depois da sua aprovação.
+O Stickman Video Director transforma um roteiro em vídeo animado com personagens palito. Os vídeos saem em vários estilos visuais. Você faz vídeo sem aparecer e sem gravar nada.
 
-```
-git clone https://github.com/darkzOGx/youtube-automation-agent.git
-```
+Fonte: <https://github.com/kaomei/stickman-video-director>
 
-Fonte: <https://github.com/darkzOGx/youtube-automation-agent>
+## YouTube: produção e cortes
 
-## LinkedIn Skills (12º)
+O YouTube Automation Agent pesquisa temas, escreve o roteiro, gera narração e imagens e monta o vídeo para o YouTube. Ele só publica depois da sua aprovação. O AI YouTube Shorts Generator pega um vídeo longo do YouTube e entrega os melhores trechos em formato vertical, pronto para Shorts, Reels e TikTok.
 
-São 12 skills que escrevem posts, comentários e respostas no LinkedIn com a sua voz.
+- O YouTube Automation Agent pede sua aprovação antes de publicar.
+- O AI YouTube Shorts Generator entrega trechos verticais 9:16.
+
+Fonte: <https://github.com/darkzOGx/youtube-automation-agent https://github.com/Anil-matcha/AI-Youtube-Shorts-Generator>
+
+## LinkedIn com a sua voz: LinkedIn Skills
+
+O LinkedIn Skills reúne 12 skills que escrevem posts, comentários e respostas no LinkedIn com a sua voz. Elas esperam a sua aprovação antes de publicar.
 
 ```
 npx skills add sergebulaev/linkedin-skills
@@ -69,18 +64,9 @@ npx skills add sergebulaev/linkedin-skills
 
 Fonte: <https://github.com/sergebulaev/linkedin-skills>
 
-## AI YouTube Shorts Generator (11º)
-
-Corta vídeos longos do YouTube em Shorts verticais 9:16, com os melhores trechos.
-
-```
-git clone https://github.com/Anil-matcha/AI-Youtube-Shorts-Generator.git
-```
-
-Fonte: <https://github.com/Anil-matcha/AI-Youtube-Shorts-Generator>
-
 ## Além do vídeo
 
-- Whisper-WebUI roda também sem Docker, com install.bat ou install.sh e start-webui.bat ou start-webui.sh.
-- Whisper-WebUI é feito em Gradio.
-- As três implementações do Whisper do Whisper-WebUI são openai/whisper, SYSTRAN/faster-whisper e Vaibhavs10/insanely-fast-whisper.
+- O AI Video Transcriber também extrai diálogos de vídeos e gravações.
+- O Auto Subs sincroniza as legendas geradas a partir de arquivos de áudio e vídeo, com alta precisão.
+- O LinkedIn Skills automatiza pesquisa, redação e publicação de conteúdos estratégicos no LinkedIn.
+- O AI YouTube Shorts Generator converte ideias e materiais em vídeos verticais prontos para publicação.
