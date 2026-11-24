@@ -4,6 +4,7 @@ Todas as apostilas dos vídeos do canal, as mais novas primeiro. As das séries 
 
 | Data e título | Formato | Apostila |
 | --- | --- | --- |
+| 2026-11-24: OpenAI foi de 30 ferramentas a uma fábrica de agentes | reportagens | [md](reportagens/2026-11/2026-11-24-openai-foi-de-30-ferramentas-a-uma-fabrica-de-agentes/apostila.md) · [pdf](reportagens/2026-11/2026-11-24-openai-foi-de-30-ferramentas-a-uma-fabrica-de-agentes/apostila.pdf) |
 | 2026-11-24: Modelos de IA já controlam um braço robótico de 6 eixos | filmes | [md](filmes/2026-11/2026-11-24-modelos-de-ia-ja-controlam-um-braco-robotico-de-6-eixos/apostila.md) · [pdf](filmes/2026-11/2026-11-24-modelos-de-ia-ja-controlam-um-braco-robotico-de-6-eixos/apostila.pdf) |
 | 2026-11-24: Meta lança o Llama 5 com 400 bi | noticias | [md](noticias/2026-11/2026-11-24-meta-lanca-o-llama-5-com-400-bi/apostila.md) · [pdf](noticias/2026-11/2026-11-24-meta-lanca-o-llama-5-com-400-bi/apostila.pdf) |
 | 2026-11-24: GPT-6.2 Sol custou menos de um quinto do Opus 5.5 no teste | reportagens | [md](reportagens/2026-11/2026-11-24-gpt-6-2-sol-custou-menos-de-um-quinto-do-opus-5-5-no-teste/apostila.md) · [pdf](reportagens/2026-11/2026-11-24-gpt-6-2-sol-custou-menos-de-um-quinto-do-opus-5-5-no-teste/apostila.pdf) |
