@@ -5,6 +5,7 @@ Todas as apostilas dos vídeos do canal, as mais novas primeiro. As das séries 
 | Data e título | Formato | Apostila |
 | --- | --- | --- |
 | 2026-11-24: OpenAI foi de 30 ferramentas a uma fábrica de agentes | reportagens | [md](reportagens/2026-11/2026-11-24-openai-foi-de-30-ferramentas-a-uma-fabrica-de-agentes/apostila.md) · [pdf](reportagens/2026-11/2026-11-24-openai-foi-de-30-ferramentas-a-uma-fabrica-de-agentes/apostila.pdf) |
+| 2026-11-24: O purismo preguiçoso: por que a cruzada contra o "AI slop" virou o novo elitismo digital | reportagens | [md](reportagens/2026-11/2026-11-24-o-purismo-preguicoso-por-que-a-cruzada-contra-o-ai-slop-viro/apostila.md) · [pdf](reportagens/2026-11/2026-11-24-o-purismo-preguicoso-por-que-a-cruzada-contra-o-ai-slop-viro/apostila.pdf) |
 | 2026-11-24: Modelos de IA já controlam um braço robótico de 6 eixos | filmes | [md](filmes/2026-11/2026-11-24-modelos-de-ia-ja-controlam-um-braco-robotico-de-6-eixos/apostila.md) · [pdf](filmes/2026-11/2026-11-24-modelos-de-ia-ja-controlam-um-braco-robotico-de-6-eixos/apostila.pdf) |
 | 2026-11-24: Meta lança o Llama 5 com 400 bi | noticias | [md](noticias/2026-11/2026-11-24-meta-lanca-o-llama-5-com-400-bi/apostila.md) · [pdf](noticias/2026-11/2026-11-24-meta-lanca-o-llama-5-com-400-bi/apostila.pdf) |
 | 2026-11-24: JEV e Claude classificam 17.020 leads em 40 segundos | tutoriais | [md](tutoriais/2026-11/2026-11-24-jev-e-claude-classificam-17-020-leads-em-40-segundos/apostila.md) · [pdf](tutoriais/2026-11/2026-11-24-jev-e-claude-classificam-17-020-leads-em-40-segundos/apostila.pdf) |
