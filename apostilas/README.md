@@ -4,6 +4,7 @@ Todas as apostilas dos vídeos do canal, as mais novas primeiro. As das séries 
 
 | Data e título | Formato | Apostila |
 | --- | --- | --- |
+| 2026-11-24: Meta lança o Llama 5 com 400 bi | noticias | [md](noticias/2026-11/2026-11-24-meta-lanca-o-llama-5-com-400-bi/apostila.md) · [pdf](noticias/2026-11/2026-11-24-meta-lanca-o-llama-5-com-400-bi/apostila.pdf) |
 | 2026-11-24: GPT-6.2 Sol custou menos de um quinto do Opus 5.5 no teste | reportagens | [md](reportagens/2026-11/2026-11-24-gpt-6-2-sol-custou-menos-de-um-quinto-do-opus-5-5-no-teste/apostila.md) · [pdf](reportagens/2026-11/2026-11-24-gpt-6-2-sol-custou-menos-de-um-quinto-do-opus-5-5-no-teste/apostila.pdf) |
 | 2026-11-23: YouTube Agent Skill dá 11 habilidades grátis ao Claude | noticias | [md](noticias/2026-11/2026-11-23-youtube-agent-skill-da-11-habilidades-gratis-ao-claude/apostila.md) · [pdf](noticias/2026-11/2026-11-23-youtube-agent-skill-da-11-habilidades-gratis-ao-claude/apostila.pdf) |
 | 2026-11-23: VoiceStudio, é alternativa local ao ElevenLabs | tutoriais | [md](tutoriais/2026-11/2026-11-23-voicestudio-e-alternativa-local-ao-elevenlabs/apostila.md) · [pdf](tutoriais/2026-11/2026-11-23-voicestudio-e-alternativa-local-ao-elevenlabs/apostila.pdf) |
