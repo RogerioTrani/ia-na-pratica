@@ -2,49 +2,34 @@
 
 _2026-11-08 · noticia_
 
-A Anthropic pagou US$ 3,4 bilhões para assumir contratos de fornecimento de geradores a gás que a OnePWR Solutions tinha com a Caterpillar, totalizando 1,7 GW de capacidade. O acordo cobre engenharia e construção para instalação, sem compra da OnePWR nem transferência de funcionários. A vantagem é disponibilidade imediata e nos próximos dois anos, antes da disparada dos preços.
+A Anthropic pagou US$ 3,4 bilhões para assumir contratos de geradores a gás que a OnePWR tinha com a Caterpillar, totalizando 1,7 GW. O acordo não compra a OnePWR nem transfere funcionários. A vantagem é disponibilidade imediata e nos próximos dois anos, antes da disparada dos preços.
 
-## O negócio
+## O fato
 
-A Anthropic fechou em setembro acordo com a OnePWR Solutions, fornecedora de equipamentos sediada em San Antonio, no Texas, para assumir contratos de fornecimento de geradores de alta potência que essa empresa tinha com a Caterpillar: 1,7 GW de capacidade total, por US$ 3,4 bilhões.
-
-Fonte: <https://c-level.folha.uol.com.br/ia/2026/11/anthropic-fecha-acordo-de-us-34-bilhoes-para-comprar-geradores-a-gas-para-data-centers.shtml>
-
-## O que foi comprado (e o que não foi)
+A Anthropic fechou em setembro acordo com a OnePWR Solutions, fornecedora de equipamentos sediada em San Antonio, no Texas, para assumir contratos de fornecimento de geradores de alta potência que essa empresa tinha com a Caterpillar.
 
 O acordo cobre os contratos de fornecimento e os serviços de engenharia e construção necessários para instalar os geradores. Não inclui a compra da OnePWR nem de sua operação. Nenhum funcionário da OnePWR foi transferido para a Anthropic.
 
-Fonte: <https://c-level.folha.uol.com.br/ia/2026/11/anthropic-fecha-acordo-de-us-34-bilhoes-para-comprar-geradores-a-gas-para-data-centers.shtml>
-
-## Por que assumir a fila vale mais
-
-Com prazos de fabricação de vários anos para turbinas e geradores a gás, a Anthropic garantiu acesso a motores já encomendados, antes da disparada dos preços. O fornecimento é imediato e se estende pelos próximos dois anos.
+A OnePWR havia encomendado geradores à Caterpillar cerca de dois anos antes, mas precisava de financiamento para concluir o negócio. A Anthropic optou por assumir seus pedidos diretamente junto à Caterpillar.
 
 Fonte: <https://c-level.folha.uol.com.br/ia/2026/11/anthropic-fecha-acordo-de-us-34-bilhoes-para-comprar-geradores-a-gas-para-data-centers.shtml>
 
-## A cadeia de pedidos
+## Os números
 
-A OnePWR havia encomendado geradores à Caterpillar cerca de dois anos antes, mas precisava de financiamento para concluir o negócio. A Anthropic planejava inicialmente se tornar cliente da OnePWR, mas optou por assumir seus pedidos de equipamentos diretamente junto à Caterpillar.
-
-Fonte: <https://c-level.folha.uol.com.br/ia/2026/11/anthropic-fecha-acordo-de-us-34-bilhoes-para-comprar-geradores-a-gas-para-data-centers.shtml>
-
-## Corrida por energia
-
-A xAI, controlada pela SpaceX, comprou turbinas móveis a gás por US$ 2 bilhões no início do ano. A Alphabet adquiriu a desenvolvedora de energia Intersect no fim de 2025. A Anthropic declarou compromissos de quase US$ 900 bilhões em capacidade computacional até 2045 e se prepara para abrir capital (IPO) neste mês.
+- Valor do acordo: US$ 3,4 bilhões.
+- Capacidade total: 1,7 GW.
+- Prazo de fornecimento: imediato e pelos próximos dois anos.
+- Outra compra no setor: a xAI, controlada pela SpaceX, comprou turbinas móveis a gás por US$ 2 bilhões no início do ano.
+- Compromissos da Anthropic: quase US$ 900 bilhões em capacidade computacional até 2045.
 
 Fonte: <https://c-level.folha.uol.com.br/ia/2026/11/anthropic-fecha-acordo-de-us-34-bilhoes-para-comprar-geradores-a-gas-para-data-centers.shtml>
 
-## Fontes
+## O que conferir
 
-Reportagem C-Level/Folha sobre o acordo; site da OnePWR Solutions.
+Fato: o acordo cobre contratos e serviços de instalação. Não cobre a compra da empresa nem de sua operação.
 
-- https://c-level.folha.uol.com.br/ia/2026/11/anthropic-fecha-acordo-de-us-34-bilhoes-para-comprar-geradores-a-gas-para-data-centers.shtml
-- https://onepwrsolutions.com
+Contexto informado na reportagem: a Anthropic se prepara para abrir capital (IPO) neste mês. A reportagem também diz que a Alphabet adquiriu a desenvolvedora de energia Intersect no fim de 2025.
 
-## Além do vídeo
+Fonte citada para os dados do fornecedor: site da OnePWR Solutions, https://onepwrsolutions.com
 
-- A Anthropic é cliente da SpaceX e paga aluguel de capacidade computacional que deve chegar a US$ 3,1 bilhões até o fim do ano.
-- A compra direta de equipamentos de geração foi decisiva para a SpaceX colocar rapidamente em operação seus centros de processamento de dados.
-- A Blackstone alertou investidores de que a Anthropic poderá receber classificação de crédito especulativa em vez de grau de investimento.
-- A Anthropic busca avaliação de US$ 1,5 trilhão no IPO.
-- A compra ocorre no momento em que a Anthropic busca assumir maior controle da infraestrutura que sustenta suas operações, após depender fortemente de parceiros para garantir energia, chips, data centers e terrenos.
+Fonte: <https://onepwrsolutions.com>

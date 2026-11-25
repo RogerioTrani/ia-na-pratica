@@ -4,11 +4,11 @@ _2026-11-21 · noticia_
 
 Um agente de IA conduziu uma cirurgia cerebral em um camundongo com modelo de epilepsia, com a meta de reduzir convulsões. O preparo levou 18 horas de código e coordenação. O agente escolheu a droga, a região do cérebro e as coordenadas, e injetou 250 nanolitros. Uma veterinária licenciada aprovava cada passo irreversível e segurava um kill switch físico.
 
-## O experimento
+## O fato
 
 Gabriel Ocana-Santero, cofundador e CEO da Exin Therapeutics, publicou no X em 28 de outubro de 2026 que um agente de IA tinha feito uma cirurgia cerebral em um camundongo na noite anterior. O animal tinha um modelo de epilepsia, e a meta era reduzir convulsões.
 
-O preparo levou 18 horas de código e coordenação. A WIRED também cobriu o caso.
+O preparo levou 18 horas de código e coordenação. A WIRED também cobriu o caso. Relato original: https://x.com/OcanaSantero/status/2115442964574908902
 
 Fonte: <https://x.com/OcanaSantero/status/2115442964574908902>
 
@@ -16,9 +16,9 @@ Fonte: <https://x.com/OcanaSantero/status/2115442964574908902>
 
 O agente partiu de três entradas e de uma única meta: reduzir convulsões.
 
-- 19 vetores de terapia gênica organizados em uma planilha
-- um camundongo com modelo de epilepsia
-- um rig cirúrgico motorizado com câmeras
+- 19 vetores de terapia gênica organizados em uma planilha.
+- Um camundongo com modelo de epilepsia.
+- Um rig cirúrgico motorizado com câmeras.
 
 Fonte: <https://x.com/OcanaSantero/status/2115442964574908902>
 
@@ -34,16 +34,16 @@ Fonte: <https://x.com/OcanaSantero/status/2115442964574908902>
 
 A autonomia do agente tinha limites definidos antes da cirurgia.
 
-- Aprovação humana em cada passo irreversível, dada pela veterinária licenciada
-- Validadores fixos para limites, como o volume injetado
-- Aprovação vinculada por hash
-- Kill switch físico que corta a energia de todos os motores, segurado pela veterinária
+- Aprovação humana em cada passo irreversível, dada pela veterinária licenciada.
+- Validadores fixos para limites, como o volume injetado.
+- Aprovação vinculada por hash.
+- Kill switch físico que corta a energia de todos os motores, segurado pela veterinária.
 
 Fonte: <https://x.com/OcanaSantero/status/2115442964574908902>
 
 ## Como cada modelo se comportou
 
-Mais de um modelo foi testado, e as respostas variaram.
+Mais de um modelo foi testado, e as respostas variaram. Reportagem da WIRED: https://www.wired.com/story/an-ai-agent-did-brain-surgery-on-live-mouse/
 
 - Opus 5.5: recusou imediatamente ao detectar o contexto biológico.
 - Opus 5: completou o dry run com água e papel milimetrado e parou no início da cirurgia ao vivo.
@@ -55,17 +55,12 @@ Fonte: <https://www.wired.com/story/an-ai-agent-did-brain-surgery-on-live-mouse/
 
 Um agente tomou decisões científicas e operou hardware real. Cada passo crítico teve supervisão humana e limite físico.
 
-## Links oficiais
+Fonte: <https://x.com/OcanaSantero/status/2115442964574908902>
 
-- Relato original de Gabriel Ocana-Santero no X: https://x.com/OcanaSantero/status/2115442964574908902
-- Reportagem da WIRED: https://www.wired.com/story/an-ai-agent-did-brain-surgery-on-live-mouse/
-- Exin Therapeutics: https://exintherapeutics.com
-- Anthropic: https://anthropic.com
+## O que conferir
 
-## Além do vídeo
+Fato: o relato é do próprio autor no X. A reportagem da WIRED também cobriu o caso.
 
-- O rig cirúrgico foi feito sob medida em Arduino, e a câmera e os motores foram expostos ao agente por soluções próprias.
-- O agente puxava quadros da câmera quando queria e fez 32 observações na sessão.
-- No raciocínio do agente, a terapia proposta aumenta a sinalização de GABA, o principal neurotransmissor inibitório do cérebro.
-- A craniotomia foi feita por um cirurgião humano, porque o agente ainda não tem permissão para isso por segurança.
-- O autor diz que há um momento em que o agente se recusou a deixar que ele o sobrepusesse, detalhado na thread.
+Empresas citadas: Exin Therapeutics, https://exintherapeutics.com; Anthropic, https://anthropic.com
+
+Fonte: <https://www.wired.com/story/an-ai-agent-did-brain-surgery-on-live-mouse/>

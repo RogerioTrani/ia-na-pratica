@@ -4,11 +4,11 @@ _2026-11-22 · noticia_
 
 O Google Labs lançou o Tabletop, um experimento de IA que gera espaços de planejamento sob medida para família e amigos. Você descreve o que precisa e a IA monta a ferramenta, que o grupo usa junto, ao mesmo tempo. O beta está em lista de espera e vale só para maiores de 18 anos nos EUA. O anúncio saiu em 11 de novembro de 2026.
 
-## O que é o Tabletop
+## O fato
 
 O Tabletop é um experimento do Google Labs que gera espaços colaborativos personalizados para você se organizar com família e amigos. Em vez de procurar um aplicativo pronto que quase serve, você conta o que precisa e a IA constrói a ferramenta para o seu grupo.
 
-O visual lembra gerenciadores de trabalho como Asana e Monday, mas o foco é a vida pessoal.
+O visual lembra gerenciadores de trabalho como Asana e Monday, mas o foco é a vida pessoal. O anúncio saiu em 11 de novembro de 2026. Fonte: https://blog.google/innovation-and-ai/models-and-research/google-labs/tabletop/
 
 Fonte: <https://blog.google/innovation-and-ai/models-and-research/google-labs/tabletop/>
 
@@ -16,13 +16,13 @@ Fonte: <https://blog.google/innovation-and-ai/models-and-research/google-labs/ta
 
 Cada pedido vira uma ferramenta interativa própria. Os exemplos citados no anúncio:
 
-- Rastreador de economias
-- Tabela de tarefas domésticas
-- Plano de evento
-- Roteiro de viagem
-- Votação de jantar
-- Divisor de despesas
-- Chave de torneio
+- Rastreador de economias.
+- Tabela de tarefas domésticas.
+- Plano de evento.
+- Roteiro de viagem.
+- Votação de jantar.
+- Divisor de despesas.
+- Chave de torneio.
 
 Fonte: <https://blog.google/innovation-and-ai/models-and-research/google-labs/tabletop/>
 
@@ -30,9 +30,9 @@ Fonte: <https://blog.google/innovation-and-ai/models-and-research/google-labs/ta
 
 O processo parte do seu material e termina numa ferramenta pronta para usar.
 
-- Adicione seus links, arquivos e ideias.
-- Escreva o pedido para @tabletop, ou escolha um modelo pronto.
-- A IA organiza tudo num espaço interativo.
+1. adicione seus links, arquivos e ideias. Resultado: o material fica disponível para a IA.
+2. escreva o pedido para @tabletop, ou escolha um modelo pronto. Resultado: a IA recebe o que você quer montar.
+3. a IA organiza tudo num espaço interativo. Resultado: o espaço fica pronto para usar.
 
 ```
 @tabletop
@@ -42,7 +42,7 @@ Fonte: <https://blog.google/innovation-and-ai/models-and-research/google-labs/ta
 
 ## Como compartilhar com o grupo
 
-Com o espaço pronto, mande o link de convite no grupo de mensagens. Todo mundo entra e usa ao mesmo tempo, como num Google Doc.
+Com o espaço pronto, mande o link de convite no grupo de mensagens. Todo mundo entra e usa ao mesmo tempo, como num Google Doc. Fonte: https://blog.google/innovation-and-ai/models-and-research/google-labs/tabletop/
 
 Fonte: <https://blog.google/innovation-and-ai/models-and-research/google-labs/tabletop/>
 
@@ -50,8 +50,8 @@ Fonte: <https://blog.google/innovation-and-ai/models-and-research/google-labs/ta
 
 O acesso ao beta chega por lista de espera e, por enquanto, só para maiores de 18 anos nos Estados Unidos. O cadastro é feito pelo site do Google Labs.
 
-- Abra o endereço abaixo.
-- Entre na lista de espera.
+1. abra o endereço labs.google/tabletop. Resultado: a página do beta abre.
+2. entre na lista de espera. Resultado: você fica na fila do acesso.
 
 ```
 labs.google/tabletop
@@ -59,7 +59,10 @@ labs.google/tabletop
 
 Fonte: <https://labs.google/tabletop>
 
-## Além do vídeo
+## O que conferir
 
-- O anúncio foi assinado por Roman Nurik, líder de design e engenharia do Google Labs, e traz um vídeo com exemplos de uso.
-- O Tabletop não tem relação com D&D nem com jogos de tabuleiro, apesar do nome.
+Fato: o beta está em lista de espera e vale só para maiores de 18 anos nos EUA.
+
+O Tabletop não tem relação com D&D nem com jogos de tabuleiro, apesar do nome. Anúncio: https://blog.google/innovation-and-ai/models-and-research/google-labs/tabletop/
+
+Fonte: <https://labs.google/tabletop>

@@ -2,27 +2,31 @@
 
 _2026-11-23 · noticia_
 
-O Energy-Based Reasoner (EBR) é proposto como alternativa ao raciocínio em loop. No Sudoku-Extreme, os autores relatam 345x menos computação na inferência que o EqR, o segundo melhor modelo, e 99,9% de acurácia com 1,8 milhão de parâmetros. Esta apostila reúne os números, a ideia central e os links oficiais do projeto.
+O Energy-Based Reasoner (EBR) é proposto como alternativa ao raciocínio em loop. No Sudoku-Extreme, os autores relatam 345x menos computação na inferência que o EqR, o segundo melhor modelo, e 99,9% de acurácia com 1,8 milhão de parâmetros. Os resultados são divulgados pelos próprios autores.
+
+## O fato
+
+O Energy-Based Reasoner (EBR) é proposto como alternativa ao raciocínio em loop. No Sudoku-Extreme, os autores relatam 345x menos computação na inferência que o EqR, o segundo melhor modelo, e 99,9% de acurácia com 1,8 milhão de parâmetros.
+
+O artigo foi enviado ao arXiv em 6 de novembro de 2026, com o título "Energy-Based Reasoners: Your Recurrent Reasoner Should Be an Energy-Based Model". Fonte: https://arxiv.org/abs/2611.08977
+
+Fonte: <https://arxiv.org/abs/2611.08977>
 
 ## O que é o EBR
 
 O Energy-Based Reasoner, ou EBR, é um modelo de raciocínio proposto como alternativa ao raciocínio em loop, também chamado de raciocínio recorrente.
 
-O artigo foi enviado ao arXiv em 6 de novembro de 2026, com o título "Energy-Based Reasoners: Your Recurrent Reasoner Should Be an Energy-Based Model".
-
 Fonte: <https://arxiv.org/abs/2611.08977>
 
 ## A tese do artigo
 
-Os autores defendem que um raciocinador recorrente deve ser um modelo baseado em energia.
-
-O modelo aprende uma função de energia que avalia cada estado de raciocínio. O gradiente dessa energia indica como melhorar a resposta e quando parar.
+Os autores defendem que um raciocinador recorrente deve ser um modelo baseado em energia. O modelo aprende uma função de energia que avalia cada estado de raciocínio. O gradiente dessa energia indica como melhorar a resposta e quando parar.
 
 Fonte: <https://arxiv.org/abs/2611.08977>
 
 ## Os números no Sudoku-Extreme
 
-Todos os números abaixo são do teste Sudoku-Extreme e foram divulgados pelos autores. A comparação é com o EqR, o segundo melhor modelo.
+Todos os números abaixo são do teste Sudoku-Extreme e foram divulgados pelos autores. A comparação é com o EqR, o segundo melhor modelo. Fonte: https://energy-based-reasoners.github.io/
 
 - Computação na inferência: 345x menor que a do EqR.
 - Acurácia: 99,9% com apenas 1,8 milhão de parâmetros, com computação de treino comparável.
@@ -38,10 +42,10 @@ Testes de outros grupos vão mostrar se o ganho se mantém fora do estudo origin
 
 Fonte: <https://energy-based-reasoners.github.io/>
 
-## Links oficiais
+## Links oficiais e o que conferir
 
-- Artigo no arXiv: https://arxiv.org/abs/2611.08977
-- Repositório oficial no GitHub: https://github.com/wwillchen/ebr
-- Página do projeto: https://energy-based-reasoners.github.io/
+Fato: os números vêm dos autores, e ainda falta confirmação de outros grupos.
+
+Artigo no arXiv: https://arxiv.org/abs/2611.08977. Repositório oficial no GitHub: https://github.com/wwillchen/ebr. Página do projeto: https://energy-based-reasoners.github.io/
 
 Fonte: <https://energy-based-reasoners.github.io/>

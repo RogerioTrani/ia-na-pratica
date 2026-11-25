@@ -2,32 +2,34 @@
 
 _2026-11-15 · noticia_
 
-Em 21 de outubro de 2026, a OpenAI publicou o artigo 'Using thousands of AI agents to uncover new leads in biological data'. O trabalho propõe usar milhares de agentes autônomos para varrer grandes volumes de dados biológicos e descobrir leads relevantes. O link oficial está na página Research da OpenAI.
+Em 21 de outubro de 2026, a OpenAI publicou o artigo 'Using thousands of AI agents to uncover new leads in biological data'. O trabalho propõe usar milhares de agentes autônomos para varrer grandes volumes de dados biológicos e descobrir leads relevantes.
 
-## A publicação
+## O fato
 
-A OpenAI publicou, em 21 de outubro de 2026, o artigo 'Using thousands of AI agents to uncover new leads in biological data'. A escala é explícita: a própria OpenAI fala em milhares de agentes atuando juntos nessa tarefa.
+A OpenAI publicou, em 21 de outubro de 2026, o artigo 'Using thousands of AI agents to uncover new leads in biological data'.
 
-Fonte: <https://openai.com/research/>
-
-## A ideia central
-
-O artigo propõe usar milhares de agentes autônomos para varrer grandes volumes de dados biológicos e descobrir leads relevantes. A proposta é que esses agentes explorem grandes conjuntos de dados biológicos, cruzando informações para encontrar pistas que seriam difíceis de identificar manualmente.
+A escala é explícita: a própria OpenAI fala em milhares de agentes atuando juntos nessa tarefa.
 
 Fonte: <https://openai.com/research/>
 
-## Onde ler
+## O que muda para você
 
-Você pode ler o artigo completo na página Research da OpenAI.
+O artigo propõe usar milhares de agentes autônomos para varrer grandes volumes de dados biológicos e descobrir leads relevantes.
 
-- Link oficial do artigo: https://openai.com/research/
-- Página inicial da OpenAI: https://openai.com/
+A proposta é que esses agentes explorem grandes conjuntos de dados biológicos, cruzando informações para encontrar pistas que seriam difíceis de identificar manualmente.
+
+## O que fazer hoje
+
+1. Abra a página Research da OpenAI em https://openai.com/research/. Resultado: você encontra o link do artigo.
+2. Leia o artigo completo na página Research. Resultado: você vê os detalhes do trabalho, que esta apostila não reproduz.
 
 Fonte: <https://openai.com/research/>
 
-## Contexto da OpenAI
+## O que conferir
 
-A OpenAI afirma que sua pesquisa eventualmente levará à inteligência artificial geral, um sistema capaz de resolver problemas em nível humano. Construir uma AGI segura e benéfica é a missão da empresa.
+Esta apostila descreve o artigo a partir do título e da proposta central. Os resultados e a metodologia estão apenas no texto completo.
+
+A OpenAI afirma que sua pesquisa eventualmente levará à inteligência artificial geral, um sistema capaz de resolver problemas em nível humano. Isso é uma meta declarada pela empresa, não um resultado.
 
 Fonte: <https://openai.com/>
 
@@ -35,6 +37,3 @@ Fonte: <https://openai.com/>
 
 - Introducing GPT-6.1 Terra, publicação de 26 de outubro de 2026.
 - Introducing Images 2.6, de 4 de novembro de 2026.
-- Patch the Planet: global response coordination as agents uncover critical vulnerabilities, de 21 de outubro de 2026.
-- OpenAI acquires Orchestra Bio, de 20 de outubro de 2026.
-- Accelerating antibiotic discovery with ChatGPT, de 9 de setembro de 2026.

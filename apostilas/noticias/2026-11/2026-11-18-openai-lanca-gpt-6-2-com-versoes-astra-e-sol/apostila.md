@@ -2,61 +2,37 @@
 
 _2026-11-18 · noticia_
 
-A OpenAI lançou o GPT 6.2 em duas versões: Astra, para projetos grandes e complexos, e Sol, para o trabalho comum do dia a dia. O Astra foi ajustado para reproduzir layout, cores e tipografia de templates profissionais, com atenção a convenções de áreas como finanças, contabilidade e direito. Em programação, o Sol entrega quase o mesmo resultado por cerca de um quinto do custo, segundo dados da OpenAI na FrontierCode 2.0. O modelo está disponível no ChatGPT Work e no Codex nos planos Plus, Pro, Enterprise e Edu.
+A OpenAI lançou o GPT 6.2 em duas versões: Astra, para projetos grandes e complexos, e Sol, para o trabalho do dia a dia. O modelo está disponível no ChatGPT Work e no Codex nos planos Plus, Pro, Enterprise e Edu.
 
-## O que é o GPT 6.2
+## O fato
 
-A OpenAI colocou no ar o GPT 6.2 dividido em duas versões com focos diferentes: Astra para projetos grandes e complexos, e Sol para tarefas comuns do dia a dia.
-
-## Astra: feito para material profissional
-
-O Astra foi ajustado para puxar layout, cores e tipografia de templates profissionais. Ele acerta o tamanho exato da fonte e segue convenções de áreas como finanças, contabilidade e direito.
-
-- Layout do documento preservado
-- Cores e tipografia do template original
-- Tamanho de fonte exato
-- Convenções de finanças, contabilidade e direito
-
-## Sol: custo menor em programação
-
-Segundo a OpenAI, na FrontierCode 2.0 o Sol chega perto do desempenho do Astra em programação por cerca de um quinto do custo.
-
-Fonte: <https://community.openai.com/t/gpt-6-2-astra-and-sol-are-now-available/1417531>
-
-## Desempenho em pesquisa e ciência
-
-Em tarefas complexas de pesquisa e ciência, como no benchmark Terminal-Bench Science, o GPT-6.2 Astra conclui o trabalho em cerca de metade do tempo e pela metade do custo do modelo anterior (GPT-6 Astra). Os números são da OpenAI e da Vals AI.
-
-- Metade do tempo para concluir tarefas
-- Cerca de metade do custo em relação ao GPT-6 Astra
-
-Fonte: <https://github.com/terminal-bench/terminal-bench>
-
-## Onde está disponível
+A OpenAI lançou o GPT 6.2 em duas versões com focos diferentes: Astra para projetos grandes e complexos, e Sol para tarefas comuns do dia a dia.
 
 O GPT 6.2 está liberado no ChatGPT Work e no Codex, para os planos Plus, Pro, Enterprise e Edu.
 
-- ChatGPT Work
-- Codex
-- Plano Plus
-- Plano Pro
-- Plano Enterprise
-- Plano Edu
-
 Fonte: <https://community.openai.com/t/gpt-6-2-astra-and-sol-are-now-available/1417531>
 
-## Para testar no seu fluxo
+## Os números
 
-O foco do GPT 6.2 é o trabalho de escritório: slides, planilhas e documentos. Pegue um material seu e compare o resultado do Sol com o que você faz hoje.
+- Cerca de um quinto do custo: o Sol em programação, na FrontierCode 2.0, perto do desempenho do Astra.
+- Metade do tempo: o Astra conclui tarefas de pesquisa e ciência, no Terminal-Bench Science.
+- Cerca de metade do custo em relação ao GPT-6 Astra.
 
-- Slides
-- Planilhas
-- Documentos
+## O que muda para você
 
-## Além do vídeo
+O Astra foi ajustado para puxar layout, cores e tipografia de templates profissionais. Ele segue convenções de áreas como finanças, contabilidade e direito.
 
-- O material menciona o Gemini Notebook, que transforma fontes em uma página navegável compartilhável por link.
-- O material cita o modo Tarefa do Gemini, que executa tarefas como pesquisa e compra com aprovação prévia do usuário.
-- O material informa que o Ask Maps monta roteiros com paradas, trânsito e horários de funcionamento, com o Brasil entre os países liberados.
-- O material menciona a integração do Word, Excel e PowerPoint dentro do Copilot da Microsoft, com salvamento no OneDrive.
-- O material lista recursos variáveis conforme plano e região para as integrações citadas.
+O foco do GPT 6.2 é o trabalho de escritório: slides, planilhas e documentos.
+
+## O que fazer hoje
+
+1. Pegue um material seu, como um slide, uma planilha ou um documento. Resultado: você tem um caso real para testar.
+2. Compare o resultado do Sol com o que você faz hoje. Resultado: você decide se o modelo serve ao seu fluxo.
+
+## O que conferir
+
+Os números de desempenho são da OpenAI e da Vals AI, não de testes independentes citados no texto.
+
+Os recursos dos planos podem variar conforme plano e região.
+
+Fonte: <https://github.com/terminal-bench/terminal-bench>

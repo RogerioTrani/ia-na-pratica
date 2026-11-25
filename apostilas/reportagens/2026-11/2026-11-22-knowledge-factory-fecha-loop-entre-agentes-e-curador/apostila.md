@@ -2,60 +2,32 @@
 
 _2026-11-22 · reportagem_
 
-O gargalo de IA nas empresas não é modelo nem contexto: é o conhecimento tácito de como a empresa opera, espalhado e implícito. A knowledge factory coleta, cura e mantém esse conhecimento para os agentes, em um loop onde o trabalho revela o que falta. Comece por um fluxo recorrente, veja onde o agente trava e feche a lacuna.
+O gargalo de IA nas empresas é o conhecimento tácito de como a empresa opera, espalhado e implícito. A knowledge factory coleta, cura e mantém esse conhecimento para os agentes, em um loop onde o trabalho revela o que falta. A orientação é começar por um fluxo recorrente.
 
-## O problema: conhecimento tácito e espalhado
+## O contexto
 
-O que torna seus melhores funcionários eficientes está na cabeça deles: quem procurar, onde responder, por que fazer de um jeito. Esse conhecimento é tácito e espalhado, às vezes só na mente deles, às vezes em documentos variados. Para a IA funcionar na empresa, é preciso coletar, curar e manter uma representação desse conhecimento para passar aos agentes.
+O que torna seus melhores funcionários eficientes está na cabeça deles: quem procurar, onde responder, por que fazer de um jeito. Esse conhecimento é tácito e espalhado.
 
-Fonte: <https://www.langchain.com/blog/knowledge-factory>
-
-## Contexto não é conhecimento
-
-Contexto é o que o agente tem disponível durante a tarefa. Conhecimento é o entendimento reutilizável que mantemos para que ele acerte: o que uma métrica significa, qual fonte confiar, como tratar uma situação. A factory transforma documentos e experiência em conhecimento que vira contexto para trabalhos futuros. Conhecimento é uma forma de contexto, mas geralmente não a única.
+Para a IA funcionar na empresa, é preciso coletar, curar e manter uma representação desse conhecimento para passar aos agentes.
 
 Fonte: <https://www.langchain.com/blog/knowledge-factory>
 
-## Três tipos de conhecimento
+## Linha do tempo
 
-A factory mantém três tipos de conhecimento.
+- Passo 1: comece por um fluxo recorrente.
+- Passo 2: veja onde o agente trava.
+- Passo 3: feche a lacuna e melhore o próximo trabalho.
 
-- Skills: procedimentos, instruções e scripts para fazer o trabalho do jeito da empresa.
-- Domain knowledge: definições, políticas e fatos sobre produtos, clientes, concorrentes e organização.
-- Data access guidance: quais fontes usar, onde os dados estão e como consultá-los.
+## Quem ganha e quem perde
 
-Fonte: <https://www.langchain.com/blog/knowledge-factory>
-
-## Agentes sinalizam lacunas
+A factory mantém três tipos de conhecimento: skills, domain knowledge e data access guidance.
 
 Um dos melhores jeitos de descobrir conhecimento faltante é ter o agente sinalizar enquanto trabalha. Quando não acha ou acha errado, marca a falha e sugere a correção.
 
-Fonte: <https://www.langchain.com/blog/knowledge-factory>
+Um curator agent roda em background, acessa as fontes brutas e as traces, e cura tudo. Os agentes que usam o conhecimento não devem mantê-lo.
 
-## Curator agent
+## O que ainda não se sabe
 
-O conhecimento não deve ser mantido manualmente nem pelos agentes que o usam. Um curator agent roda em background, acessa as fontes brutas e as traces, e cura tudo.
-
-Fonte: <https://www.langchain.com/blog/knowledge-factory>
-
-## Armazenamento: o menos importante
+Contexto é o que o agente tem disponível durante a tarefa. Conhecimento é o entendimento reutilizável que mantemos para que ele acerte. Conhecimento é uma forma de contexto, mas geralmente não a única.
 
 O armazenamento é o menos importante. O que importa é o loop entre agentes e curador.
-
-- Skills no GitHub (github.com), Notion (notion.so), Context Hub (docs.langchain.com/langsmith/use-the-context-hub) ou Neo4j (neo4j.com); formato menos importante que o loop.
-
-Fonte: <https://www.langchain.com/blog/knowledge-factory>
-
-## Comece fechando um loop
-
-O objetivo não é documentar tudo antes de começar. É construir um sistema onde fazer o trabalho revela o que falta, e fechar a lacuna melhora o próximo trabalho. Comece por um fluxo recorrente, veja onde o agente trava e feche a lacuna.
-
-Fonte: <https://www.langchain.com/blog/knowledge-factory>
-
-## Além do vídeo
-
-- A ideia de software factory: os melhores engenheiros constroem a fábrica (os sistemas) e os agentes fazem o trabalho; o conhecimento geral segue o mesmo caminho.
-- Exemplo ponta a ponta: um agente preparando um relatório de receita, com dados no BigQuery e no Salesforce, coluna renomeada detectada na hora e curator atualizando skills à noite.
-- Dados que mudam rápido não precisam de cópia: se a fonte de verdade já é completa e atualizada, ensine o agente a acessá-la (Snowflake, Databricks).
-- Memória: a indústria convergiu em skills para memória procedural; memória semântica ainda não tem padrão (OKF?) e não vale prescrever formato agora.
-- Os agentes que usam o conhecimento não devem mantê-lo: só o curator mantém, para evitar contradições.

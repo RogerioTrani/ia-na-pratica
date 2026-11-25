@@ -2,13 +2,13 @@
 
 _2026-11-17 · noticia_
 
-O Google DeepMind usou agentes de IA, com supervisão humana, para testar sistemas legados de criptografia RSA de 1024 bits. Os pesquisadores encontraram duas fraquezas: uma em assinaturas digitais e outra na fatoração de várias chaves em lote. Os dois ganhos de eficiência são estimativas teóricas dos autores. Protocolos modernos com chaves de 2048 bits ou mais seguem seguros.
+O Google DeepMind usou agentes de IA, com supervisão humana, para testar sistemas legados de criptografia RSA de 1024 bits. Os pesquisadores encontraram duas fraquezas: uma em assinaturas digitais e outra na fatoração de várias chaves em lote. Os ganhos de eficiência são estimativas teóricas dos autores. Protocolos modernos com chaves de 2048 bits ou mais seguem seguros.
 
-## O que foi divulgado
+## O fato
 
 Em 6 de novembro de 2026, o Google DeepMind divulgou uma pesquisa com dois artigos técnicos. Um trata de assinaturas digitais e o outro de fatoração de chaves.
 
-Agentes de IA, acompanhados por pessoas, mostraram que sistemas legados baseados em RSA de 1024 bits podem ser comprometidos com um orçamento computacional menor do que se supunha.
+Agentes de IA, acompanhados por pessoas, mostraram que sistemas legados baseados em RSA de 1024 bits podem ser comprometidos com um orçamento computacional menor do que se supunha. Fonte: https://www.linkedin.com/pulse/advancing-frontier-cryptanalysis-pushmeet-kohli-5itie
 
 Fonte: <https://www.linkedin.com/pulse/advancing-frontier-cryptanalysis-pushmeet-kohli-5itie>
 
@@ -32,18 +32,23 @@ Depois de uma pré-computação inicial equivalente a uma fatoração completa, 
 
 Fonte: <https://storage.googleapis.com/deepmind-media/papers/Fan_Factories_Multiple_Number_Fields_in_Factorization_Factories_and_Batch_NFS.pdf>
 
-## Quem é afetado
+## Os números
 
-Na prática, os resultados afetam apenas sistemas legados com chaves RSA de 1024 bits. Protocolos modernos com chaves de 2048 bits ou mais seguem seguros depois dessa pesquisa.
+Todos os ganhos abaixo são estimativas ou resultados de simulação, não ataques executados em sistemas reais.
 
-Fonte: <https://www.linkedin.com/pulse/advancing-frontier-cryptanalysis-pushmeet-kohli-5itie>
+- Assinaturas: cerca de 1.600 vezes sobre o melhor método anterior, para chaves de 1024 bits (estimativa).
+- Assinaturas: 3,5 vezes menos tempo de CPU, 391 anos-núcleo em 3,2 dias.
+- Fatoração em lote: cerca de 30 vezes menos custo médio teórico por chave adicional de 1024 bits.
+- Padding: resumo de 32 bytes.
 
-## Como ver o tamanho das suas chaves
+Fonte: <https://storage.googleapis.com/deepmind-media/papers/Faster_Affine_Root_and_a_1024bit%20Computation.pdf>
 
-Se você ainda mantém chaves antigas, dois comandos mostram o tamanho delas. O primeiro lê um certificado TLS e mostra a linha Public-Key. O segundo mostra o tamanho de uma chave SSH.
+## O que fazer hoje
 
-- Certificado TLS: rode o primeiro comando apontando para o seu arquivo de certificado.
-- Chave SSH: rode o segundo comando apontando para a sua chave pública.
+Se você ainda mantém chaves antigas, dois comandos mostram o tamanho delas. Documentação do openssl x509: https://docs.openssl.org/3.1/man1/openssl-x509/. Manual do ssh-keygen: https://man7.org/linux/man-pages/man1/ssh-keygen.1.html
+
+1. certificado TLS: rode o comando de leitura de certificado (openssl x509) apontando para o seu arquivo de certificado. Resultado: a linha Public-Key mostra o tamanho da chave.
+2. chave SSH: rode o comando de tamanho de chave (ssh-keygen) apontando para a sua chave pública. Resultado: você vê o tamanho da chave SSH.
 
 Fonte: <https://docs.openssl.org/3.1/man1/openssl-x509/>
 
@@ -55,19 +60,12 @@ A dificuldade matemática que sustenta a segurança digital não pode ser tratad
 
 Fonte: <https://www.linkedin.com/pulse/advancing-frontier-cryptanalysis-pushmeet-kohli-5itie>
 
-## Links oficiais
+## O que conferir
 
-- Anúncio no X: https://x.com/pushmeet/status/2118752095859794390
-- Cópia do anúncio no LinkedIn: https://www.linkedin.com/pulse/advancing-frontier-cryptanalysis-pushmeet-kohli-5itie
-- Artigo sobre assinaturas digitais: https://storage.googleapis.com/deepmind-media/papers/Faster_Affine_Root_and_a_1024bit%20Computation.pdf
-- Artigo sobre fatoração de chaves: https://storage.googleapis.com/deepmind-media/papers/Fan_Factories_Multiple_Number_Fields_in_Factorization_Factories_and_Batch_NFS.pdf
-- Documentação do openssl x509: https://docs.openssl.org/3.1/man1/openssl-x509/
-- Manual do ssh-keygen: https://man7.org/linux/man-pages/man1/ssh-keygen.1.html
+Fato: na prática, os resultados afetam apenas sistemas legados com chaves RSA de 1024 bits. Protocolos modernos com chaves de 2048 bits ou mais seguem seguros depois dessa pesquisa.
 
-## Além do vídeo
+Os dois ganhos de eficiência são estimativas teóricas dos autores. Anúncio no X: https://x.com/pushmeet/status/2118752095859794390
 
-- O teste de reprodução rodou em simulação isolada, sem tocar em nenhum sistema real.
-- Na chave de referência, a reprodução usou menos de um milésimo do poder computacional necessário para quebrar a própria chave.
-- O ataque em lote tem complexidade assintótica melhor que a dos métodos anteriores.
-- A pesquisa foi liderada por Dj Dvijotham e Abhradeep Thakurta, em colaboração com Nadia Heninger (UC San Diego e Inria) e Emmanuel Thomé (Inria).
-- Sistemas aposentados como o RSA de 1024 bits servem de campo de prova seguro para a comunidade de criptoanálise.
+Artigos: https://storage.googleapis.com/deepmind-media/papers/Faster_Affine_Root_and_a_1024bit%20Computation.pdf e https://storage.googleapis.com/deepmind-media/papers/Fan_Factories_Multiple_Number_Fields_in_Factorization_Factories_and_Batch_NFS.pdf
+
+Fonte: <https://x.com/pushmeet/status/2118752095859794390>

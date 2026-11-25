@@ -2,7 +2,13 @@
 
 _2026-11-24 · reportagem_
 
-Andrej Karpathy propõe trocar engenharia de prompt por engenharia de contexto: o resultado da IA depende menos do comando e mais de tudo que acontece entre a entrada e a saída. O conceito veio depois do tweet de vibe coding, visto por mais de 5,2 milhões de pessoas em fevereiro de 2025. Na prática, importam mais os arquivos do projeto, como CLAUDE.md e settings.json, do que o prompt enviado.
+Andrej Karpathy propõe trocar engenharia de prompt por engenharia de contexto: o resultado da IA depende menos do comando e mais de tudo que acontece entre a entrada e a saída. Na prática, importam mais os arquivos do projeto, como CLAUDE.md e settings.json, do que o prompt enviado. O conceito veio depois do tweet de vibe coding, visto por mais de 5,2 milhões de pessoas em fevereiro de 2025.
+
+## O contexto
+
+Andrej Karpathy propõe trocar engenharia de prompt por engenharia de contexto: o resultado da IA depende menos do comando e mais de tudo que acontece entre a entrada e a saída. O conceito veio depois do tweet de vibe coding, visto por mais de 5,2 milhões de pessoas em fevereiro de 2025. Na prática, importam mais os arquivos do projeto, como CLAUDE.md e settings.json, do que o prompt enviado. Fonte: https://karpathy.ai/
+
+Fonte: <https://karpathy.ai/>
 
 ## Quem é Andrej Karpathy
 
@@ -12,7 +18,7 @@ Fonte: <https://karpathy.ai/>
 
 ## O tweet do vibe coding
 
-Em fevereiro de 2025, Karpathy publicou o conceito de vibe coding em um tweet visto por mais de 5,2 milhões de pessoas. A ideia: você descreve em linguagem natural e a IA escreve o código. Ele mesmo já programava quase só com comandos de voz.
+Em fevereiro de 2025, Karpathy publicou o conceito de vibe coding em um tweet visto por mais de 5,2 milhões de pessoas. A ideia: você descreve em linguagem natural e a IA escreve o código. Ele mesmo já programava quase só com comandos de voz. Fonte: https://x.com/karpathy/status/1886192184808149383
 
 Fonte: <https://x.com/karpathy/status/1886192184808149383>
 
@@ -23,29 +29,21 @@ Prompt é uma instrução, um comando. Antes, com modelos fracos, esse comando p
 - Com a chegada do ChatGPT, o prompt era o centro do trabalho.
 - Com o avanço rápido dos modelos, o importante passou a ser tudo que acontece entre o input e o output.
 
+Fonte: <https://x.com/karpathy/status/1886192184808149383>
+
 ## Na prática: arquivos que importam mais que o prompt
 
-A engenharia de contexto é como você estrutura arquivos dentro de agentes, projetos e repositórios. No Claude Code, importam mais o CLAUDE.md, o settings.json, as skills e a estrutura de pastas do que o próprio prompt enviado.
+A engenharia de contexto é como você estrutura arquivos dentro de agentes, projetos e repositórios. No Claude Code, importam mais o CLAUDE.md, o settings.json, as skills e a estrutura de pastas do que o próprio prompt enviado. Fonte: https://code.claude.com/docs
 
-- CLAUDE.md
-- settings.json
-- skills
-- estrutura de pastas e arquivos
+- CLAUDE.md.
+- settings.json.
+- Skills.
+- Estrutura de pastas e arquivos.
 
 Fonte: <https://code.claude.com/docs>
 
 ## Onde conferir
 
-Links oficiais para acompanhar o tema.
+Links oficiais para acompanhar o tema. Tweet original do vibe coding: https://x.com/karpathy/status/1886192184808149383. Documentação do Claude Code: https://code.claude.com/docs. Site oficial de Andrej Karpathy: https://karpathy.ai/
 
-- Tweet original do vibe coding: https://x.com/karpathy/status/1886192184808149383
-- Documentação do Claude Code: https://code.claude.com/docs
-- Site oficial de Andrej Karpathy: https://karpathy.ai/
-
-## Além do vídeo
-
-- A comunidade Maestros da IA, com lives semanais, 25 horas de conteúdo e suporte técnico diário, citada no material como próximo passo para quem quer aplicar a lógica.
-- A ironia do material sobre o Autopilot da Tesla, descrito como 'recurso pouquíssimo relevante'.
-- A frase original do tweet: vibe coding é 'se entregar ao fluxo, abraçar o crescimento e esquecer que o código existe'.
-- A observação de que hoje o vibe coding pode parecer óbvio, mas Karpathy percebeu o momento e sintetizou o conceito.
-- A nota de que muitas vezes o input é simples, mas a configuração do agente torna o output incrível.
+Fonte: <https://karpathy.ai/>

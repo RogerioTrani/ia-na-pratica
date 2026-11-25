@@ -4,11 +4,11 @@ _2026-11-16 · noticia_
 
 O MEC homologou, na terça-feira (10), as diretrizes nacionais para o uso de IA na educação brasileira, da infantil ao superior. A principal novidade é a autorização para que ferramentas de IA auxiliem na correção de questões dissertativas, com a nota final sob responsabilidade do professor. A norma vigente é a Resolução CNE/CP nº 1/2026, publicada no Diário Oficial em 12/11.
 
-## O que mudou
+## O fato
 
 O MEC homologou, na terça-feira (10), as diretrizes nacionais para o uso de IA na educação brasileira, da educação infantil ao ensino superior. A principal novidade é a autorização para que ferramentas de IA auxiliem na correção de questões dissertativas. A nota final continua sob responsabilidade do professor.
 
-- Sistemas automatizados não podem substituir integralmente a atuação dos profissionais da educação nem assumir a responsabilidade por decisões pedagógicas.
+Sistemas automatizados não podem substituir integralmente a atuação dos profissionais da educação nem assumir a responsabilidade por decisões pedagógicas. Fonte: https://olhardigital.com.br/2026/11/10/inteligencia-artificial/mec-libera-ia-para-corrigir-provas-mas-professores-continuam-responsaveis-pelas-notas/
 
 Fonte: <https://olhardigital.com.br/2026/11/10/inteligencia-artificial/mec-libera-ia-para-corrigir-provas-mas-professores-continuam-responsaveis-pelas-notas/>
 
@@ -47,7 +47,7 @@ Instituições podem usar IA em ensino, pesquisa e extensão, e a tecnologia pod
 
 Fonte: <https://olhardigital.com.br/2026/11/10/inteligencia-artificial/mec-libera-ia-para-corrigir-provas-mas-professores-continuam-responsaveis-pelas-notas/>
 
-## Uso de IA na educação já é realidade
+## Os números
 
 A homologação ocorre em cenário no qual a IA já faz parte da rotina de muitos estudantes brasileiros.
 
@@ -57,21 +57,12 @@ A homologação ocorre em cenário no qual a IA já faz parte da rotina de muito
 
 Fonte: <https://olhardigital.com.br/2026/11/10/inteligencia-artificial/mec-libera-ia-para-corrigir-provas-mas-professores-continuam-responsaveis-pelas-notas/>
 
-## Onde ler a norma
+## O que conferir
 
-A norma em vigor é a Resolução CNE/CP nº 1/2026, publicada no Diário Oficial em 12/11.
+Fato: a norma em vigor é a Resolução CNE/CP nº 1/2026, publicada no Diário Oficial em 12/11.
 
-- Texto integral: https://www.gov.br/mec/pt-br/cne/2026/novembro-2026/rcp001_26.pdf
-- MEC Normas (detalhamento): https://mecnormas.mec.gov.br/pesquisa/detalhar/15979
-- Cetic.br: IA na educação (estudos setoriais): https://cetic.br/media/docs/publicacoes/7/pt/20251124074142/estudos_setoriais-ia_na_educacao.pdf
-- MEC: diretrizes para uso responsável da IA na educação: https://www.gov.br/mec/pt-br/assuntos/noticias/2026/novembro/mec-estabelece-diretrizes-para-uso-responsavel-da-ia-na-educacao
+Texto integral: https://www.gov.br/mec/pt-br/cne/2026/novembro-2026/rcp001_26.pdf. Detalhamento: https://mecnormas.mec.gov.br/pesquisa/detalhar/15979
 
-Fonte: <https://olhardigital.com.br/2026/11/10/inteligencia-artificial/mec-libera-ia-para-corrigir-provas-mas-professores-continuam-responsaveis-pelas-notas/>
+Cetic.br, estudos setoriais sobre IA na educação: https://cetic.br/media/docs/publicacoes/7/pt/20251124074142/estudos_setoriais-ia_na_educacao.pdf. Diretrizes do MEC: https://www.gov.br/mec/pt-br/assuntos/noticias/2026/novembro/mec-estabelece-diretrizes-para-uso-responsavel-da-ia-na-educacao
 
-## Além do vídeo
-
-- Nos anos iniciais, tecnologias assistivas e recursos para eliminar barreiras de aprendizagem seguem condições específicas previstas nas diretrizes.
-- No ensino médio, um dos objetivos é desenvolver o pensamento crítico e a autonomia intelectual dos alunos para avaliar informações produzidas por sistemas automatizados.
-- Na pesquisa científica, a utilização de IA deve ser informada quando a contribuição da ferramenta for relevante para a elaboração de textos, análise de dados, revisão bibliográfica, programação ou outras etapas da investigação.
-- Cursos de licenciatura devem incluir conteúdos sobre letramento digital, uso pedagógico de tecnologias emergentes, análise crítica de dados educacionais e aspectos éticos da IA.
-- Na gestão universitária, ferramentas automatizadas podem auxiliar no planejamento, na análise de indicadores e na identificação de riscos de evasão, mas decisões com impacto relevante não podem ser tomadas exclusivamente por sistemas de IA.
+Fonte: <https://www.gov.br/mec/pt-br/cne/2026/novembro-2026/rcp001_26.pdf>

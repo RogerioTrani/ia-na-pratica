@@ -2,51 +2,35 @@
 
 _2026-11-22 · noticia_
 
-Em 12 de novembro de 2026, Jensen Huang renunciou como presidente, CEO e membro do conselho da Nvidia, com efeito imediato. Colette Kress, diretora financeira, assume como CEO interina e segue como CFO até haver um sucessor. Harvey C. Jones é o primeiro presidente do conselho da empresa. O conselho busca um CEO permanente entre candidatos internos e externos.
+Em 12 de novembro de 2026, Jensen Huang renunciou como presidente, CEO e membro do conselho da Nvidia, com efeito imediato. Colette Kress assume como CEO interina e segue como CFO até haver um sucessor. Harvey C. Jones é o primeiro presidente do conselho.
 
-## O que mudou
+## O fato
 
-O conselho da Nvidia (NASDAQ: NVDA) anunciou em 12 de novembro de 2026 que Jensen Huang renunciou como presidente, CEO e membro do conselho, com efeito imediato.
+Em 12 de novembro de 2026, o conselho da Nvidia anunciou que Jensen Huang renunciou como presidente, CEO e membro do conselho, com efeito imediato.
 
-Huang sai do cargo executivo e da mesa que supervisiona a gestão.
-
-Fonte: <https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition>
-
-## Colette Kress: CEO interina e CFO
-
-Kress é vice-presidente executiva e diretora financeira. Ela aceitou ser CEO interina e continua como CFO até um sucessor permanente ser nomeado.
-
-Está na Nvidia desde setembro de 2013 e lidera a área de finanças. Antes, passou quase 25 anos em funções de finanças em empresas de tecnologia, entre elas Cisco e Microsoft.
+Colette Kress, vice-presidente executiva e diretora financeira, aceitou ser CEO interina e continua como CFO até um sucessor permanente ser nomeado.
 
 Fonte: <https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition>
 
-## Harvey C. Jones, primeiro presidente do conselho
+## Os números
 
-O conselho nomeou Jones como seu primeiro presidente. Ele é empreendedor, executivo de tecnologia e investidor de risco há mais de 30 anos, e foi CEO e presidente executivo do Synopsys.
+- 12 de novembro de 2026: data da renúncia.
+- 33 anos: tempo da base construída por Huang, segundo Kress.
+- Setembro de 2013: ano em que Kress entrou na Nvidia.
+- 17 de novembro: data da divulgação do terceiro trimestre do ano fiscal de 2027.
 
-Fonte: <https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition>
+## O que muda para você
 
-## O que a empresa diz
+Harvey C. Jones é o primeiro presidente do conselho da empresa. Ele foi CEO e presidente executivo do Synopsys.
 
-Jones afirmou que Kress conhece a fundo o negócio, os clientes, as operações e a posição financeira, e que o conselho tem plena confiança nela e na equipe de liderança. A expectativa dele é que operações, compromissos com clientes e plano de produtos sigam sem interrupção.
+Jones afirmou que o conselho tem plena confiança em Kress e na equipe de liderança. A expectativa é que operações, compromissos com clientes e plano de produtos sigam sem interrupção.
 
-Kress disse que pretende construir sobre a base que Huang criou ao longo de 33 anos, e que o foco segue em clientes, parceiros, desenvolvedores e acionistas.
+O conselho iniciou a busca por um CEO permanente e vai considerar candidatos internos e externos.
 
-Fonte: <https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition>
+## O que conferir
 
-## O que vem agora
+Kress fica no cargo interino até a nomeação de um permanente.
 
-O conselho iniciou a busca por um CEO permanente e vai considerar candidatos internos e externos. Kress fica no cargo interino até a nomeação.
+Os comunicados oficiais estão no Nvidia Newsroom e na página de relações com investidores.
 
-A Nvidia apresenta os resultados do terceiro trimestre do ano fiscal de 2027 na terça-feira, 17 de novembro, como já estava previsto.
-
-Fonte: <https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition>
-
-## Comunicados oficiais
-
-- Nvidia Newsroom: https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition
-- Relações com investidores: https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-CEO-Transition/
-
-## Além do vídeo
-
-- Contatos de imprensa e de relações com investidores da Nvidia constam no comunicado: press@nvidia.com e ir@nvidia.com.
+Fonte: <https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-CEO-Transition/>

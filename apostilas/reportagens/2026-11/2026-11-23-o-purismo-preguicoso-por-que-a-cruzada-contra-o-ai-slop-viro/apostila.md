@@ -2,13 +2,19 @@
 
 _2026-11-23 · reportagem_
 
-O manifesto No AI Slop foi escrito por palestrantes e participantes do AIE Code Summit 2026. Ele define slop como entregar algo sem responsabilidade pela qualidade, e não como o simples uso de IA. A apostila reúne a definição, as causas, os critérios de revisão e as práticas que o texto propõe, além de como assinar.
+O manifesto No AI Slop foi escrito por palestrantes e participantes do AIE Code Summit 2026. Ele define slop como entregar algo sem responsabilidade pela qualidade, e não como o simples uso de IA. O texto propõe revisar ao menos parte do que sai, deixar claro o que um agente escreveu e melhorar o sistema quando um erro aparece duas vezes.
+
+## O contexto
+
+O manifesto No AI Slop foi escrito por palestrantes e participantes do AIE Code Summit 2026. Ele define slop como entregar algo sem responsabilidade pela qualidade, e não como o simples uso de IA. Fonte: https://slopmanifesto.com
+
+Fonte: <https://slopmanifesto.com>
 
 ## O que é o manifesto
 
 O No AI Slop Manifesto foi escrito por palestrantes e participantes do AIE Code Summit 2026. Foi inspirado no Manifesto Ágil, criado em 2001 por 17 engenheiros e líderes de software reunidos numa estação de esqui em Snowbird, Utah.
 
-Entre as assinaturas estão Kent C. Dodds e Lauren Tan. O texto completo está no endereço abaixo.
+Entre as assinaturas estão Kent C. Dodds e Lauren Tan. O texto completo está no endereço abaixo: https://slopmanifesto.com
 
 Fonte: <https://slopmanifesto.com>
 
@@ -30,9 +36,7 @@ Fonte: <https://slopmanifesto.com>
 
 ## O critério: resultado e revisão
 
-O manifesto diz que o que foi entregue, quem usa e como isso ajuda vale muito mais do que linhas de código, PRs mesclados, tokens gastos ou agentes em paralelo.
-
-Código sem revisão nem sempre é ruim. Prompts de uma tacada e vibe coding são ferramentas de alta alavancagem. O slop passa a ser um problema quando prejudica o resultado: um produto útil, um sistema que se mantém ou o tempo e a energia da equipe.
+O manifesto diz que o que foi entregue, quem usa e como isso ajuda vale muito mais do que linhas de código, PRs mesclados, tokens gastos ou agentes em paralelo. Código sem revisão nem sempre é ruim. Prompts de uma tacada e vibe coding são ferramentas de alta alavancagem. O slop passa a ser um problema quando prejudica o resultado: um produto útil, um sistema que se mantém ou o tempo e a energia da equipe.
 
 - Revisão por agentes, linters e verificadores ajuda, mas não basta.
 - Por ora, o manifesto defende revisar ao menos parte do que sai. Qual parte depende do que está em jogo.
@@ -41,6 +45,8 @@ Código sem revisão nem sempre é ruim. Prompts de uma tacada e vibe coding sã
 Fonte: <https://slopmanifesto.com>
 
 ## Na prática: o que o manifesto pede
+
+Práticas que o texto propõe.
 
 - Assuma a intenção, o gosto e as consequências do que você entrega, por mais que a IA ajude a fazer.
 - Quando um agente escreveu algo que você vai enviar, deixe isso claro e confira as partes que importam antes de enviar.
@@ -53,7 +59,10 @@ Fonte: <https://slopmanifesto.com>
 
 ## Como assinar
 
-Para assinar, deixe um comentário no gist com qualquer um destes dados: nome, empresa, handle do X, LinkedIn. As assinaturas são incorporadas ao manifesto de tempos em tempos. Use este formato:
+Para assinar, deixe um comentário no gist com qualquer um destes dados: nome, empresa, handle do X, LinkedIn. As assinaturas são incorporadas ao manifesto de tempos em tempos. Use este formato. Gist: https://gist.github.com/dexhorthy/4cc96f01be5b1208519e75dad250a948
+
+1. abra o gist do manifesto e deixe um comentário com os seus dados. Resultado: a assinatura fica disponível para ser incorporada ao manifesto.
+2. use o formato da linha de assinatura abaixo. Resultado: a assinatura fica no padrão do manifesto.
 
 ```
 Signed-off by: [any of: name, company, x, linkedin, etc]
@@ -61,10 +70,10 @@ Signed-off by: [any of: name, company, x, linkedin, etc]
 
 Fonte: <https://gist.github.com/dexhorthy/4cc96f01be5b1208519e75dad250a948>
 
-## Além do vídeo
+## O que conferir
 
-- Os cinco valores do manifesto: resultados acima de produção, compreensão acima de velocidade, o próprio raciocínio acima do primeiro rascunho do modelo, trabalho melhor acima de trabalho mais fácil, melhorar o sistema acima de remendar a saída.
-- O slop se acumula: quanto mais circula numa equipe, mais se perde a vontade de combatê-lo, e a comunicação e a qualidade pioram com o tempo.
-- O manifesto pede otimizar sistemas, ferramentas e produtos para extrair com eficiência a intenção humana e para facilitar o entendimento humano.
-- O texto admite que ninguém tem isso resolvido e que cada um está reaprendendo o que aceita ou não.
-- Materiais complementares listados no manifesto: a palestra de swyx "No More Slop" (AIE Code Summit, novembro de 2025), "Please stop the slop" (Tejas Kumar), "Vibe Coding Our Way to Disaster" (Jake Nations), a política de uso de IA do Ghostty e "Why Software Factories Fail" (Dex).
+O manifesto admite que ninguém tem isso resolvido e que cada um está reaprendendo o que aceita ou não. Os cinco valores do manifesto: resultados acima de produção, compreensão acima de velocidade, o próprio raciocínio acima do primeiro rascunho do modelo, trabalho melhor acima de trabalho mais fácil, melhorar o sistema acima de remendar a saída. Texto completo: https://slopmanifesto.com
+
+Materiais complementares listados no manifesto: a palestra de swyx "No More Slop" (AIE Code Summit, novembro de 2025), "Please stop the slop" (Tejas Kumar), "Vibe Coding Our Way to Disaster" (Jake Nations), a política de uso de IA do Ghostty e "Why Software Factories Fail" (Dex).
+
+Fonte: <https://slopmanifesto.com>

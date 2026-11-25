@@ -2,59 +2,43 @@
 
 _2026-11-21 · noticia_
 
-O Google lançou o Gemini 4 Neon, o modelo do meio da nova linha Gemini 4, voltado a programação, análise de dados e trabalho profissional complexo. Ele está disponível desde 18/11 no Google AI Studio, no Gemini para empresas, no app Gemini e no Antigravity. Uma variante para defesa cibernética, o Neon for Cyber, chega nos próximos dias.
+O Google lançou o Gemini 4 Neon, o modelo do meio da nova linha Gemini 4, voltado a programação, análise de dados e trabalho profissional complexo. Está disponível desde 18/11 no Google AI Studio, no app Gemini e no Antigravity.
 
-## O que é o Gemini 4 Neon
+## O fato
 
-O Neon é o modelo intermediário da linha Gemini 4. O Google o descreve como feito para tarefas longas e complexas, com várias etapas e vários arquivos na mesma solicitação, em vez de perguntas soltas.
+O Google lançou o Gemini 4 Neon, o modelo do meio da nova linha Gemini 4, voltado a programação, análise de dados e trabalho profissional complexo.
 
-As áreas de foco são programação, análise de dados e atividades profissionais.
+Ele está disponível desde 18/11 no Google AI Studio, no Gemini para empresas, no app Gemini e no Antigravity.
 
 Fonte: <https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/>
 
-## Contexto de até 1 milhão de tokens
+## Os números
+
+- Contexto de até 1 milhão de tokens.
+- Terminal-Bench 4.1: 65,2%, segundo o Google.
+- FrontierCode 2.0: 46,2%, segundo o Google.
+- Vals Index: 70,9%, em segundo lugar nesse ranking.
+- Entrada em cache com 95% de desconto sobre a entrada normal.
+
+## O que muda para você
 
 Num mesmo pedido dá para juntar planilhas, PDFs, gráficos, áudios e vídeos. Isso ajuda em análises que misturam vários formatos.
 
-Fonte: <https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/>
+As áreas de foco são programação, análise de dados e atividades profissionais. O Neon é feito para tarefas longas e complexas, com várias etapas e vários arquivos.
 
-## Preço na API
+## O que fazer hoje
 
-Valores por milhão de tokens. A entrada em cache sai com 95% de desconto sobre a entrada normal.
-
-Fonte: <https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/>
-
-## Benchmarks divulgados pelo Google
-
-Os números abaixo vêm do próprio Google.
-
-- Terminal-Bench 4.1: 65,2%
-- FrontierCode 2.0: 46,2%
-- Vals Index: 70,9%, em segundo lugar nesse ranking
-
-Fonte: <https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/>
-
-## Onde usar desde 18/11
-
-O link abaixo abre o Google AI Studio já com o Gemini 4 Neon selecionado.
-
-- API do Gemini, pelo Google AI Studio (aistudio.google.com)
-- Gemini para empresas
-- App Gemini, para assinantes dos planos Google AI Pro e Ultra
-- Antigravity (antigravity.google), para assinantes dos planos Google AI Pro e Ultra
+1. Abra o Google AI Studio já com o Gemini 4 Neon selecionado, pelo link oficial. Resultado: o modelo fica pronto para uso na API.
+2. Abra o Antigravity e comece por um pedido que envolva várias etapas e arquivos. Resultado: você testa o modelo num caso parecido com o seu trabalho.
 
 Fonte: <https://antigravity.google/blog/gemini-4-neon-in-google-antigravity/>
 
-## Teste prático no Antigravity
+## O que conferir
 
-O teste usou o Neon no Antigravity com 7 pedidos, começando por uma landing page. Cada pedido foi feito uma só vez, sem segunda tentativa.
+Os benchmarks vêm do próprio Google.
 
-Para repetir o teste no seu trabalho, abra o Antigravity e comece por um pedido que envolva várias etapas e arquivos.
+No teste feito no Antigravity, cada um dos 7 pedidos foi feito uma só vez, sem segunda tentativa.
 
-Fonte: <https://antigravity.google/blog/gemini-4-neon-in-google-antigravity/>
-
-## Neon for Cyber
-
-A variante voltada a defesa cibernética chega nos próximos dias. O primeiro acesso é para integrantes elegíveis do programa Fairwind (deepmind.google/fairwind-program).
+A variante Neon for Cyber chega nos próximos dias, com primeiro acesso para integrantes elegíveis do programa Fairwind.
 
 Fonte: <https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/>

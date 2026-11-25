@@ -2,39 +2,34 @@
 
 _2026-11-23 · noticia_
 
-A Nvidia liberou o PersonaPlex, um modelo de voz aberto com 7 bilhões de parâmetros que conversa em tempo real e roda no seu computador. Ele ouve e fala ao mesmo tempo, aceita interrupções, tem 18 vozes prontas e deixa você definir o papel da IA. Foi treinado para inglês e precisa de placa de vídeo. Esta apostila reúne o que ele faz, os limites e onde começar.
+A Nvidia liberou o PersonaPlex, um modelo de voz aberto com 7 bilhões de parâmetros que conversa em tempo real e roda no seu computador. Ele tem 18 vozes prontas e deixa você definir o papel da IA. Foi treinado para inglês e precisa de placa de vídeo.
 
-## O que é o PersonaPlex
+## O fato
 
-O PersonaPlex é um modelo de voz da Nvidia com 7 bilhões de parâmetros e código aberto. Você pode baixar, ver como funciona e rodar no seu computador, sem pagar.
+A Nvidia liberou o PersonaPlex, um modelo de voz aberto com 7 bilhões de parâmetros.
 
-O repositório oficial no GitHub tem mais de 12 mil estrelas.
+Ele ouve e fala ao mesmo tempo e aceita interrupções. Você pode baixar, ver como funciona e rodar no seu computador, sem pagar.
 
 Fonte: <https://github.com/NVIDIA/personaplex>
 
-## Como ele conversa
+## Os números
 
-O modelo ouve e fala ao mesmo tempo. Se você interrompe no meio da frase, ele para e responde na hora.
+- 7 bilhões de parâmetros.
+- 18 vozes prontas.
+- Mais de 12 mil estrelas no repositório oficial do GitHub.
 
-Ele também solta um "uhum" enquanto você fala e entende as suas pausas.
+## O que muda para você
+
+Se você interrompe no meio da frase, ele para e responde na hora. Ele também solta um 'uhum' enquanto você fala e entende as suas pausas.
+
+Você escolhe uma das 18 vozes prontas e escreve o papel que a IA vai assumir na conversa, como professor simpático ou atendente de restaurante.
 
 Fonte: <https://research.nvidia.com/labs/adlr/personaplex/>
 
-## Voz e papel sob medida
+## O que fazer hoje
 
-Você escolhe uma das 18 vozes prontas e escreve o papel que a IA vai assumir na conversa.
-
-- Professor simpático
-- Atendente de restaurante
-- Astronauta a caminho de Marte
-
-Fonte: <https://github.com/NVIDIA/personaplex>
-
-## Limites: idioma e placa de vídeo
-
-O modelo foi treinado para conversar em inglês.
-
-Ele precisa de placa de vídeo. Se faltar memória da placa, rode o servidor com a opção --cpu-offload e parte do trabalho passa para o processador.
+1. Abra o repositório oficial da Nvidia no GitHub e siga a instalação passo a passo. Resultado: o modelo fica pronto para rodar no seu computador.
+2. Se faltar memória da placa, rode o servidor com a opção --cpu-offload. Resultado: parte do trabalho passa para o processador.
 
 ```
 --cpu-offload
@@ -42,12 +37,10 @@ Ele precisa de placa de vídeo. Se faltar memória da placa, rode o servidor com
 
 Fonte: <https://github.com/NVIDIA/personaplex>
 
-## Por onde começar
+## O que conferir
 
-O repositório oficial da Nvidia no GitHub traz a instalação passo a passo. O modelo também está publicado no Hugging Face, e a Nvidia mantém uma página de pesquisa sobre o PersonaPlex.
+O modelo foi treinado para conversar em inglês.
 
-- Repositório: https://github.com/NVIDIA/personaplex
-- Modelo personaplex-7b-v1: https://huggingface.co/nvidia/personaplex-7b-v1
-- Pesquisa: https://research.nvidia.com/labs/adlr/personaplex/
+Ele precisa de placa de vídeo. Sem memória suficiente, a opção de offload para o processador ajuda, mas o texto não traz desempenho.
 
-Fonte: <https://github.com/NVIDIA/personaplex>
+Fonte: <https://huggingface.co/nvidia/personaplex-7b-v1>

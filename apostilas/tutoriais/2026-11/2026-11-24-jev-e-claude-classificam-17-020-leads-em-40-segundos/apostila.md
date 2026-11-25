@@ -2,34 +2,31 @@
 
 _2026-11-24 · tutorial_
 
-Esta apostila mostra como usar o JEV, o modelo da TypeSafe que só classifica, junto com o Claude Code para separar suas conexões do LinkedIn em sim, não e revisar. Você vai criar a chave de API, instalar a skill, exportar as conexões e pedir a classificação. No vídeo, 17.020 conexões foram classificadas em menos de 40 segundos. O tempo é o relato da demonstração e pode variar na sua conta ou planilha.
+Esta apostila mostra como usar o JEV, o modelo da TypeSafe que só classifica, junto com o Claude Code para separar suas conexões do LinkedIn em sim, não e revisar. Você vai criar a chave de API, instalar a skill, exportar as conexões e pedir a classificação. No vídeo, 17.020 conexões foram classificadas em menos de 40 segundos, um relato da demonstração que pode variar na sua conta.
 
-## O que o JEV faz
+## O que você terá no fim
 
-O JEV é um modelo de IA que não escreve texto. Ele só responde com classificações, e por isso é pequeno, rápido e barato. A promessa de lançamento é de 20 a 200 vezes mais velocidade e de 40 a 400 vezes menos custo que os modelos padrão.
+Ao final, você terá as conexões do seu LinkedIn classificadas pelo JEV, com a resposta sim, não ou revisar para cada lead, e os casos de revisão separados para análise humana. O JEV é um modelo de IA que não escreve texto. Ele só responde com classificações, e por isso é pequeno, rápido e barato. Ele trabalha em três formatos: sim ou não, escolha de uma lista que você fornece, e nota de 1 a 10. Fonte: https://docs.typesafe.ai/introduction/quickstart
 
-Ele trabalha em três formatos: responder sim ou não a uma pergunta, escolher uma opção dentro de uma lista que você fornece, e dar uma nota de 1 a 10. Resumir reunião, escrever post, fazer conta e pesquisar continuam com o Claude, o GPT ou o Gemini. O melhor fluxo usa os dois, cada um no que faz melhor.
-
-Use o JEV para classificar respostas de leads, tickets de suporte e objeções de venda, dar notas de ICP, risco ou prioridade, rotear leads para vendedores e processar volumes grandes de texto ou planilha.
-
-## O que você precisa
-
-- Claude Code instalado
-- Conta no console da TypeSafe (console.typesafe.ai)
-- Créditos para usar a API
-- Conta no LinkedIn com conexões (linkedin.com)
-- Navegador com acesso à internet
+Antes de começar: Claude Code instalado; conta no console da TypeSafe (console.typesafe.ai); créditos para usar a API; conta no LinkedIn com conexões (linkedin.com); e navegador com acesso à internet. O tempo de 40 segundos é o relato da demonstração e pode variar na sua conta ou planilha.
 
 Fonte: <https://docs.typesafe.ai/introduction/quickstart>
 
-## Passo 1: abra o console e crie a chave
+## Passo a passo
 
-O JEV não tem chat. Ele só funciona pela API, e o Claude usa a sua chave para chamá-lo. Abra o console da TypeSafe, empresa do JEV. O painel de gerenciamento da API deve abrir.
+Siga os passos na ordem. Os endereços e caminhos ficam em seções próprias.
 
-Na página de chaves, gere uma chave de API. Guarde o valor em local privado e não o mostre na conversa nem em gravações.
+1. abra o console e crie a chave. O JEV não tem chat. Abra o console da TypeSafe, gere uma chave de API na página de chaves e guarde o valor em local privado. Resultado esperado: a chave de API está gerada e guardada.
+2. instale a skill no Claude Code. No terminal, rode os dois comandos do bloco de instalação. O primeiro adiciona o repositório de skills da TypeSafe e o segundo instala o plugin. Guarde a chave na variável de ambiente TYPESAFE_API_KEY. Resultado esperado: o Claude tem uma skill para usar o JEV pela API. O repositório é github.com/typesafe-ai/skills.
+3. exporte suas conexões do LinkedIn. Siga o caminho do LinkedIn, escolha o download maior e solicite o arquivo. O e-mail com o link chega em até 24 horas, e o link fica disponível por 72 horas. Resultado esperado: o arquivo de conexões traz nome, URL do perfil, e-mail, empresa, cargo e data de cada conexão.
+4. peça a classificação. No Claude, forneça a planilha de conexões e peça à skill do JEV que responda, para cada lead, se ele é decisor, com as respostas sim, não ou revisar. Resultado esperado: a classificação das conexões volta no formato sim, não e revisar.
+5. confira os casos para revisão. Compare os dados de algumas conexões com a classificação recebida e examine os registros marcados para revisar. Resultado esperado: você consegue ligar cada contato à resposta e avaliar se os dados sustentam a decisão.
 
-- Console: console.typesafe.ai
-- Chaves: console.typesafe.ai/keys
+Fonte: <https://docs.typesafe.ai/agent-skill.md#installation>
+
+## Chave de API no console
+
+Abra o console da TypeSafe e gere a chave na página de chaves. Não mostre o valor na conversa nem em gravações. Console: console.typesafe.ai. Fonte: https://docs.typesafe.ai/introduction/quickstart.md
 
 ```
 console.typesafe.ai/keys
@@ -37,19 +34,9 @@ console.typesafe.ai/keys
 
 Fonte: <https://docs.typesafe.ai/introduction/quickstart.md>
 
-## Passo 2: instale a skill no Claude Code
+## Exportar as conexões do LinkedIn
 
-No terminal, rode os dois comandos abaixo. O primeiro adiciona o repositório de skills da TypeSafe e o segundo instala o plugin. Depois, guarde a chave de API na variável de ambiente TYPESAFE_API_KEY para a skill usá-la.
-
-Ao terminar, o Claude passa a ter uma skill para usar o JEV pela API. Se ela não aparecer, revise o retorno dos comandos antes de enviar a planilha. O repositório é github.com/typesafe-ai/skills.
-
-Fonte: <https://docs.typesafe.ai/agent-skill.md#installation>
-
-## Passo 3: exporte suas conexões do LinkedIn
-
-No LinkedIn, siga o caminho abaixo, escolha o download maior e solicite o arquivo. O e-mail com o link chega em até 24 horas, e o link fica disponível por 72 horas.
-
-Entre os dados baixados, localize o arquivo de conexões. Ele traz nome, URL do perfil, e-mail, empresa, cargo e data de cada conexão.
+No LinkedIn, siga o caminho abaixo, escolha o download maior e solicite o arquivo. O e-mail com o link chega em até 24 horas, e o link fica disponível por 72 horas. Entre os dados baixados, localize o arquivo de conexões. Fonte: https://www.linkedin.com/help/linkedin/answer/a1339364
 
 ```
 Eu > Configurações e privacidade > Privacidade dos dados > Baixe seus dados
@@ -57,11 +44,9 @@ Eu > Configurações e privacidade > Privacidade dos dados > Baixe seus dados
 
 Fonte: <https://www.linkedin.com/help/linkedin/answer/a1339364>
 
-## Passo 4: peça a classificação
+## Chamar a skill do JEV
 
-No Claude, forneça a planilha de conexões e peça à skill do JEV que responda, para cada lead, se ele é decisor, com as respostas sim, não ou revisar. O Claude coordena a tarefa e delega a classificação ao JEV.
-
-Se o Claude não acionar a skill sozinho, chame-a pelo comando abaixo. Ao final, a classificação das conexões volta no formato sim, não e revisar.
+O Claude coordena a tarefa e delega a classificação ao JEV. Se o Claude não acionar a skill sozinho, chame-a pelo comando abaixo. Fonte: https://docs.typesafe.ai/agent-skill.md
 
 ```
 /typesafe:typesafe-ai
@@ -69,22 +54,20 @@ Se o Claude não acionar a skill sozinho, chame-a pelo comando abaixo. Ao final,
 
 Fonte: <https://docs.typesafe.ai/agent-skill.md>
 
-## Passo 5: confira os casos para revisão
+## Teste de pronto
 
-Execução concluída não garante classificação útil. Compare os dados de algumas conexões com a classificação recebida e examine os registros marcados para revisar. Você deve conseguir ligar cada contato à resposta e avaliar se os dados sustentam aquela decisão.
+Execução concluída não garante classificação útil. Você deve conseguir ligar cada contato à resposta e avaliar se os dados sustentam aquela decisão.
 
-- Se não conseguir associar contato e resposta, peça ao Claude uma apresentação que permita comparar os registros.
-- Se o cargo deixar dúvida sobre poder de decisão, mantenha o caso para análise humana.
-- Trate a classificação como triagem, não como confirmação de autoridade comercial.
+- [ ] Você compara os dados de algumas conexões com a classificação recebida.
+- [ ] Se não conseguir associar contato e resposta, peça ao Claude uma apresentação que permita comparar os registros.
+- [ ] Se o cargo deixar dúvida sobre poder de decisão, o caso fica para análise humana.
 
-## Alternativa pelo OpenRouter
+Fonte: <https://docs.typesafe.ai/agent-skill.md>
 
-O JEV também pode ser usado com uma chave do OpenRouter. Este roteiro segue o caminho direto pelo console da TypeSafe.
+## Cuidados e outras opções
+
+Trate a classificação como triagem, não como confirmação de autoridade comercial. O JEV também pode ser usado com uma chave do OpenRouter. Este roteiro segue o caminho direto pelo console da TypeSafe. Fonte: https://openrouter.ai/docs/guides/community/jev.md
+
+Use o JEV para classificar respostas de leads, tickets de suporte e objeções de venda, dar notas de ICP, risco ou prioridade, rotear leads para vendedores e processar volumes grandes de texto ou planilha. Resumir reunião, escrever post, fazer conta e pesquisar continuam com o Claude, o GPT ou o Gemini.
 
 Fonte: <https://openrouter.ai/docs/guides/community/jev.md>
-
-## Além do vídeo
-
-- O JEV pode servir a software que precisa de resposta imediata, como sugerir perguntas durante uma call de vendas ou analisar o sentimento do lead em tempo real.
-- Outro uso apresentado é classificar transcrições de vendas para listar as objeções que mais aparecem, escolhendo numa lista como preço, timing, falar com sócio ou nenhuma objeção.
-- A nota de 1 a 10 também serve para estimar o risco de cancelamento de um cliente a partir dos dados de uso do software.

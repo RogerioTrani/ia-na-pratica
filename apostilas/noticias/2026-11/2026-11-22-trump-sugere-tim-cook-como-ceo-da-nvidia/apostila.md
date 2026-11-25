@@ -2,11 +2,13 @@
 
 _2026-11-22 · noticia_
 
-Jensen Huang renunciou ao cargo de CEO da NVIDIA, e o presidente Donald Trump respondeu na Truth Social indicando Tim Cook para o lugar. Cook deixou a presidência-executiva da Apple e hoje é executive chairman do conselho. Pelo que a matéria original descreve, a indicação fica no desejo público de Trump.
+Jensen Huang renunciou ao cargo de CEO da NVIDIA, e o presidente Donald Trump respondeu na Truth Social indicando Tim Cook para o lugar. Cook deixou a presidência-executiva da Apple e hoje é executive chairman do conselho. A sugestão, até aqui, é só um desejo expresso em público, sem decisão da NVIDIA.
 
-## O que aconteceu
+## O fato
 
 Com a renúncia de Jensen Huang, Trump publicou na Truth Social que existe "only one man to take his place" e apontou Tim Cook, da Apple. A matéria do 9to5Mac, de 12 de novembro de 2026, descreve a indicação como uma nomeação "in spirit": uma sugestão pública, sem decisão da NVIDIA.
+
+Fonte: https://9to5mac.com/2026/11/12/president-trump-calls-on-tim-cook-to-be-next-nvidia-ceo/
 
 Fonte: <https://9to5mac.com/2026/11/12/president-trump-calls-on-tim-cook-to-be-next-nvidia-ceo/>
 
@@ -22,7 +24,7 @@ Fonte: <https://9to5mac.com/2026/11/12/president-trump-calls-on-tim-cook-to-be-n
 
 ## Onde Cook está hoje
 
-Cook já não é CEO da Apple. Ele é executive chairman do conselho da empresa. Parte das responsabilidades desse cargo é conversar com líderes mundiais como Trump, mesmo quando eles sugerem que ele volte a comandar uma empresa.
+Cook já não é CEO da Apple. Ele é executive chairman do conselho da empresa. Parte das responsabilidades desse cargo é conversar com líderes mundiais como Trump, mesmo quando eles sugerem que ele volte a comandar uma empresa. Fonte: https://9to5mac.com/2026/11/12/president-trump-calls-on-tim-cook-to-be-next-nvidia-ceo/
 
 Fonte: <https://9to5mac.com/2026/11/12/president-trump-calls-on-tim-cook-to-be-next-nvidia-ceo/>
 
@@ -34,20 +36,21 @@ Fonte: <https://9to5mac.com/2026/11/12/president-trump-calls-on-tim-cook-to-be-n
 
 ## O que dá para afirmar
 
+Os quatro pontos abaixo são os que a matéria sustenta.
+
 - Jensen Huang renunciou ao cargo de CEO da NVIDIA.
 - Trump pediu Tim Cook para o lugar dele.
 - Cook é executive chairman da Apple e não é mais CEO.
 - A sugestão, até aqui, é só um desejo expresso em público.
 
+Fonte: <https://9to5mac.com/2026/11/12/president-trump-calls-on-tim-cook-to-be-next-nvidia-ceo/>
+
 ## Fontes para acompanhar
 
-- Matéria original (9to5Mac): https://9to5mac.com/2026/11/12/president-trump-calls-on-tim-cook-to-be-next-nvidia-ceo/
-- Comunicado oficial da NVIDIA (8-K) sobre a transição de CEO: https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000082/nvidiaannouncesceotransiti.htm
-- Truth Social, onde Trump publicou: https://truthsocial.com
+Matéria original (9to5Mac): https://9to5mac.com/2026/11/12/president-trump-calls-on-tim-cook-to-be-next-nvidia-ceo/
+
+Comunicado oficial da NVIDIA (8-K) sobre a transição de CEO: https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000082/nvidiaannouncesceotransiti.htm
+
+Truth Social, onde Trump publicou: https://truthsocial.com
 
 Fonte: <https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000082/nvidiaannouncesceotransiti.htm>
-
-## Além do vídeo
-
-- A matéria do 9to5Mac é de 12 de novembro de 2026, assinada por Zac Hall.
-- O comentário mais curtido na matéria brinca com a troca de nome: "Tim Nvidia instead of Tim Apple".
