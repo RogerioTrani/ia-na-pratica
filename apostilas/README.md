@@ -4,6 +4,7 @@ Todas as apostilas dos vídeos do canal, as mais novas primeiro. As das séries 
 
 | Data e título | Formato | Apostila |
 | --- | --- | --- |
+| 2026-11-25: Meta lança o Llama 5 com 400 bi | noticias | [md](noticias/2026-11/2026-11-25-meta-lanca-o-llama-5-com-400-bi/apostila.md) · [pdf](noticias/2026-11/2026-11-25-meta-lanca-o-llama-5-com-400-bi/apostila.pdf) |
 | 2026-11-24: Siri AI permite ações personalizadas via App Intents | noticias | [md](noticias/2026-11/2026-11-24-siri-ai-permite-acoes-personalizadas-via-app-intents/apostila.md) · [pdf](noticias/2026-11/2026-11-24-siri-ai-permite-acoes-personalizadas-via-app-intents/apostila.pdf) |
 | 2026-11-24: Projeto C99 roda Kimi K3 em CPU com 8 GB | reportagens | [md](reportagens/2026-11/2026-11-24-projeto-c99-roda-kimi-k3-em-cpu-com-8-gb/apostila.md) · [pdf](reportagens/2026-11/2026-11-24-projeto-c99-roda-kimi-k3-em-cpu-com-8-gb/apostila.pdf) |
 | 2026-11-24: OpenAI foi de 30 ferramentas a uma fábrica de agentes | reportagens | [md](reportagens/2026-11/2026-11-24-openai-foi-de-30-ferramentas-a-uma-fabrica-de-agentes/apostila.md) · [pdf](reportagens/2026-11/2026-11-24-openai-foi-de-30-ferramentas-a-uma-fabrica-de-agentes/apostila.pdf) |
