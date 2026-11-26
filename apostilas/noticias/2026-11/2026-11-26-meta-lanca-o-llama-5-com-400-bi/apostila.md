@@ -2,8 +2,8 @@
 
 _2026-11-26 · noticia_
 
-r
+RESUMO DA APOSTILA
 
-## A
+## SEÇÃO DA APOSTILA
 
-x
+conteúdo aprovado
