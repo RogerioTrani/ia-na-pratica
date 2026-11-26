@@ -5,6 +5,7 @@ Todas as apostilas dos vídeos do canal, as mais novas primeiro. As das séries 
 | Data e título | Formato | Apostila |
 | --- | --- | --- |
 | 2026-11-26: VoiceStudio, é alternativa local ao ElevenLabs | tutoriais | [md](tutoriais/2026-11/2026-11-26-voicestudio-e-alternativa-local-ao-elevenlabs/apostila.md) · [pdf](tutoriais/2026-11/2026-11-26-voicestudio-e-alternativa-local-ao-elevenlabs/apostila.pdf) |
+| 2026-11-26: Skill da Cloudflare chega quase a 37 mil estrelas no mês | noticias | [md](noticias/2026-11/2026-11-26-skill-da-cloudflare-chega-quase-a-37-mil-estrelas-no-mes/apostila.md) · [pdf](noticias/2026-11/2026-11-26-skill-da-cloudflare-chega-quase-a-37-mil-estrelas-no-mes/apostila.pdf) |
 | 2026-11-26: Receita com NeMo e GRPO leva sucesso de 0% a 96,58% | noticias | [md](noticias/2026-11/2026-11-26-receita-com-nemo-e-grpo-leva-sucesso-de-0-a-96-58/apostila.md) · [pdf](noticias/2026-11/2026-11-26-receita-com-nemo-e-grpo-leva-sucesso-de-0-a-96-58/apostila.pdf) |
 | 2026-11-26: Meta lança o Llama 5 com 400 bi | noticias | [md](noticias/2026-11/2026-11-26-meta-lanca-o-llama-5-com-400-bi/apostila.md) · [pdf](noticias/2026-11/2026-11-26-meta-lanca-o-llama-5-com-400-bi/apostila.pdf) |
 | 2026-11-26: Ling-3.2-air vai de 26,40 a 58,28 no SWE-bench Pro | noticias | [md](noticias/2026-11/2026-11-26-ling-3-2-air-vai-de-26-40-a-58-28-no-swe-bench-pro/apostila.md) · [pdf](noticias/2026-11/2026-11-26-ling-3-2-air-vai-de-26-40-a-58-28-no-swe-bench-pro/apostila.pdf) |
