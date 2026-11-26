@@ -4,6 +4,7 @@ Todas as apostilas dos vídeos do canal, as mais novas primeiro. As das séries 
 
 | Data e título | Formato | Apostila |
 | --- | --- | --- |
+| 2026-11-26: Meta lança o Llama 5 com 400 bi | noticias | [md](noticias/2026-11/2026-11-26-meta-lanca-o-llama-5-com-400-bi/apostila.md) · [pdf](noticias/2026-11/2026-11-26-meta-lanca-o-llama-5-com-400-bi/apostila.pdf) |
 | 2026-11-25: SWE-2.1 tem 80% no ExploitBench e 27,3% no ExploitGym | noticias | [md](noticias/2026-11/2026-11-25-swe-2-1-tem-80-no-exploitbench-e-27-3-no-exploitgym/apostila.md) · [pdf](noticias/2026-11/2026-11-25-swe-2-1-tem-80-no-exploitbench-e-27-3-no-exploitgym/apostila.pdf) |
 | 2026-11-25: Outliers são vídeos 4 vezes melhores que a média | reportagens | [md](reportagens/2026-11/2026-11-25-outliers-sao-videos-4-vezes-melhores-que-a-media/apostila.md) · [pdf](reportagens/2026-11/2026-11-25-outliers-sao-videos-4-vezes-melhores-que-a-media/apostila.pdf) |
 | 2026-11-25: Neon lidera o Coding Agent Index com 58,6 pontos | noticias | [md](noticias/2026-11/2026-11-25-neon-lidera-o-coding-agent-index-com-58-6-pontos/apostila.md) · [pdf](noticias/2026-11/2026-11-25-neon-lidera-o-coding-agent-index-com-58-6-pontos/apostila.pdf) |
