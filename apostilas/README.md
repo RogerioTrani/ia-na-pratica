@@ -4,6 +4,7 @@ Todas as apostilas dos vídeos do canal, as mais novas primeiro. As das séries 
 
 | Data e título | Formato | Apostila |
 | --- | --- | --- |
+| 2026-11-27: Sucesso de agentes Qwen3-0.6B sobe de 6,6% a 82,3% | tutoriais | [md](tutoriais/2026-11/2026-11-27-sucesso-de-agentes-qwen3-0-6b-sobe-de-6-6-a-82-3/apostila.md) · [pdf](tutoriais/2026-11/2026-11-27-sucesso-de-agentes-qwen3-0-6b-sobe-de-6-6-a-82-3/apostila.pdf) |
 | 2026-11-27: Skill da Cloudflare chega quase a 37 mil estrelas no mês | noticias | [md](noticias/2026-11/2026-11-27-skill-da-cloudflare-chega-quase-a-37-mil-estrelas-no-mes/apostila.md) · [pdf](noticias/2026-11/2026-11-27-skill-da-cloudflare-chega-quase-a-37-mil-estrelas-no-mes/apostila.pdf) |
 | 2026-11-27: Meta lança o Llama 5 com 400 bi | noticias | [md](noticias/2026-11/2026-11-27-meta-lanca-o-llama-5-com-400-bi/apostila.md) · [pdf](noticias/2026-11/2026-11-27-meta-lanca-o-llama-5-com-400-bi/apostila.pdf) |
 | 2026-11-27: Dashboard llama.cpp para AMD Ryzen e Radeon no HF | noticias | [md](noticias/2026-11/2026-11-27-dashboard-llama-cpp-para-amd-ryzen-e-radeon-no-hf/apostila.md) · [pdf](noticias/2026-11/2026-11-27-dashboard-llama-cpp-para-amd-ryzen-e-radeon-no-hf/apostila.pdf) |
