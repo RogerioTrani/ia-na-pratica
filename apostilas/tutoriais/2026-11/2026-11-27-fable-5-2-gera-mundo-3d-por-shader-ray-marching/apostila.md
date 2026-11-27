@@ -2,205 +2,194 @@
 
 _2026-11-27 · tutorial_
 
-O Fable 5.2 é o modelo mais capaz da Anthropic para trabalho técnico, e este tutorial mostra como usá-lo para gerar um único arquivo HTML com cinco demos interativas, incluindo um mundo 3D renderizado por ray marching. Você vai configurar a conta, selecionar o modelo, definir o esforço em Extra, colar um prompt e abrir o resultado no navegador. Ao fim, saberá explorar as demos, testar os controles do mundo 3D e repetir o fluxo com seu próprio pedido.
+Você vai gerar e abrir um mundo 3D interativo no navegador com o Claude Fable 5.2, usando um único arquivo HTML. A apostila explica o ray marching, a escolha do modelo e do esforço, o prompt exato e os controles da demonstração. Também mostra como interpretar preços, benchmarks e as outras visualizações sem confundir capacidade anunciada com resultado garantido. Ao final, você saberá repetir o processo, testar se funcionou e evitar os problemas mais comuns.
 
 ## O que você terá no fim
 
-Um arquivo HTML único com cinco demos interativas, gerado pelo Fable 5.2, o modelo mais capaz da Anthropic para trabalho técnico. Entre as demos está um mundo 3D renderizado por ray marching: cada pixel é calculado a cada quadro, sem modelos prontos nem estruturas. O arquivo roda direto no navegador, sem servidor, sem build e sem dependências externas.
+Você terá um mundo 3D interativo rodando no navegador, gerado pelo Claude Fable 5.2 em um único arquivo HTML. A cena será calculada por um shader ray marching e responderá ao mouse e às teclas H, espaço e E.
 
-O resultado é um artefato completo que você pode abrir, explorar e compartilhar. As outras quatro demos cobrem enxame de agentes, física de ondas, janela de contexto de um milhão de tokens e comparação entre o Fable 5.2 e o Fable 5.1.
+O arquivo abre localmente e funciona offline. Você não precisa montar um servidor nem escrever o shader. Seu trabalho é escolher o modelo, dar o objetivo, aguardar o código completo, salvar o HTML e testar a demonstração.
 
-Fonte: <https://www.anthropic.com/claude/fable>
+Esse exercício mostra a capacidade de geração de código do modelo em uma tarefa visual. Também dá um critério prático: a demonstração precisa renderizar, responder aos controles e continuar funcionando quando o arquivo é aberto no navegador.
 
-## Como isso funciona
+## O fato: a Anthropic anunciou o Fable 5.2
 
-O Fable 5.2 é o modelo mais capaz da Anthropic para trabalho técnico. Ele toma problemas ambíguos, questiona e verifica o próprio trabalho e coordena subagentes para melhorar o resultado em loop. Para este tutorial, ele lê a documentação de lançamento da Anthropic e gera código que demonstra as capacidades anunciadas.
+Em 9 de novembro de 2026, a Anthropic anunciou o Claude Fable 5.2. A empresa apresenta o modelo como o mais capaz para trabalho técnico e cita programação, agentes, pesquisa científica, análise de dados e design entre os usos.
 
-Ray marching é uma técnica de desenho 3D: em vez de usar modelos prontos, o shader calcula cada pixel a cada quadro. É isso que faz o mundo 3D ser gerado do zero pela matemática do shader, sem estruturas pré-existentes.
+Para pessoas e organizações, a página oficial lista acesso nos planos Pro, Max, Ultra, Team e Enterprise. A disponibilidade depende do plano e do acesso da conta.
 
-O prompt define o escopo do que o modelo constrói. Ele instrui o Fable 5.2 a buscar a documentação de lançamento e gerar demos interativas. É essa instrução que faz o modelo ler a página oficial e montar o mundo 3D por ray marching. Um prompt vago gera uma demo genérica sem o mundo 3D.
-
-A arquitetura de um único arquivo HTML existe para rodar direto no navegador: você clica e vê. Nenhuma instalação nem build.
+Na parte de design, a Anthropic diz que o modelo cria mundos 3D interativos, simulações, animações e vídeos educacionais com som em código. A demonstração do mundo 3D usa essa capacidade para gerar a cena e sua interação.
 
 Fonte: <https://www.anthropic.com/claude/fable>
 
-## As novidades do Fable 5.2
+## Como funciona: shader, ray marching e arquivo único
 
-O Fable 5.2 e o Mythos 5.2 mostram melhorias em programação, raciocínio e visão. Durante testes pré-lançamento, ajudaram engenheiros a completar migrações de software de outra forma inviáveis, projetaram três dispositivos eletrônicos funcionais do zero, resolveram dois problemas abertos na física de buracos negros, avançaram em avaliações de robótica e formalizaram a prova do Último Teorema de Fermat em 30 horas.
+![Raios avançam em busca de uma superfície; o resultado define o pixel.](figuras/03-como-funciona-shader-ray-marching-e-arqu.png)
 
-Os testes mostraram que o Fable 5.2 e o Mythos 5.2 se comunicam com mais clareza do que os modelos anteriores e geram resultados até 30% mais rápido do que o Fable 5.1 e o Mythos 5.1.
+_Raios avançam em busca de uma superfície; o resultado define o pixel._
 
-O Fable 5.2 constrói mundos 3D interativos, lê imagens e PDFs detalhados, projeta componentes de hardware, cria simulações, animações e vídeos educacionais com som em código e pode manipular ambientes em robótica. A Anthropic descreve essa capacidade na seção de design para 3D, hardware e motion.
+Um shader é um programa que roda na GPU e calcula a aparência da cena. No ray marching, o cálculo começa em raios que atravessam a imagem. Cada raio avança pelo espaço em busca de uma superfície, e o resultado define o que aparece naquele pixel.
 
-O modelo coordena centenas ou até mais de mil subagentes em tarefas longas e roda trabalho de engenharia ambíguo por dias, questionando e verificando o próprio trabalho. Mais de 90% das mudanças integradas ao código-base central da Anthropic são agora escritas pelo Claude, com orientação humana.
+A cada quadro, a demonstração recalcula a imagem. Quando você move o mouse, muda a direção do olhar. Quando troca a paleta ou a textura, o shader passa a calcular a cena com outra aparência. Por isso a resposta parece imediata.
 
-Fonte: <https://www.anthropic.com/claude-fable-and-mythos-5-2>
+Uma cena 3D comum pode usar uma malha de polígonos. Aqui, o mundo é obtido pelo cálculo dos raios, sem depender de um modelo 3D pronto. O Fable 5.2 escreve o código desse cálculo; o navegador e a GPU executam o arquivo.
+
+Deixar interface, shader e controles no mesmo HTML permite abrir a demonstração sem servidor local. O custo dessa liberdade é o processamento: cada pixel é recalculado a cada quadro, então a GPU precisa estar disponível.
+
+Fonte: <https://www.anthropic.com/claude/fable>
 
 ## Antes de começar
 
-Confirme o acesso antes de colar o prompt. Sem plano pago, o seletor não mostra o Fable 5.2 e o tutorial para aqui.
+Confira os requisitos antes de gerar o arquivo. Eles evitam que você precise interromper a demonstração para resolver acesso, navegador ou armazenamento.
 
-- Conta Claude com plano pago: o Fable 5.2 está disponível para usuários Pro, Max, Ultra, Team e Enterprise. Contas gratuitas não veem o modelo no seletor.
-- Navegador moderno instalado: Chrome ou Edge recomendados para abrir o HTML gerado.
-- Conexão com a internet: o modelo busca a documentação de lançamento durante a geração.
-- Acesso ao modelo Fable 5.2: confirme que o seletor exibe o Fable 5.2 antes de colar o prompt.
-
-Fonte: <https://www.anthropic.com/claude/fable>
+- Uma conta Claude Pro, Max, Ultra, Team ou Enterprise, com o Fable 5.2 visível no seletor de modelo. A conta gratuita não inclui o modelo neste fluxo.
+- Um navegador atualizado, como Chrome, Edge ou Firefox.
+- GPU e aceleração de hardware disponíveis para executar o shader.
+- Alguns megabytes livres para salvar o arquivo HTML.
+- Tempo para aguardar a geração sem interromper o modelo.
 
 ## Passo a passo
 
-![Cinco passos do prompt ao HTML no navegador.](figuras/05-passo-a-passo.png)
+A sequência abaixo vai do login ao mundo 3D. O resultado esperado de cada etapa ajuda a identificar onde parar e o que corrigir.
 
-_Cinco passos do prompt ao HTML no navegador._
-
-1. Passo 1 — Acessar o Claude e entrar na conta. Abra a aplicação web do Claude e entre com sua conta. O Fable 5.2 não roda local: ele vive na nuvem da Anthropic e o navegador é só a porta de entrada. Resultado esperado: página inicial do Claude com o campo de prompt vazio.
-2. Passo 2 — Selecionar o modelo Fable 5.2. No seletor de modelos, na parte de baixo da tela, escolha o Fable 5.2. O modelo define o teto de capacidade do que vem depois. É ele quem vai gerar o mundo 3D por ray marching. Modelos anteriores não sustentam a mesma complexidade de shader e código. Resultado esperado: Fable 5.2 destacado no seletor de modelos.
-3. Passo 3 — Definir o esforço em Extra. No seletor de esforço, ao lado do modelo, escolha Extra. O esforço controla quanto o modelo pensa antes de responder. Extra libera mais passos de raciocínio e a coordenação de subagentes. Essa margem permite gerar um shader de ray marching completo num único arquivo. Resultado esperado: esforço definido como Extra.
-4. Passo 4 — Colar o prompt de demo interativa. Cole o prompt que pede a demo em um único HTML. O prompt define o escopo do que o modelo vai construir e é a única especificação que ele recebe. Ele instrui o Fable 5.2 a buscar a documentação de lançamento e gerar demos interativas. Resultado esperado: prompt colado no campo.
-5. Passo 5 — Gerar o arquivo HTML. Envie o prompt e aguarde a geração. O modelo busca a documentação de lançamento, entende as capacidades anunciadas e monta um único arquivo HTML com cinco demos interativas, coordenando subagentes para pesquisar e escrever o código em paralelo. Resultado esperado: arquivo HTML único com as cinco demos.
-6. Passo 6 — Abrir o HTML no navegador. Abra o arquivo HTML gerado no navegador. O arquivo é autocontido e roda local, sem servidor. O HTML contém o shader de ray marching embutido, então a renderização acontece no navegador. Resultado esperado: página com as demos carregada.
-7. Passo 7 — Explorar o mundo 3D por ray marching. Abra a aba do mundo 3D gerado pelo shader de ray marching. Essa é a capacidade que a página da Anthropic anuncia. O ray marching calcula cada pixel a cada quadro, sem modelos prontos nem estruturas. Resultado esperado: mundo 3D renderizado e você pode olhar para os lados.
-8. Passo 8 — Testar os controles do mundo 3D. Pressione H, Espaço e E no mundo 3D. H esconde a interface e deixa a experiência imersiva. Espaço troca a paleta de cores do céu. E altera a textura do cenário. Cada mudança acontece sem recarregar a página. Resultado esperado: cada tecla muda a cena em tempo real.
-9. Passo 9 — Explorar as outras quatro demos. Abra as abas do enxame, física, contexto e comparação. O enxame simula cem agentes respondendo ao cursor. A física resolve a equação da onda ao vivo por diferenças finitas. O contexto exibe um milhão de tokens como pixels. A comparação coloca o Fable 5.2 ao lado do 5.1. Resultado esperado: quatro demos adicionais visíveis e funcionais.
-
-Fonte: <https://www.anthropic.com/claude/fable>
-
-## Exemplo completo
-
-![Cinco demos interativas num único arquivo HTML.](figuras/06-exemplo-completo.png)
-
-_Cinco demos interativas num único arquivo HTML._
-
-O arquivo gerado contém cinco demos, cada uma usando uma técnica diferente de renderização. Juntas, elas mostram o alcance do Fable 5.2 além do mundo 3D.
-
-Enxame: simula cem agentes respondendo ao cursor. Você pode digitar em tempo real e os agentes reagem. Há controle de velocidade, de 1x a 3x.
-
-Mundo 3D: renderizado por ray marching, cada pixel calculado a cada quadro, sem modelos prontos nem estruturas. Controles: H esconde o menu, Espaço troca a paleta de cores do céu, E altera a textura do cenário.
-
-Física: equação da onda resolvida ao vivo por diferenças finitas, incluindo um experimento de dupla fenda.
-
-Contexto: a janela de contexto do Fable 5.2 comporta um milhão de tokens. Cada pixel do painel é um token e há um pixel diferente dos demais, identificado por um scanner.
-
-Comparação: coloca o Fable 5.2 ao lado do Fable 5.1, mostrando o novo modelo ganhando em todos os critérios.
-
-Fonte: <https://www.anthropic.com/claude/fable>
+1. 1. Acesse claude.ai e faça login com uma conta Claude Pro, Max, Ultra, Team ou Enterprise. O resultado esperado é o painel aberto com o seletor de modelo visível; se aparecer uma tela de upgrade, troque de conta ou faça a atualização do plano.
+2. 2. No seletor de modelo, escolha Claude Fable 5.2. O resultado esperado é o nome do modelo selecionado; se ele não aparecer, confira o plano ou tente outra conta com acesso.
+3. 3. No controle de esforço, escolha Extra. O resultado esperado é o controle mostrar Extra; se a opção não existir, use o nível mais alto disponível.
+4. 4. Cole o prompt da próxima seção no campo de texto do Claude. O resultado esperado é ver a instrução completa no campo antes de enviar.
+5. 5. Envie o prompt e aguarde a resposta terminar. O resultado esperado é um arquivo HTML completo com as visualizações; se a resposta for genérica, peça foco em 3D e ray marching, e se travar, reenvie o pedido com menos demos e foco em 3D.
+6. 6. Salve o arquivo HTML e abra-o no navegador atualizado. O resultado esperado é a demonstração carregar com o menu de visualizações; se a página ficar em branco, abra o console do navegador e procure erros de script.
+7. 7. No menu da demonstração, selecione a visualização mundo 3D. O resultado esperado é a cena ser renderizada e responder ao movimento do mouse; se não renderizar, troque de navegador ou verifique a aceleração de hardware.
 
 ## Prompt pronto
 
-O prompt define o escopo do que o modelo constrói e é a única especificação que ele recebe. Ele instrui o Fable 5.2 a buscar a documentação de lançamento e gerar demos interativas. É essa instrução que faz o modelo ler a página oficial e montar o mundo 3D por ray marching.
+Use o texto abaixo sem alterar a estrutura. O pedido de uma demo interativa define o comportamento; a exigência de um único arquivo HTML define a arquitetura; a referência à documentação de lançamento orienta a busca; e o plural demos pede mais de uma visualização.
 
-Revise se o prompt completo entrou antes de enviar. Um prompt vago gera uma demo genérica sem o mundo 3D.
+Se quiser concentrar a resposta no mundo 3D, faça um novo pedido depois da primeira geração. Peça foco em 3D e ray marching e, se necessário, reduza a quantidade de demos. Esses ajustes são orientações em texto; o bloco copiável abaixo preserva o prompt original.
 
 ```
 crie uma demo interativa em um único arquivo HTML para demonstrar o poder do novo Fable 5.2. busque a documentação de lançamento e gere demos que demonstram o poder de forma interativa dessa novidade.
 ```
 
+## Exemplo completo: o mundo 3D
+
+![O mundo 3D responde ao mouse e às teclas H, espaço e E.](figuras/07-exemplo-completo-o-mundo-3d.png)
+
+_O mundo 3D responde ao mouse e às teclas H, espaço e E._
+
+Exemplo: depois de abrir o HTML, o menu mostra as visualizações geradas. Ao entrar em mundo 3D, a cena aparece e o movimento do mouse muda o olhar. O menu faz parte de uma demonstração interativa, com a cena respondendo às ações do usuário.
+
+Pressione H para esconder a interface e deixar a experiência mais imersiva. Pressione espaço para mudar a paleta de cores do céu. Pressione E para variar a textura da cena. Cada controle altera o que o shader calcula no quadro seguinte.
+
+Se os três controles responderem, o arquivo está executando o mundo 3D. Se apenas alguns funcionarem, o arquivo pode estar incompleto e precisa ser gerado novamente. Se nenhum responder, recarregue a página e confira se o HTML foi salvo por inteiro.
+
+## As outras visualizações: enxame, física e contexto
+
+A demonstração também transforma partes do anúncio em experiências visuais. O enxame usa 100 agentes que respondem ao cursor. Você pode digitar ao pressionar Tab e ajustar a velocidade da animação, inclusive para 3x. A cena ilustra a coordenação de agentes; a quantidade de agentes desenhada não é uma medição de quantos subagentes o modelo usou naquela geração.
+
+A visualização de física mostra ondas se espalhando a partir de dois pontos. O texto da demonstração explica que a equação da onda é resolvida ao vivo por diferenças finitas e inclui o experimento da dupla fenda. Diferenças finitas são uma forma de aproximar um cálculo contínuo por etapas discretas, o que permite atualizar a simulação quadro a quadro.
+
+A visualização de contexto usa 1 milhão de tokens. Cada pixel do painel representa um token; a lupa ajuda a percorrer a escala e o scanner encontra um pixel diferente. A janela de contexto indica quanto texto o modelo pode receber e processar em uma mesma interação. Ela não mede, sozinha, a precisão das respostas.
+
+## Os números: preço, capacidade e benchmarks
+
+![Tarifas da API por milhão de tokens de entrada e saída no Fable 5.2 e no Fable 5.1.](figuras/09-os-numeros-preco-capacidade-e-benchmarks.png)
+
+_Tarifas da API por milhão de tokens de entrada e saída no Fable 5.2 e no Fable 5.1._
+
+Os preços citados são tarifas da API, não valores da assinatura do Claude. Os benchmarks são resultados de testes específicos e devem ser lidos com a configuração indicada.
+
+A página oficial informa que os resultados do Fable 5.2 e do Fable 5.1 usam as proteções ativadas, salvo indicação contrária, e o maior esforço disponível quando não especificado.
+
+- US$ 8 por milhão de tokens de entrada e US$ 40 por milhão de tokens de saída no Fable 5.2. O Fable 5.1 custava US$ 10 e US$ 50 nos mesmos critérios, o que representa redução de 20% em cada tarifa; o custo total de um projeto depende do uso.
+- US$ 0,20 por milhão de tokens em leituras de cache. Esse valor descreve as leituras de cache na API e não é o preço de tokens novos.
+- No FrontierCode 2.0, o Fable 5.2 marcou 49,1% com esforço Xhigh, contra 32,4% do Fable 5.1 com o mesmo esforço. O percentual se refere ao benchmark de codificação agêntica e não é um índice de acerto em qualquer tarefa de programação.
+- No FrontierSWE v2, o Fable 5.2 marcou 69,9%, contra 56,3% do Fable 5.1. O resultado é específico desse teste de tarefas de engenharia e não cobre todo trabalho de desenvolvimento.
+- No RoboDojo Sim, o Fable 5.2 marcou 64,9%, contra 27,6% do Fable 5.1. A página informa que a avaliação foi executada internamente e usou o maior esforço disponível; o resultado não representa toda robótica.
+- Em testes com agentes, a Anthropic relata que o Fable 5.2 coordenou centenas ou mais de mil subagentes. O número descreve o relato da empresa sobre aqueles testes e não define quantos subagentes serão usados em cada pedido.
+
 Fonte: <https://www.anthropic.com/claude/fable>
+
+## O que muda na sua prática
+
+Você pode avaliar a capacidade de 3D do modelo com uma tarefa concreta: gerar um arquivo, abrir no navegador, mover a cena e testar os controles. O resultado interativo dá mais informação do que uma imagem bonita, porque mostra o código em execução.
+
+O exercício também separa três coisas que costumam aparecer juntas: a capacidade anunciada pela Anthropic, a visualização criada pela demonstração e o desempenho medido em benchmarks. Cada uma responde a uma pergunta diferente. Para decidir se o modelo serve ao seu trabalho, repita o teste com um problema real e observe se ele conclui a tarefa.
+
+O mundo 3D é um bom começo para quem está vendo o assunto pela primeira vez. Depois de entender o fluxo, você pode testar outros objetivos e comparar os arquivos gerados, mantendo o mesmo critério de prontidão.
 
 ## Teste de pronto
 
-- [ ] Volte ao mundo 3D e repita os três controles: H deve esconder a interface, Espaço deve trocar o céu, E deve mudar a textura.
-- [ ] Se os três responderem, o ray marching está rodando e o Fable 5.2 cumpriu a tarefa.
-- [ ] Se algum falhar, recarregue o arquivo e teste de novo.
-- [ ] O sucesso é ver o mundo renderizado e reagindo, não só o arquivo aberto.
-- [ ] Se nada responder, clique na janela do navegador para dar foco e tente de novo.
+Use esta lista depois de abrir o HTML. Cada item pode ser conferido diretamente na demonstração.
 
-Fonte: <https://www.anthropic.com/claude/fable>
+- [ ] O arquivo HTML abre no navegador e mostra o menu de visualizações.
+- [ ] A visualização mundo 3D renderiza uma cena 3D.
+- [ ] O movimento do mouse muda o olhar dentro da cena.
+- [ ] A tecla H esconde a interface e deixa a experiência imersiva.
+- [ ] A tecla espaço muda a paleta de cores do céu.
+- [ ] A tecla E muda a textura da cena.
+- [ ] Os três controles continuam respondendo depois de recarregar o arquivo salvo.
 
 ## Erros comuns e cuidados
 
-- Conta sem plano pago não exibe o Fable 5.2 no seletor. Resolva isso antes de seguir.
-- Se deixar o esforço no padrão, o resultado sai mais curto e pode faltar parte do mundo 3D. Use Extra.
-- Prompt vago gera demo genérica sem o mundo 3D. Use o prompt completo.
-- O navegador pode bloquear o arquivo local. Permita a execução ou use um servidor simples.
-- Se as teclas não responderem, clique na janela do navegador para dar foco.
-- Use Chrome ou Edge se o arquivo não abrir.
-- Cache reads custam 0,20 dólar por milhão de tokens. US-only inference: 1,1 vezes o preço.
-- Retenção de dados: usar modelos Fable exige retenção de 30 dias por padrão para monitoramento de segurança. Com Enterprise Frontier Safeguards, compatível com zero data retention.
-- Safeguards: consultas de cibersegurança e biologia podem ser roteadas automaticamente para modelos menos capazes. Fable 5.2 tem safeguards tão robustos quanto o Fable 5.1, mas com menos bloqueios desnecessários.
-- O Mythos 5.2 é o mesmo modelo subjacente, com safeguards diferentes, e está disponível apenas para organizações via programas de verificação de cibersegurança e ciências da vida.
-- Os benchmarks são avaliações da Anthropic. Números mais altos não significam necessariamente diferença perceptível no dia a dia.
+Se algum teste falhar, identifique a etapa antes de gerar tudo novamente. A maior parte dos problemas aparece no acesso ao modelo, na integridade do arquivo ou na execução gráfica do navegador.
 
-Fonte: <https://www.anthropic.com/claude/fable>
-
-## Preço e disponibilidade
-
-O Fable 5.2 está disponível para usuários Pro, Max, Ultra, Team e Enterprise. Para desenvolvedores, está no Claude Platform nativamente, em marketplaces disponíveis e na Amazon Web Services, Google Cloud e Microsoft Foundry.
-
-Cache reads custam 0,20 dólar por milhão de tokens.
-
-Está disponível no Claude Platform, nos Claude Models no Google Cloud e no Microsoft Foundry, além do Claude Code.
-
-Para cargas que precisam rodar nos Estados Unidos, a inferência US-only está disponível a 1,1 vezes o preço de entrada e saída.
-
-Fonte: <https://www.anthropic.com/claude/fable>
-
-## Benchmark
-
-![Fable 5.2 lidera o FrontierCode 2.0 com 49,1%.](figuras/11-benchmark.png)
-
-_Fable 5.2 lidera o FrontierCode 2.0 com 49,1%._
-
-A tabela de benchmark compara o Fable 5.2 com o Fable 5.1, o Opus 5.5, o GPT-6 Astra e o Gemini 4 Carbon em várias categorias. Os números são da Anthropic.
-
-- FrontierCode 2.0 (codificação agentiva): Fable 5.2 com 49,1% em esforço Xhigh, o maior de qualquer modelo lançado testado. Fable 5.1: 32,4%. Opus 5.5: 45,5%. GPT-6 Astra: 42,8%. Gemini 4 Carbon: 41,1%.
-- FrontierSWE v2: Fable 5.2 com 69,9% contra 56,3% do Fable 5.1, 62,3% do Opus 5.5, 65,5% do GPT-6 Astra e 61,2% do Gemini 4 Carbon.
-- AutomationBench (fluxos de negócio): 51,4% contra 31,4%, 42,5%, 41,4% e 53,9%.
-- Terminal-Bench-Science 0.1: 74,6% para o Fable 5.2, 75,3% para o Mythos 5.2, 52,6% para o Opus 5.5, 58,7% para o GPT-6 Astra e 68,1% para o Gemini 4 Carbon.
-- WANDR (busca agentiva, relaxado): 82,1% contra 68,7% e 72,3%.
-- OSWorld 2.1 (uso de computador): 89,3% contra 83,5%, 87,2%, 79,5% e 81,5%.
-- Humanity's Last Exam (com ferramentas): 74,2% contra 65,6% e 67,7%.
-- Chartography (leitura de gráficos, sem ferramentas): 73,4% contra 44,8%, 64,4%, 71,0% e 72,5%.
-- Em esforço Medium, o Fable 5.2 pode realizar tarefas desafiadoras com menos tokens que o Fable 5.1. Em esforço High, pontuou cerca de igual ao Opus 5.5 em esforço Max, por cerca de metade do custo por tarefa.
-
-Fonte: <https://www.anthropic.com/claude-fable-and-mythos-5-2>
+- Conta sem acesso: o Fable 5.2 não aparece no seletor. Confira se o plano é Pro, Max, Ultra, Team ou Enterprise e, se necessário, troque de conta ou atualize o plano.
+- Esforço insuficiente: use Extra ou o nível mais alto disponível. Esforço alto dá mais espaço de raciocínio ao modelo, mas não elimina a necessidade de testar o código.
+- Resposta genérica: peça foco em 3D e ray marching. Se a geração travar, reenvie o prompt com menos demos.
+- Arquivo incompleto: aguarde a resposta terminar antes de salvar. Se apenas alguns controles funcionarem, gere o arquivo novamente.
+- Página em branco: abra o console do navegador e verifique erros de script. Recarregue a página e confira se o HTML foi salvo por completo.
+- Cena lenta: feche outras abas pesadas. O ray marching recalcula cada pixel a cada quadro e depende da GPU.
+- Cena sem renderização: troque de navegador ou verifique a aceleração de hardware.
+- Preço e benchmark sem contexto: não trate a tarifa da API como valor da assinatura nem o resultado de um benchmark como garantia para qualquer tarefa.
+- Privacidade: a página oficial informa retenção de dados por 30 dias por padrão para monitoramento de segurança ao usar modelos Fable. Considere essa política antes de incluir informações sensíveis no prompt.
 
 ## Glossário
 
-- Fable 5.2: modelo mais capaz da Anthropic para trabalho técnico, disponível para usuários Pro, Max, Ultra, Team e Enterprise.
-- Mythos 5.2: mesmo modelo subjacente do Fable 5.2, com safeguards diferentes, disponível apenas para organizações via programas de verificação.
-- Ray marching: técnica de desenho 3D que calcula cada pixel a cada quadro, sem modelos prontos nem estruturas.
-- Shader: programa que roda na GPU para renderizar gráficos.
-- Subagente: agente auxiliar que o modelo coordena em tarefas longas.
+- HTML: linguagem de marcação usada para estruturar a página que o navegador abre.
+- Arquivo único: demonstração cuja interface, código e controles ficam no mesmo HTML.
+- Shader: programa executado pela GPU para calcular a aparência da cena.
+- Ray marching: técnica que avança raios pelo espaço em busca de superfícies para desenhar a imagem.
+- Raio: direção de cálculo que parte da câmera e atravessa um ponto da imagem.
+- Pixel: menor unidade visual de uma imagem digital.
+- Quadro: uma imagem calculada e exibida em um instante da animação.
+- GPU: processador especializado em cálculos gráficos usado para executar o shader.
+- Aceleração de hardware: uso da GPU para executar parte do trabalho gráfico.
+- Malha poligonal: representação de objetos 3D por vértices, arestas e polígonos.
+- Subagente: processo delegado pelo modelo para executar uma parte do trabalho.
 - Token: unidade de texto processada pelo modelo.
-- Esforço (effort): quanto o modelo pensa antes de responder. Extra libera mais passos de raciocínio e coordenação de subagentes.
-- HTML autocontido: arquivo único sem dependências externas, que roda direto no navegador.
-- Safeguard: proteção de segurança que pode rotear consultas sensíveis para modelos menos capazes.
-- Fast mode: modo opcional que acelera a geração de tokens em até 2,5 vezes.
-- Data retention: retenção de dados por 30 dias por padrão para monitoramento de segurança.
-
-Fonte: <https://www.anthropic.com/claude/fable>
+- Janela de contexto: quantidade de tokens que o modelo pode considerar em uma mesma interação.
+- Benchmark: teste com tarefas e critérios definidos para comparar desempenho.
+- Esforço: controle que define quanto trabalho de raciocínio o modelo pode usar.
+- API: interface que permite integrar o modelo a outros programas.
 
 ## Plano de 7 dias
 
-- Dia 1: acessar a aplicação web do Claude, entrar na conta e confirmar o plano pago.
-- Dia 2: selecionar o modelo Fable 5.2 e definir o esforço em Extra.
-- Dia 3: colar o prompt completo e gerar o arquivo HTML.
-- Dia 4: abrir o HTML no navegador e explorar o mundo 3D por ray marching.
-- Dia 5: testar os controles H, Espaço e E e explorar as outras quatro demos.
-- Dia 6: repetir o fluxo com um prompt próprio, mudando o escopo da demo.
-- Dia 7: revisar o resultado, comparar com o Fable 5.1 e anotar o que funcionou.
+- Dia 1: confira a conta, o plano, o navegador, a GPU e o espaço livre para salvar o HTML.
+- Dia 2: acesse o Claude, selecione o Fable 5.2 e defina o esforço Extra ou o nível mais alto disponível.
+- Dia 3: cole o prompt da demonstração, envie e aguarde a geração terminar.
+- Dia 4: salve o HTML completo e abra o arquivo no navegador para conferir o menu.
+- Dia 5: entre na visualização mundo 3D e mova o mouse para olhar ao redor.
+- Dia 6: teste H, espaço e E e use a lista de erros comuns se algum controle falhar.
+- Dia 7: repita o fluxo com o arquivo salvo e teste outro prompt, comparando o resultado com a primeira demonstração.
 
 ## Para onde ir depois
 
-- Teste o fluxo com seu próprio pedido e veja o que o modelo entrega.
-- Leia a página oficial do Fable 5.2 para ver os casos de uso e os benchmarks completos.
-- Consulte a página de preços para detalhes de custo por milhão de tokens.
-- Experimente o fast mode para tarefas que exigem mais velocidade.
-- Use o Claude Code para integrar o Fable 5.2 em projetos de desenvolvimento.
+Guarde o arquivo HTML para repetir a demonstração offline. A partir daí, use o mesmo teste de pronto em cada arquivo novo e amplie o objetivo aos poucos.
+
+- Repita a demonstração offline e use o teste de pronto sempre que gerar um arquivo novo.
+- Explore as visualizações de enxame, física e contexto para relacionar cada uma ao anúncio do modelo.
+- Teste outros prompts e compare os resultados, mantendo o mesmo objetivo e o mesmo critério de avaliação.
+- Se quiser acompanhar os usos técnicos e a disponibilidade do modelo, use a página oficial da Anthropic.
 
 Fonte: <https://www.anthropic.com/claude/fable>
 
 ## Além do vídeo
 
-- Detalhes dos benchmarks por categoria (FrontierCode 2.0, FrontierSWE v2, AutomationBench, Terminal-Bench-Science, OSWorld, WANDR, HLE, Chartography).
-- Casos de uso detalhados: codificação, agentes, pesquisa científica, análise de dados e ML, análise financeira, design 3D.
-- Depoimentos de clientes (Vercel, Shopify, Datadog, Unity, Uber, Oracle, iGent, Snowflake, Cognition).
-- Mythos 5.2 e programas de verificação de cibersegurança e ciências da vida.
-- Safeguards, retenção de dados de 30 dias e Enterprise Frontier Safeguards.
-- Fast mode e inferência US-only.
-- Disponibilidade em AWS, Google Cloud e Microsoft Foundry.
-- Migração de serviço de Python para Rust, 26 vezes mais rápido no início.
-- Protótipo de sistema operacional feito pelo Claude em 8 dias com mais de 1.000 subagentes.
-- Auditoria de segurança de 10 a 12 horas com cerca de 170 agentes revisores.
-- Hypervisor com mais de 3.500 provas verificadas por máquina.
+- O acesso ao Fable 5.2 também é oferecido no Claude Platform, em marketplaces, na Amazon Web Services, no Google Cloud e no Microsoft Foundry.
+- O modo rápido entrega até 2,5 vezes mais velocidade e custa US$ 16 por milhão de tokens de entrada e US$ 80 por milhão de tokens de saída.
+- A inferência restrita aos Estados Unidos é oferecida com preço de 1,1 vez as tarifas de entrada e saída.
+- Consultas sinalizadas pelas proteções de cibersegurança e biologia podem ser encaminhadas para modelos menos capazes; a Anthropic oferece programas de verificação para trabalhos legítimos afetados.
+- O Enterprise Frontier Safeguards permite executar o monitoramento de segurança na infraestrutura do cliente e ser compatível com retenção zero de dados.
+- A Unity relata melhora na criação de cenas 3D do zero e em tarefas mais difíceis de desenvolvimento de jogos.
+- A iGent relata uma sessão em que o modelo construiu um hipervisor com mais de 3.500 provas verificadas por máquina.
+- A tabela oficial também traz resultados em design de proteínas, trabalho do conhecimento, análise de gráficos e outras categorias.
