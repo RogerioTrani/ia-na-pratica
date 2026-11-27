@@ -1,6 +1,6 @@
 # MiniMind treina LLM de 64M em 2 horas por 3 yuans
 
-_2026-11-23 · tutorial_
+_2026-11-26 · tutorial_
 
 Esta apostila ensina a treinar do zero um modelo de linguagem de cerca de 64 milhões de parâmetros com PyTorch puro, usando o projeto MiniMind. As 2 horas do título são o tempo medido pelo autor para uma época de fine-tuning supervisionado em uma única NVIDIA 3090, e os 3 yuans (moeda chinesa) são o custo de aluguel da GPU nesse período. Você vai ver por que um LLM pequeno pode ser treinado em poucas horas, quais são os requisitos, como clonar e instalar, baixar os dados, rodar o pretrain e o fine-tuning, testar no terminal e abrir a interface web. Também cobre como conferir se o treino funcionou, erros comuns, glossário, plano de 7 dias e para onde ir depois. O foco é entender cada etapa, não apenas copiar comandos.
 
