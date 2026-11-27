@@ -4,6 +4,7 @@ Todas as apostilas dos vídeos do canal, as mais novas primeiro. As das séries 
 
 | Data e título | Formato | Apostila |
 | --- | --- | --- |
+| 2026-11-27: Meta lança o Llama 5 com 400 bi | noticias | [md](noticias/2026-11/2026-11-27-meta-lanca-o-llama-5-com-400-bi/apostila.md) · [pdf](noticias/2026-11/2026-11-27-meta-lanca-o-llama-5-com-400-bi/apostila.pdf) |
 | 2026-11-26: VoiceStudio, é alternativa local ao ElevenLabs | tutoriais | [md](tutoriais/2026-11/2026-11-26-voicestudio-e-alternativa-local-ao-elevenlabs/apostila.md) · [pdf](tutoriais/2026-11/2026-11-26-voicestudio-e-alternativa-local-ao-elevenlabs/apostila.pdf) |
 | 2026-11-26: Um prompt de 11 etapas monta seu plano de produto digital | tutoriais | [md](tutoriais/2026-11/2026-11-26-um-prompt-de-11-etapas-monta-seu-plano-de-produto-digital/apostila.md) · [pdf](tutoriais/2026-11/2026-11-26-um-prompt-de-11-etapas-monta-seu-plano-de-produto-digital/apostila.pdf) |
 | 2026-11-26: Together AI lança Hallmark, estilo grátis para Claude Code | noticias | [md](noticias/2026-11/2026-11-26-together-ai-lanca-hallmark-estilo-gratis-para-claude-code/apostila.md) · [pdf](noticias/2026-11/2026-11-26-together-ai-lanca-hallmark-estilo-gratis-para-claude-code/apostila.pdf) |
