@@ -4,6 +4,7 @@ Todas as apostilas dos vídeos do canal, as mais novas primeiro. As das séries 
 
 | Data e título | Formato | Apostila |
 | --- | --- | --- |
+| 2026-11-28: Para manter o PR verde, o Claude Ship roda testes na sua máquina | tutoriais | [md](tutoriais/2026-11/2026-11-28-para-manter-o-pr-verde-o-claude-ship-roda-testes-na-sua-maqu/apostila.md) · [pdf](tutoriais/2026-11/2026-11-28-para-manter-o-pr-verde-o-claude-ship-roda-testes-na-sua-maqu/apostila.pdf) |
 | 2026-11-27: Vídeo igual ao Seedance 2.5, mas 10x mais barato | filmes | [md](filmes/2026-11/2026-11-27-video-igual-ao-seedance-2-5-mas-10x-mais-barato/apostila.md) · [pdf](filmes/2026-11/2026-11-27-video-igual-ao-seedance-2-5-mas-10x-mais-barato/apostila.pdf) |
 | 2026-11-27: Uma mensagem vira roteiro, prévia e vídeo no Stickman Video Director | noticias | [md](noticias/2026-11/2026-11-27-uma-mensagem-vira-roteiro-previa-e-video-no-stickman-video-d/apostila.md) · [pdf](noticias/2026-11/2026-11-27-uma-mensagem-vira-roteiro-previa-e-video-no-stickman-video-d/apostila.pdf) |
 | 2026-11-27: Um prompt de 11 etapas monta seu plano de produto digital | tutoriais | [md](tutoriais/2026-11/2026-11-27-um-prompt-de-11-etapas-monta-seu-plano-de-produto-digital/apostila.md) · [pdf](tutoriais/2026-11/2026-11-27-um-prompt-de-11-etapas-monta-seu-plano-de-produto-digital/apostila.pdf) |
