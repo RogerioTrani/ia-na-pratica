@@ -4,6 +4,7 @@ Todas as apostilas dos vídeos do canal, as mais novas primeiro. As das séries 
 
 | Data e título | Formato | Apostila |
 | --- | --- | --- |
+| 2026-11-28: SpaceX usa usina própria para ligar IA mais rápido | noticias | [md](noticias/2026-11/2026-11-28-spacex-usa-usina-propria-para-ligar-ia-mais-rapido/apostila.md) · [pdf](noticias/2026-11/2026-11-28-spacex-usa-usina-propria-para-ligar-ia-mais-rapido/apostila.pdf) |
 | 2026-11-28: Para manter o PR verde, o Claude Ship roda testes na sua máquina | tutoriais | [md](tutoriais/2026-11/2026-11-28-para-manter-o-pr-verde-o-claude-ship-roda-testes-na-sua-maqu/apostila.md) · [pdf](tutoriais/2026-11/2026-11-28-para-manter-o-pr-verde-o-claude-ship-roda-testes-na-sua-maqu/apostila.pdf) |
 | 2026-11-28: Nvidia negocia a criadora do Mercury por mais de US$ 500 milhões | noticias | [md](noticias/2026-11/2026-11-28-nvidia-negocia-a-criadora-do-mercury-por-mais-de-us-500-milh/apostila.md) · [pdf](noticias/2026-11/2026-11-28-nvidia-negocia-a-criadora-do-mercury-por-mais-de-us-500-milh/apostila.pdf) |
 | 2026-11-28: Muse tem 10 milhões de downloads e alertas sobre dados de terceiros | noticias | [md](noticias/2026-11/2026-11-28-muse-tem-10-milhoes-de-downloads-e-alertas-sobre-dados-de-te/apostila.md) · [pdf](noticias/2026-11/2026-11-28-muse-tem-10-milhoes-de-downloads-e-alertas-sobre-dados-de-te/apostila.pdf) |
