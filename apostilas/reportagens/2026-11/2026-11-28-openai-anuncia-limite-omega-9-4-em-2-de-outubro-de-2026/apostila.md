@@ -2,147 +2,273 @@
 
 _2026-11-28 · reportagem_
 
-Em 2 de outubro de 2026, a OpenAI anunciou um novo limite para a multiplicação de matrizes sobre os números complexos: o expoente ômega fica abaixo de 9/4, ou seja, menos de 2,25. Esse número mede quantas operações aritméticas são necessárias, no limite em que as dimensões das matrizes crescem, para multiplicá-las. O anúncio saiu em um repositório oficial da OpenAI no GitHub e o argumento foi atribuído a um modelo interno da empresa, sem assinatura humana imediata — o que gerou debate na comunidade. Em 6 de novembro de 2026, Dogan, Lysikov, Sakabe e Walter publicaram uma prova simplificada no arXiv que vale para qualquer corpo matemático, não só os complexos, e formalizaram o resultado em Lean dentro do repositório openai/math. Entenda aqui o que esse limite significa, por que ele importa para quem treina modelos de IA e quais são os limites práticos desse avanço.
+A OpenAI publicou em 2 de outubro de 2026 um limite teórico novo para o custo de multiplicar matrizes: o expoente omega fica em no máximo 9/4 sobre os números complexos, com argumento atribuído a um modelo interno da empresa. Esta apostila explica o que é esse expoente, por que ele tem piso 2 e o que cada anúncio de setembro a novembro afirma. Você vai entender como um grupo de matemáticos refez a prova por outro caminho, estendeu o resultado a todo corpo e entregou uma formalização em Lean que uma máquina confere. Ao final, você saberá separar o que está verificado do que ainda é manuscrito em verificação, explicar por que o resultado não acelera o seu treino de amanhã e rodar na sua máquina a checagem da prova formal.
 
-## O fato: um número menor para multiplicar matrizes
+## O contexto
 
-Multiplicar duas matrizes grandes é uma das operações mais caras de todo o treinamento e da inferência de modelos de IA. Cada modelo grande armazena bilhões de parâmetros organizados em matrizes, e a cada passo de treino essas matrizes precisam ser multiplicadas milhares ou milhões de vezes.
+Multiplicar matrizes é a operação que mais se repete em IA. Cada camada densa de uma rede neural e cada passo de atenção de um transformer se resumem a produtos de matrizes, tanto no treino quanto na inferência. O custo dessa operação define boa parte da conta de computação de qualquer modelo.
 
-Há décadas se busca um algoritmo que faça isso mais rápido. O algoritmo clássico roda em O(n³), onde n é a dimensão da matriz — ou seja, o número de operações cresce cubicamente com o tamanho. Em 2 de outubro de 2026, a OpenAI anunciou que o expoente ômega da multiplicação de matrizes sobre os números complexos é menor que 9/4, aproximadamente 2,25.
+O método ensinado na escola, linha por coluna, gasta da ordem de n³ operações aritméticas para multiplicar duas matrizes quadradas de lado n. Essa curva cresce depressa: quando o lado dobra, o trabalho fica oito vezes maior, porque 2³ é 8.
 
-Isso significa que, quando as dimensões das matrizes tendem ao infinito, dá para fazer a multiplicação com um número de operações que cresce mais devagar do que o cubo — algo entre n^2,25 e n^3. O anúncio foi publicado no repositório oficial openai/math no GitHub, com o argumento atribuído a um modelo interno da OpenAI.
+Em 1969, Volker Strassen publicou o artigo Gaussian Elimination Is Not Optimal e mostrou que dá para fazer melhor que o cubo, aplicando suas fórmulas de forma recursiva. Desde então, a matemática procura saber até onde esse expoente pode cair. Os anúncios de 2026 são o capítulo mais recente dessa busca, com uma novidade: o argumento é atribuído a um modelo de IA.
+
+Fonte: <https://doi.org/10.1007/BF02165411>
+
+## O que é o expoente omega
+
+Omega é o nome do expoente ideal da multiplicação de matrizes. A definição formal, registrada no MathWorld, diz que omega sobre um corpo F é o ínfimo dos expoentes tau tais que, para todo epsilon maior que zero, duas matrizes n por n sobre F podem ser multiplicadas com O(n^(tau+epsilon)) operações aritméticas. Em linguagem simples: omega é o menor valor de que os algoritmos conseguem se aproximar quando as matrizes ficam cada vez maiores.
+
+Três detalhes da definição mudam a leitura de qualquer notícia sobre o tema. Primeiro, a constante escondida na notação O pode depender de epsilon, mas não de n. Segundo, as operações contadas são soma, subtração e multiplicação de elementos do corpo. Terceiro, a complexidade em bits, que mede o trabalho real com números de muitos dígitos, é outra pergunta e fica fora dessa conta.
+
+Omega depende do corpo, que é o conjunto de números em que as entradas da matriz vivem. Números complexos formam um corpo, e existem corpos de característica positiva, em que somar o número 1 a si mesmo uma quantidade finita de vezes dá zero. Um limite provado sobre os complexos não vale automaticamente nos outros corpos, e por isso cada anúncio diz onde o resultado se aplica.
+
+Fonte: <https://mathworld.wolfram.com/MatrixMultiplicationExponent.html>
+
+## Por que o piso é 2
+
+O produto de duas matrizes n por n tem n² entradas. Qualquer algoritmo precisa ao menos produzir cada uma delas, então o expoente nunca desce abaixo de 2. Esse é o piso clássico de omega.
+
+Entre o piso 2 e o cubo do método usual existe um intervalo, e a pesquisa trabalha dentro dele. Cada resultado novo é um limite superior: uma prova de que omega é no máximo certo valor. A conjectura de que omega vale exatamente 2 ficou décadas em aberto.
+
+Fonte: <https://mathworld.wolfram.com/MatrixMultiplicationExponent.html>
+
+## Os anúncios de 24 de setembro
+
+Em 24 de setembro de 2026, o repositório de matemática da OpenAI recebeu dois manuscritos sobre o tema. O primeiro, Complex Matrix Multiplication Below 2.258 and Rectangular Bounds, anuncia um limite abaixo de 2,258 para o expoente. Segundo o registro do MathWorld, o anúncio cobre todo corpo de característica zero e todas as características positivas fora de um conjunto finito de exceções.
+
+O segundo manuscrito, Staggered Extraction for Exact Matrix Multiplication Over Every Field, traz um limite mais fraco, com a vantagem de valer sobre todo corpo fixo. Os dois textos mostram o padrão que se repete na história inteira: um número melhor costuma vir com um recorte menor de corpos, e ampliar o recorte é um trabalho à parte.
+
+Fonte: <https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/Complex-Matrix-Multiplication-Below-2.258-and-Rectangular-Bounds-September-24-2026/Complex-Matrix-Multiplication-Below-2.258-and-Rectangular-Bounds-September-24-2026.pdf>
+
+## O limite de 9/4, de 2 de outubro
+
+Em 2 de outubro de 2026, a OpenAI publicou o manuscrito An Upper Bound of 9/4 for the Matrix Multiplication Exponent. Ele anuncia que omega é no máximo 9/4 sobre os números complexos. Em decimal, 9/4 é 2,25, um degrau pequeno abaixo dos 2,258 de setembro.
+
+O argumento é atribuído a um modelo interno da OpenAI, ainda sem nome público. Essa origem é a parte da notícia que interessa a quem acompanha IA: um resultado em um problema de pesquisa aberto há décadas, proposto por um modelo. Resultado com essa origem pede checagem de fora, e ela veio em duas etapas.
+
+A primeira etapa aconteceu em 7 de outubro, quando o VibeMathed revisou o enunciado formal do limite sobre os complexos. Revisar o enunciado garante que a frase matemática escrita para a máquina diz o que se pretende. Ainda faltava alguém refazer a prova por outro caminho.
 
 Fonte: <https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/Matrix-Multiplication-Nine-Fourths-October-2-2026/paper.pdf>
 
-## O que é o expoente ômega
+## De onde vêm os manuscritos da OpenAI
 
-O expoente ômega, escrito como ω_F sobre um campo F, é o menor expoente tal que duas matrizes n×n sobre F podem ser multiplicadas com no máximo O(n^(ω+ε)) operações aritméticas, para qualquer ε maior que zero. As operações contadas são adição, subtração e multiplicação de elementos do campo.
+O repositório openai/math reúne manuscritos matemáticos e artefatos de prova produzidos por um modelo interno da OpenAI. A empresa explica que avalia seus modelos em problemas de pesquisa em aberto e que ampliou essas avaliações depois que as avaliações matemáticas anteriores ficaram saturadas. Alguns resultados se apoiam em resultados anteriores produzidos pelos próprios modelos.
 
-Esse número descreve o crescimento assintótico — ou seja, o comportamento quando n fica muito grande. Ele não diz qual algoritmo é mais rápido em um tamanho finito específico, nem substitui a análise de complexidade bit a bit. O que ele captura é a tendência de longo prazo: se ω for menor, a multiplicação escala mais devagar conforme as matrizes crescem.
+A própria OpenAI descreve o conteúdo como dado bruto de pesquisa, em vez de artigos acadêmicos polidos. A coleção inclui resultados em estágios diferentes de verificação, parte deles sem formalização em Lean, e o texto do repositório avisa que resultados ainda sem formalização podem ter problemas. A empresa diz também que deixa para a comunidade matemática as questões de crédito, precedência e trabalho concorrente.
 
-O limite inferior conhecido era 2, vindo da necessidade de operar com cada entrada da matriz geral. A conjectura em aberto é saber se esse limite inferior pode ser superado — e o resultado da OpenAI mexe justamente nessa fronteira.
+Para o leitor, isso define como tratar cada manuscrito: como uma afirmação a ser conferida. O que transforma a afirmação em resultado aceito é a verificação, seja por formalização, seja por matemáticos que refazem a prova.
 
-## O anúncio original: o que a OpenAI publicou
-
-Em 2 de outubro de 2026, a OpenAI publicou no repositório openai/math um preprint intitulado 'Matrix-Multiplication-Nine-Fourths-October-2-2026'. O documento afirma que o expoente da multiplicação de matrizes sobre os números complexos é menor que 9/4.
-
-O argumento apresentado foi atribuído a um modelo interno não divulgado da OpenAI. A própria documentação do repositório descreve esse material como 'raw research data', ou seja, dados brutos de pesquisa, e admite que nem tudo está formalizado em prova assistida por computador. Essa ausência de verificação humana imediata é o ponto que mais gerou discussão entre matemáticos.
-
-A OpenAI também já havia anunciado resultados anteriores: um limite sobre todo campo de característica zero e sobre características positivas fora de um conjunto finito excepcional, além de uma bound retangular (matrizes de dimensões diferentes) abaixo de 2,258. O resultado novo estende o alcance do limite.
-
-- Procure o preprint no repositório openai/math e leia a seção de declaração do resultado para entender como o expoente é definido.
-- Observe que esse conjunto de dados se autodenomina 'raw research data': considere como rascunho de pesquisa, não como prova publicada em revista revisada por pares.
+- O catálogo atual tem 730 manuscritos organizados em 375 famílias. Uma família agrupa artigos relacionados, como um resultado principal, argumentos complementares, consequências e provas alternativas.
+- Ao longo da avaliação, o modelo recebeu cerca de 4.000 problemas. O catálogo é o que restou depois de agrupar as saídas e exigir um nível adequado de relevância.
+- Cada resultado usou, em média, três horas de computação de raciocínio do ChatGPT Pro com o modelo interno.
+- Cerca de 42% dos resultados principais do repositório têm formalização em Lean. Os demais ainda dependem de conferência.
+- Correções e revisões entram como versões novas, e as versões anteriores continuam acessíveis.
 
 Fonte: <https://github.com/openai/math>
 
-## A prova simplificada: Dogan et al. e a generalização para qualquer corpo
+## A prova simplificada de Doğan, Lysikov, Sakabe e Walter
 
-Em 6 de novembro de 2026, Mahmut Levent Doğan, Vladimir Lysikov, Keiya Sakabe e Michael Walter publicaram no arXiv o artigo 'Tensor value and the 9/4 bound for matrix multiplication' (arxiv.org/abs/2611.09716). O trabalho apresenta uma exposição simplificada do resultado da OpenAI.
+Em 6 de novembro de 2026, Mahmut Levent Doğan, Vladimir Lysikov, Keiya Sakabe e Michael Walter enviaram ao arXiv o artigo Tensor value and the 9/4 bound for matrix multiplication. Os autores apresentam o texto como uma exposição do resultado da OpenAI, com uma prova de que o expoente é no máximo 9/4 válida sobre todo corpo.
 
-A prova usa uma variante fracionária simetrizada do valor tensorial, introduzida por Coppersmith e Winograd, no lugar dos pontos espectrais usados na prova original. Os autores demonstram uma desigualdade de superaditividade para potências desse valor em somas diretas parciais, e combinam isso com degenerações de tensores de multiplicação polinomial vindas da prova da OpenAI.
+A ferramenta principal é uma variante fracionária e simetrizada do valor tensorial, medida introduzida por Coppersmith e Winograd. Ela entra no lugar dos pontos espectrais, também chamados de caracteres tensoriais, usados na prova original. Os autores provam uma desigualdade de superaditividade para uma potência desse valor em somas parcialmente diretas, nas quais as parcelas compartilham um fator tensorial e ocupam subespaços independentes nos outros dois. Essa desigualdade, combinada com as degenerações dos tensores de multiplicação de polinômios que vêm da prova da OpenAI, entrega o limite.
 
-O resultado provado vale sobre qualquer corpo — inclusive corpos de característica positiva, onde a prova original não se aplicava diretamente. Isso amplia o alcance do limite: antes ele era declarado para os complexos; agora está formalizado para uma classe muito maior de campos.
-
-- Leia o resumo e o abstract do artigo no arXiv para identificar a afirmação central: o expoente é menor ou igual a 9/4 sobre todo campo.
-- Procure na seção de ferramentas matemáticas como o valor tensorial fracionário simetrizado é definido — é um conceito que aparece em complexidade computacional e teoria da representação.
+O ganho é duplo. O limite deixa de valer só sobre os complexos e passa a valer em todo corpo, inclusive os de característica positiva. E a prova vem acompanhada de uma formalização em Lean. Os autores citam ainda outras extensões do limite a corpos arbitrários.
 
 Fonte: <https://arxiv.org/abs/2611.09716>
 
 ## A formalização em Lean
 
-Os mesmos autores publicaram a formalização do resultado no idioma de prova assistida Lean, dentro do repositório openai/math. Isso significa que o argumento foi verificado por um sistema computacional, reduzindo a chance de erro manual na demonstração.
+Lean é um assistente de provas: uma linguagem em que cada passo de uma demonstração é escrito de forma que um programa confere a validade de todos eles. O repositório qit-lmu/omega traz a formalização do manuscrito em Lean com a biblioteca mathlib. O teorema principal está no arquivo Omega/Main.lean e aparece no bloco abaixo.
 
-O repositório da OpenAI mantém uma biblioteca Lean com as provas já formalizadas e indica que cerca de 42% dos resultados principais estão formalizados. O resultado do expoente 9/4 está entre eles, o que dá à comunidade uma verificação independente do anúncio original.
+A leitura do enunciado é direta: para qualquer tipo K que seja um corpo, omega de K é menor ou igual a 9/4. O repositório afirma que o teorema vale sobre todo corpo, sem hipótese sobre característica, cardinalidade ou fecho algébrico. A prova usa valor tensorial fracionário e simetrizado, degenerações da multiplicação de polinômios e um argumento elementar de crescimento, sem pontos espectrais.
 
-- Acesse a biblioteca Lean no repositório openai/math e localize a prova associada ao preprint de outubro de 2026.
-- Confira no catálogo de formalizações qual versão do resultado está coberta e quais requisitos da ferramenta são necessários.
+Dois números ajudam a medir a cobertura. Todas as entradas matemáticas do blueprint auditado estão formalizadas, o que abrange 34 ambientes numerados ativos do manuscrito e 14 equações rotuladas. A biblioteca conferida não contém sorry, a marca que o Lean usa para um trecho de prova deixado em branco, nem axiomas próprios do projeto.
+
+```
+theorem MatrixMultiplication.omega_le_nine_quarters
+    (K : Type u) [Field K] :
+    MatrixMultiplication.omega K ≤ (9 : ℝ) / 4
+```
+
+Fonte: <https://github.com/qit-lmu/omega>
+
+## O manuscrito de 24 de novembro
+
+Em 24 de novembro de 2026, a OpenAI publicou no mesmo repositório o manuscrito The matrix multiplication exponent is nine fourths. Ele afirma que omega é exatamente 9/4 em todo corpo.
+
+A diferença em relação aos passos anteriores é grande. Até aqui, todos os resultados eram limites superiores: omega é no máximo certo valor. Dizer que omega é exatamente 9/4 exige também o outro lado, uma prova de que nenhum algoritmo se aproxima de expoente menor. Isso responderia à pergunta que ficou décadas em aberto, com uma resposta diferente do piso 2.
+
+Essa afirmação tem o status que o repositório dá a todos os seus manuscritos: dado bruto de pesquisa, em estágios diferentes de verificação. A formalização em Lean do grupo de Doğan cobre o limite superior, omega menor ou igual a 9/4.
+
+Fonte: <https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf>
+
+## Os números, um por um
+
+![Barras comparam os expoentes: 3 do método usual, 2,258, 9/4 (2,25) e o piso 2.](figuras/10-os-numeros-um-por-um.png)
+
+_Barras comparam os expoentes: 3 do método usual, 2,258, 9/4 (2,25) e o piso 2._
+
+- 3: expoente do método usual, que gasta da ordem de n³ operações aritméticas para matrizes de lado n.
+- Abaixo de 2,258: limite anunciado pela OpenAI em 24 de setembro de 2026, no manuscrito sobre multiplicação de matrizes complexas.
+- 9/4, ou 2,25: limite superior anunciado em 2 de outubro de 2026 sobre os números complexos e provado em novembro sobre todo corpo.
+- 2: piso clássico, porque o produto tem n² entradas.
+- Um quarto: distância entre 2,25 e o piso 2.
+- Todos esses valores são expoentes de crescimento. Eles comparam curvas quando n tende ao infinito e não dizem quantos segundos um produto leva em um tamanho específico.
+
+Fonte: <https://mathworld.wolfram.com/MatrixMultiplicationExponent.html>
+
+## Como funciona na prática
+
+Imagine que uma equipe treina um modelo e lê a manchete sobre o expoente 9/4. A pergunta natural é se o treino da semana seguinte fica mais rápido. A resposta é que o treino continua com as mesmas bibliotecas e o mesmo tempo.
+
+O motivo está na definição. Omega descreve o crescimento do custo quando a matriz tende ao infinito, e a notação O esconde uma constante. O expoente sozinho não determina qual algoritmo é o mais rápido em um tamanho finito, como o das matrizes que cabem em uma GPU. Um método de expoente menor pode carregar uma constante tão grande que só compensaria em tamanhos fora do alcance prático.
+
+A formalização tem o mesmo cuidado. O repositório em Lean define omega de K como o logaritmo na base dois do posto assintótico do tensor de multiplicação de matrizes 2 por 2, e avisa que a interpretação em operações aritméticas é expositiva: o projeto não formaliza um modelo computacional nem prova que o expoente de complexidade desse modelo é igual a omega. O que mudou foi o teto teórico do que um algoritmo pode alcançar.
+
+Fonte: <https://github.com/qit-lmu/omega>
+
+## Linha do tempo
+
+![Linha do tempo de 1969 a outubro de 2026, de Strassen ao limite superior de 9/4.](figuras/12-linha-do-tempo.png)
+
+_Linha do tempo de 1969 a outubro de 2026, de Strassen ao limite superior de 9/4._
+
+- 1969: Strassen publica Gaussian Elimination Is Not Optimal e mostra que o expoente pode ficar abaixo de 3.
+- 24 de setembro de 2026: a OpenAI publica o manuscrito com limite abaixo de 2,258 e limites para matrizes retangulares.
+- 24 de setembro de 2026: a OpenAI publica também o manuscrito Staggered Extraction, com um limite mais fraco que vale sobre todo corpo fixo.
+- 2 de outubro de 2026: a OpenAI publica o limite superior de 9/4 sobre os números complexos, com argumento atribuído a um modelo interno.
+- 7 de outubro de 2026: o VibeMathed revisa o enunciado formal do limite 9/4 sobre os complexos.
+- 6 de novembro de 2026: Doğan, Lysikov, Sakabe e Walter enviam ao arXiv a prova simplificada, válida sobre todo corpo, com formalização em Lean.
+- 24 de novembro de 2026: a OpenAI publica o manuscrito que afirma que omega é exatamente 9/4 em todo corpo.
+
+Fonte: <https://mathworld.wolfram.com/MatrixMultiplicationExponent.html>
+
+## Quem ganha e quem perde
+
+![Caminho do resultado: proposta do modelo, revisão, prova refeita e formalização em Lean.](figuras/13-quem-ganha-e-quem-perde.png)
+
+_Caminho do resultado: proposta do modelo, revisão, prova refeita e formalização em Lean._
+
+Ganha a teoria da complexidade, que recebeu um teto mais baixo para um dos seus problemas centrais e uma prova mais simples, válida em todo corpo. Ganha também quem avalia modelos de IA: o caminho do resultado mostra um processo completo, em que um modelo propôs o argumento, um site independente revisou o enunciado, um grupo de matemáticos refez a prova por outra técnica e a formalização em Lean deixou tudo conferível por máquina.
+
+Quem esperava um ganho imediato de velocidade fica sem novidade. As bibliotecas de álgebra linear que rodam nas GPUs seguem as mesmas, porque o resultado trata de crescimento assintótico.
+
+A lição para quem consome notícia de IA é sobre confiança. Uma afirmação matemática gerada por modelo ganha peso quando passa por conferência externa, e a notícia traz os dois casos lado a lado: o limite superior de 9/4, já formalizado, e a igualdade de 24 de novembro, ainda com status de manuscrito.
+
+## O que ainda não se sabe
+
+- A afirmação de que omega é exatamente 9/4 vem de um manuscrito de 24 de novembro que a própria OpenAI enquadra como dado bruto de pesquisa. Trate como afirmação em verificação.
+- O que está formalizado em Lean no repositório qit-lmu/omega é o limite superior, omega menor ou igual a 9/4 sobre todo corpo.
+- A formalização prova um enunciado sobre posto assintótico de tensores. A ligação com a contagem de operações aritméticas é expositiva e fica fora do que a máquina conferiu.
+- A revisão do VibeMathed de 7 de outubro tratou do enunciado formal do limite sobre os complexos.
+- Cerca de 42% dos resultados principais do repositório da OpenAI têm formalização em Lean, e a empresa avisa que resultados sem formalização podem ter problemas.
+- Operação aritmética e complexidade em bits são medidas diferentes. O expoente omega conta só a primeira.
+- Nenhum desses resultados indica qual algoritmo é mais rápido em tamanho finito.
 
 Fonte: <https://github.com/openai/math>
 
-## O que muda na prática
+## O que você pode fazer: conferir a prova na sua máquina
 
-Um limite assintótico menor para a multiplicação de matrizes reduz o número de operações aritméticas necessárias quando as dimensões das matrizes crescem. Isso tem impacto direto no custo computacional de treinar e inferir modelos grandes, já que a multiplicação de matrizes é uma das operações dominantes nesses fluxos.
+A formalização é pública e qualquer pessoa pode pedir ao Lean que confira a prova. Os comandos rodam a partir da raiz do repositório qit-lmu/omega. As versões de Lean e mathlib ficam fixadas nos arquivos lean-toolchain, lakefile.toml e lake-manifest.json.
 
-Mas há um detalhe importante: o ganho real só aparece se existir um algoritmo que consiga efetivamente alcançar esse limite. O número ω < 9/4 é um teto teórico; ele não garante que um método prático já opere nesse nível. Algoritmos como os baseados em Strassen e suas variantes mostram que há caminhos abaixo de n³, mas cada avanço exige implementação eficiente e escalável.
+1. Instale o Git e o elan e garanta que o comando lake esteja no PATH. Resultado esperado: o elan seleciona sozinho a versão de Lean fixada pelo repositório.
+2. Na raiz do repositório, rode o primeiro comando do bloco abaixo, lake exe cache get. Resultado esperado: o download dos artefatos pré-compilados da mathlib.
+3. Rode lake build. Resultado esperado: a biblioteca compila, o que significa que o Lean aceitou todas as provas.
+4. Rode lake env lean scripts/Audit.lean. Resultado esperado: a auditoria confere todas as declarações importadas do projeto, inclusive as auxiliares privadas, e aceita como axiomas somente propext, Classical.choice e Quot.sound.
 
-Além disso, o custo total de um treino depende de outras operações além da multiplicação — acúmulo de gradientes, ativações de redes profundas, comunicação entre GPUs. O limite da multiplicação é uma peça do quebra-cabeça, não a resposta completa para reduzir tempo ou dinheiro.
+```
+lake exe cache get
+lake build
+lake env lean scripts/Audit.lean
+```
 
-- Entenda que o resultado vale no limite assintótico (n → ∞). Para tamanhos finitos, o algoritmo clássico O(n³) pode continuar sendo o mais eficiente.
-- Verifique se há implementações públicas de multiplicação de matrizes com complexidade abaixo de n³ antes de prometer ganhos em produção.
+Fonte: <https://github.com/qit-lmu/omega>
 
-## Antes e depois: a linha do expoente
+## Verificação completa e blueprint
 
-![Comparação entre o teto clássico O(n³) e o novo limite ω 2,25 para multiplicação de matriz](figuras/07-antes-e-depois-a-linha-do-expoente.png)
+O repositório traz também um blueprint, um mapa que liga cada resultado do manuscrito à declaração correspondente em Lean, com grafo de dependências. A verificação completa exige mais ferramentas, que precisam estar instaladas antes de rodar make check.
 
-_Comparação entre o teto clássico O(n³) e o novo limite ω 2,25 para multiplicação de matriz_
+1. Instale o uv, que monta o ambiente travado do blueprint.
+2. Tenha Python 3.11 ou mais novo e o Make. O ambiente do blueprint seleciona o Python 3.13 pelo arquivo blueprint/.python-version.
+3. Instale o Graphviz com as bibliotecas de desenvolvimento, o pkg-config e um compilador C.
+4. Instale uma distribuição TeX que forneça kpsewhich para o HTML. Para o PDF, ela precisa trazer também latexmk, os pacotes AMS e as fontes Latin Modern. No macOS, o repositório indica o MacTeX.
+5. No Ubuntu, instale os pacotes de sistema com os comandos apt-get da seção seguinte.
+6. Rode os quatro comandos do bloco abaixo. Resultado esperado: make check compila o Lean, audita os axiomas, valida a cobertura do manuscrito e o grafo de dependências, gera o blueprint em HTML e o índice de declarações, verifica as declarações ligadas e roda os testes de regressão das ferramentas. O comando make blueprint-pdf gera a versão para impressão em blueprint/print/print.pdf.
 
-Para visualizar o que o número representa, pense em uma matriz quadrada de dimensão n. O algoritmo padrão faz cerca de n³ operações para multiplicá-la por outra matriz de mesma dimensão.
+```
+lake exe cache get
+uv sync --project blueprint --locked --cache-dir .lake/uv-cache
+make check
+make blueprint-pdf
+```
 
-Strassen mostrou em 1969 que é possível fugir do cubo usando blocos e multiplicação de matrizes em paralelo, mas o limite inferior conhecido continuava em 2. Ou seja: havia um caminho abaixo de n³, mas ninguém sabia até onde ele poderia ir.
+Fonte: <https://github.com/qit-lmu/omega>
 
-Com o resultado da OpenAI, o teto superior caiu para menos de 9/4 ≈ 2,25 sobre os complexos. Com a prova simplificada de Dogan et al., esse mesmo teto vale sobre qualquer corpo. Na prática, isso desloca a fronteira do problema: em vez de buscar um limite entre 2 e 3, o alvo agora é algo abaixo de 2,25.
+## Pacotes de sistema no Ubuntu
 
-- Algoritmo clássico: O(n³) — o padrão antes dos avanços de Strassen.
-- Strassen: abriu caminho para ω < 3, mas com limite inferior aberto em 2.
-- OpenAI (out/2026): propôs ω(C) < 9/4 ≈ 2,25 sobre os complexos.
-- Dogan et al. (nov/2026): provaram ω ≤ 9/4 sobre todo corpo e formalizaram em Lean.
+Estes são os pacotes de sistema do blueprint que a integração contínua do projeto instala no Ubuntu. Rode antes da verificação completa.
 
-## Onde entram os modelos internos da OpenAI
+```
+sudo apt-get update
+sudo apt-get install -y --no-install-recommends \
+  graphviz libgraphviz-dev pkg-config \
+  latexmk texlive-latex-recommended texlive-fonts-recommended lmodern
+```
 
-![Fluxo do uso de modelo interno da OpenAI para gerar resultados, seguido de revisão ou form](figuras/08-onde-entram-os-modelos-internos-da-opena.png)
+Fonte: <https://github.com/qit-lmu/omega>
 
-_Fluxo do uso de modelo interno da OpenAI para gerar resultados, seguido de revisão ou form_
+## Navegar pelo blueprint local
 
-Os resultados matemáticos do repositório openai/math foram obtidos, na grande maioria dos casos, com um modelo interno não divulgado da OpenAI. Em média, cada resultado usou cerca de três horas de compute do ChatGPT Pro thinking com esse modelo, ao longo de aproximadamente 4.000 problemas propostos.
+Depois da verificação completa, o comando abaixo serve a pasta blueprint inteira no seu computador. Abra http://127.0.0.1:8000/web/ no navegador para ler o blueprint. Sirva a pasta inteira, para que os links da pasta docs funcionem.
 
-Isso levanta uma questão prática: quando um modelo gera uma prova matemática sem revisão humana imediata, ela precisa ser tratada como hipótese até que seja verificada por humanos ou formalizada em um sistema como o Lean. Foi exatamente esse caminho que a comunidade seguiu com o resultado dos 9/4.
+Os arquivos gerados ficam em blueprint/web/index.html (blueprint em HTML), blueprint/web/dep_graph_document.html (grafo de dependências) e blueprint/docs/find/index.html (índice de declarações conferidas). Quem prefere ler sem instalar nada encontra a versão publicada em https://qit-lmu.github.io/omega/web/.
 
-O próprio repositório deixa claro que nem todos os resultados têm formalização e que alguns podem ter problemas — o que reforça a necessidade de ceticismo saudável ao consumir esses materiais.
+```
+python3 -m http.server 8000 --bind 127.0.0.1 --directory blueprint
+```
 
-- Trate anúncios vindos de modelos internos como dados brutos de pesquisa, não como prova final.
-- Confira se há formalização em Lean antes de usar o resultado em contexto acadêmico ou comercial.
-- Acompanhe a evolução do repositório: novas versões e correções são registradas publicamente.
-
-Fonte: <https://github.com/openai/math>
-
-## Limites, custos e o que ainda não se sabe
-
-O primeiro limite é conceitual: um expoente ômega menor descreve comportamento assintótico. Ele não reduz o custo de uma única multiplicação nem garante ganho em problemas de tamanho realista sem algoritmos que o alcancem.
-
-Segundo, há a questão da implementação. Algoritmos com complexidade teórica baixa podem ter constantes grandes e se tornar piores para dimensões moderadas. O ganho prático depende de engenharia cuidadosa.
-
-Terceiro, o resultado vale sobre corpos matemáticos abstratos; traduzir isso para hardware específico (GPUs, TPUs) exige pesquisa própria em otimização de memória e paralelismo.
-
-Por fim, como o argumento original veio de um modelo interno sem assinatura humana imediata, a comunidade ainda discute credibilidade e precedentes. O caminho da formalização em Lean é justamente o que dá peso ao resultado — mas não substitui a revisão por pares.
-
-- Fato: o limite é assintótico; não se aplica diretamente a uma única multiplicação de tamanho fixo.
-- Hipótese: algoritmos práticos podem demorar anos para alcançar o novo teto.
-- Confira sempre se há formalização antes de citar o resultado em trabalho científico.
-- O material da OpenAI é autodenominado dado bruto de pesquisa; trate com cautela até verificação independente.
+Fonte: <https://github.com/qit-lmu/omega>
 
 ## Glossário
 
-- Multiplicação de matrizes: operação que combina duas matrizes em uma terceira, essencial em redes neurais e álgebra linear.
-- Expoente ômega (ω): menor expoente tal que a multiplicação de n×n pode ser feita com O(n^(ω+ε)) operações, para todo ε > 0.
-- Complexidade assintótica: análise do crescimento de uma função quando a entrada tende ao infinito, ignorando constantes e termos inferiores.
-- Campo matemático (corpo): conjunto com as operações de adição e multiplicação bem definidas, como os números reais ou complexos; pode ter característica positiva ou zero.
-- Característica positiva: quando um somatório de unidades é nulo após um número finito de termos; campos finitos têm característica positiva.
-- Tensor value: construção usada em complexidade para contar 'valores' possíveis de tensores associados a multiplicação de matrizes, ferramenta central na prova dos 9/4.
-- Formalização em Lean: provar um resultado matemático dentro de um sistema assistido por computador que verifica cada passo da demonstração.
-- O(n³): notação big-O indicando que o número de operações cresce proporcionalmente a n³ para algum constante.
+- Omega: expoente da multiplicação de matrizes, o menor valor de que os algoritmos se aproximam em matrizes cada vez maiores.
+- Limite superior: prova de que uma grandeza é no máximo certo valor. Dizer que omega é no máximo 9/4 é um limite superior.
+- Piso (limite inferior): valor abaixo do qual a grandeza não pode cair. Para omega, o piso clássico é 2.
+- Assintótico: que descreve o comportamento quando o tamanho do problema tende ao infinito.
+- Notação O: forma de escrever a ordem de crescimento de um custo, ignorando constantes.
+- Ínfimo: o maior valor que fica abaixo ou igual a todos os elementos de um conjunto. Pode ser um valor de que se chega cada vez mais perto sem atingir.
+- Operação aritmética: soma, subtração ou multiplicação de elementos do corpo, a unidade contada na definição de omega.
+- Complexidade em bits: medida de custo que leva em conta o tamanho dos números envolvidos, diferente da contagem de operações aritméticas.
+- Corpo: conjunto de números em que soma, subtração, multiplicação e divisão por não nulos funcionam, como os números complexos.
+- Característica: quantas vezes é preciso somar o 1 a si mesmo para chegar a zero em um corpo. Se isso nunca acontece, a característica é zero. Se acontece, é positiva.
+- Tensor: objeto matemático que generaliza matrizes para mais dimensões. A multiplicação de matrizes pode ser descrita por um tensor.
+- Valor tensorial: medida introduzida por Coppersmith e Winograd, usada na prova simplificada em versão fracionária e simetrizada.
+- Posto assintótico: medida do custo de um tensor quando ele é combinado consigo mesmo muitas vezes. A formalização define omega a partir dele.
+- Lean: assistente de provas em que um programa confere cada passo de uma demonstração.
+- mathlib: biblioteca de matemática do Lean, usada como base pela formalização.
+- Formalização: reescrita de uma prova em linguagem que a máquina verifica.
+- sorry: marca do Lean para um trecho de prova deixado em branco. Uma biblioteca sem sorry tem todas as provas completas.
+- Blueprint: mapa que liga cada resultado do manuscrito à declaração correspondente em Lean.
 
 ## Para onde ir depois
 
-- Leia o preprint original no GitHub para entender a declaração do resultado da OpenAI e como o argumento foi construído.
-- Estude o artigo de Dogan et al. no arXiv para ver a prova simplificada e o conceito de valor tensorial fracionário simetrizado.
-- Explore a biblioteca Lean no repositório openai/math para acompanhar quais resultados já têm formalização.
-- Se seu interesse é aplicação, procure implementações públicas de multiplicação de matrizes com complexidade inferior a O(n³) e compare desempenho em dimensões realistas.
+O caminho mais curto para fixar o assunto é ler os enunciados na fonte e, se você tiver familiaridade com terminal, rodar a checagem em Lean.
+
+- Leia o verbete Matrix Multiplication Exponent do MathWorld, que reúne a definição de omega e as referências de cada limite: https://mathworld.wolfram.com/MatrixMultiplicationExponent.html
+- Abra o resumo do artigo de Doğan, Lysikov, Sakabe e Walter no arXiv e identifique as três peças da prova: valor tensorial, desigualdade de superaditividade e degenerações: https://arxiv.org/abs/2611.09716
+- Clone o repositório qit-lmu/omega e rode os três comandos da biblioteca em Lean para ver a máquina aceitar a prova: https://github.com/qit-lmu/omega
+- Explore o repositório openai/math começando pelo overview e pelo mapa de manuscritos em CONTENTS.md, e consulte o catálogo de formalizações para saber quais resultados já têm prova conferida: https://github.com/openai/math
+- Acompanhe o arquivo history.md do repositório da OpenAI para ver correções, novas versões e formalizações, em especial as do manuscrito de 24 de novembro.
+- Pratique o hábito com a próxima notícia de resultado matemático gerado por IA: procure quem revisou o enunciado, quem refez a prova e se existe formalização.
 
 ## Além do vídeo
 
-- O repositório openai/math descreve seus conteúdos como 'raw research data' e admite que nem todos os resultados têm formalização em Lean.
-- A OpenAI já havia anunciado bounds anteriores: sobre todo campo de característica zero, sobre características positivas fora de um conjunto finito excepcional e uma bound retangular abaixo de 2,258.
-- O artigo de Dogan et al. usa degenerações de tensores de multiplicação polinomial vindas da prova original da OpenAI como parte do argumento.
-- A média de três horas de compute do ChatGPT Pro thinking por resultado e cerca de 4.000 problemas propostos ao modelo interno, segundo a documentação do repositório.
-- O limite inferior conhecido de ω ≥ 2 vem da necessidade de operar com as entradas gerais de uma matriz.
-- A formalização em Lean está dentro do catálogo de provas do repositório openai/math, que indica cerca de 42% dos resultados principais já formalizados.
+- O manuscrito de 24 de setembro também traz limites para matrizes retangulares: em característica zero, ele afirma que o expoente correspondente a um dos formatos retangulares é menor que 2,092.
+- Esse limite retangular de 2,092 tem a mesma passagem para característica positiva com um conjunto finito de exceções. Uma segunda afirmação retangular do manuscrito, associada ao valor 0,465, fica restrita à característica zero.
+- A formalização em Lean também prova, com o nome mme_omega_le_225, um enunciado público do site Prove2Me. As definições baixadas foram preservadas sem alteração e nenhuma solução externa foi importada.
+- A biblioteca em Lean identifica omega, definido pelo posto assintótico, com o ínfimo dos limites logarítmicos de posto ordinário.
+- A OpenAI publicou resumos abreviados do raciocínio do modelo para dez famílias de resultados, entre elas o expoente de irracionalidade de π, a conjectura de Kaplansky em característica dois e o isomorfismo de fatores de grupos livres.
+- Quase todos os resultados do repositório da OpenAI saíram do mesmo procedimento. As exceções declaradas são o trabalho sobre uma região livre de zeros da função zeta de Riemann e a prova da conjectura de Hodge para variedades abelianas CM. O texto sobre a região livre de zeros Re(s) > 11/12 foi editado por humanos para facilitar a leitura.
+- A OpenAI informa que estuda repositórios mantidos pela comunidade para hospedar esses materiais.
+- Para citar um manuscrito do repositório da OpenAI, cada pasta traz um bloco BibTeX próprio.
+- No repositório qit-lmu/omega, a integração contínua confere Lean, axiomas do projeto, cobertura, declarações e saídas do blueprint. Execuções bem-sucedidas no ramo principal publicam o site.
