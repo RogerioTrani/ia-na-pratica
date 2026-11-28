@@ -4,6 +4,7 @@ Todas as apostilas dos vídeos do canal, as mais novas primeiro. As das séries 
 
 | Data e título | Formato | Apostila |
 | --- | --- | --- |
+| 2026-11-28: Uso do Codex atinge limite até 40% mais rápido no GPT-6.2 Astra | noticias | [md](noticias/2026-11/2026-11-28-uso-do-codex-atinge-limite-ate-40-mais-rapido-no-gpt-6-2-ast/apostila.md) · [pdf](noticias/2026-11/2026-11-28-uso-do-codex-atinge-limite-ate-40-mais-rapido-no-gpt-6-2-ast/apostila.pdf) |
 | 2026-11-28: SpaceX usa usina própria para ligar IA mais rápido | noticias | [md](noticias/2026-11/2026-11-28-spacex-usa-usina-propria-para-ligar-ia-mais-rapido/apostila.md) · [pdf](noticias/2026-11/2026-11-28-spacex-usa-usina-propria-para-ligar-ia-mais-rapido/apostila.pdf) |
 | 2026-11-28: Sonnet executa e Opus revisa o trabalho no final | filmes | [md](filmes/2026-11/2026-11-28-sonnet-executa-e-opus-revisa-o-trabalho-no-final/apostila.md) · [pdf](filmes/2026-11/2026-11-28-sonnet-executa-e-opus-revisa-o-trabalho-no-final/apostila.pdf) |
 | 2026-11-28: Shirudo: defesa de Linux com zero downtime em produção | noticias | [md](noticias/2026-11/2026-11-28-shirudo-defesa-de-linux-com-zero-downtime-em-producao/apostila.md) · [pdf](noticias/2026-11/2026-11-28-shirudo-defesa-de-linux-com-zero-downtime-em-producao/apostila.pdf) |
